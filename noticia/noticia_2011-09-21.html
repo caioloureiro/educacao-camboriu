@@ -1,0 +1,208 @@
+﻿<html>
+
+<head>
+
+<link href='../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Notícias</title>
+
+<link href="../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<!-- fechar janela -->
+<script language="javascript" src="funcao.js"></script>
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script>
+<!-- fechar janela -->
+
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+<div style="width:800px; height:2200px; background:#fff; margin:0 auto;"> <!-- Inicio da div box -->
+
+<div id=cabecalho> <a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank"><img src="../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" /></a>
+    <br />
+    
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="265">
+      <param name="movie" value="../imagens/fundocima.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+      <param name="swfversion" value="6.0.65.0" />
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="../imagens/fundocima.swf" width="800" height="265">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conteúdo desta página requer uma versão mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object>
+    <br>
+    <br>
+    <br>
+    <a href="javascript:FecharJanela()"><img src="../imagens/pagina01.jpg" width="160" height="18" border="0" longdesc="../index.htm" /></a>
+  
+  </div>
+    
+<div id=divtitulo>
+	
+Iniciada a 4ª etapa da Freqüência Escolar do Bolsa Família
+    
+</div> <!-- TITULO -->
+
+<div id=divpostadoem>
+    
+    Postado em 
+    <!-- #BeginDate format:fcEn2m -->Quarta-feira, 21-Set-2011  11:37<!-- #EndDate -->
+  </div> <!-- POSTADO EM - FIXO -->
+
+<div id=divfoto>
+    
+<img src="../imagens/slider/bolsa_familia_grande.jpg" width="338" height="276">
+
+</div> 
+<!-- FOTO -->
+
+<div style="padding:5px; height:500px; background:url(imagens/fundo_descricao.jpg); font:15px Arial, Georgia, Serif, Tahoma; font-weight:normal; text-align:left;">
+
+<p>Atenção escolas da Rede de Ensino de Camboriú, <strong>terça-feira, dia 20/09/2011</strong> teve início a 4ª etapa do registro de freqüência de alunos do Programa Bolsa Família. As escolas terão até <strong>31/10/2011, segunda-feira</strong>, para encerrar o registro desta etapa.</p>
+
+<p><strong>As escolas que participarão desta etapa são:</strong></p>
+
+<strong>Frequência 85% (antigo BFA)</strong><br>
+
+<table border="1">
+
+<tr><td style="text-align: center"><strong>escola</strong></td><td style="text-align: center"><strong>INEP</strong></td><td style="text-align: center"><strong>Dependência Administrativa</strong></td><td style="text-align: center"><strong>Alunos</strong></td></tr>
+
+<tr><td>CAIC JOVEM AILOR LOTERIO</td><td>42125588</td><td>MUNICIPAL </td><td style="text-align: right">265</td></tr>
+<tr><td>CEI CONDE VILA VERDE</td><td>42176000</td><td>MUNICIPAL </td><td style="text-align: right">3</td></tr>
+<tr><td>CEI MARIA RUSSI</td><td>42114055</td><td>MUNICIPAL </td><td style="text-align: right">1</td></tr>
+<tr><td>CEI MONTE ALEGRE</td><td>42110548</td><td>MUNICIPAL </td><td style="text-align: right">2</td></tr>
+<tr><td>CEI NEIDE MERISIO MOLLERI</td><td>42144353</td><td>MUNICIPAL </td><td style="text-align: right">3</td></tr>
+<tr><td>CEI ODETE RAMOS POLTRONIERI</td><td>42070147</td><td>MUNICIPAL </td><td style="text-align: right">1</td></tr>
+<tr><td>CENTRO DE ED CAMBORIU LTDA ME - CECAM</td><td>42130930</td><td>PARTICULAR </td><td style="text-align: right">1</td></tr>
+<tr><td>CENTRO DE ED RAZAO DE VIVER</td><td>42127815</td><td>PARTICULAR </td><td style="text-align: right">1</td></tr>
+<tr><td>CENTRO EDUC ESPACO CRIANCA</td><td>42162408</td><td>PARTICULAR </td><td style="text-align: right">1</td></tr>
+<tr><td>EBM ANITA BERNARDES GANANCINI</td><td>42142172</td><td>MUNICIPAL </td><td style="text-align: right">269</td></tr>
+<tr><td>EBM DOMINGOS FONSECA</td><td>42070180</td><td>MUNICIPAL </td><td style="text-align: right">77</td></tr>
+<tr><td>EBM LUCINIRA MELO REBELO</td><td>42135982</td><td>MUNICIPAL </td><td style="text-align: right">43</td></tr>
+<tr><td>EBM PROFESSOR ARTUR SICHMANN</td><td>42142121 </td><td>MUNICIPAL </td><td style="text-align: right">84</td></tr>
+<tr><td>EBM PROFESSORA IVONE TEREZINHA GARCIA</td><td>42202230 </td><td>MUNICIPAL </td><td style="text-align: right">98</td></tr>
+<tr><td>EEB ALCUINO GONCALO VIEIRA</td><td>42109159</td><td>ESTADUAL </td><td style="text-align: right">107</td></tr>
+<tr><td>EEB PREF AMADIO DALAGO</td><td>42070171</td><td>ESTADUAL </td><td style="text-align: right">66</td></tr>
+<tr><td>EEB PROF MARIO GARCIA</td><td>42101212</td><td>ESTADUAL</td><td style="text-align: right">94</td></tr>
+<tr><td>EEB PROFª MARIA TEREZINHA GARCIA</td><td>42070392 </td><td>ESTADUAL </td><td style="text-align: right">57</td></tr>
+<tr><td>EEB PROFº JOSE ARANTES</td><td>42070384 </td><td>ESTADUAL </td><td style="text-align: right">48</td></tr>
+<tr><td>EI ADOLFO OVIDIO COPPI</td><td>42070368 </td><td>MUNICIPAL </td><td style="text-align: right">8</td></tr>
+<tr><td>EI CAETES</td><td>42070295 </td><td>MUNICIPAL </td><td style="text-align: right">9</td></tr>
+<tr><td>EI LAGEADO</td><td>42070317</td><td>MUNICIPAL </td><td style="text-align: right">1</td></tr>
+<tr><td>EI PROFESSOR HERCILIO ZIMERMANN</td><td>42070210</td><td>MUNICIPAL </td><td style="text-align: right">7</td></tr>
+<tr><td>ESC ESPECIAL ALEGRIA DE VIVER</td><td>42120373</td><td>PARTICULAR </td><td style="text-align: right">9</td></tr>
+<tr><td>GEM ABALOR AMERICO MADEIRA</td><td>42109280</td><td>MUNICIPAL </td><td style="text-align: right">193</td></tr>
+<tr><td>GEM ANDRONICO PEREIRA</td><td>42070287 </td><td>MUNICIPAL </td><td style="text-align: right">77</td></tr>
+<tr><td>GEM MARLENE PEREIRA ZUCHI</td><td>42145473</td><td>MUNICIPAL </td><td style="text-align: right">34</td></tr>
+<tr><td>GEM PROFESSOR JOAQUIM MAGALHAES</td><td>42070198</td><td>MUNICIPAL </td><td style="text-align: right">41</td></tr>
+<tr><td>GEM PROFESSORA CLOTILDE RAMOS CHAVES</td><td>42070201</td><td>MUNICIPAL </td><td style="text-align: right">278</td></tr>
+<tr><td>INSTITUTO FEDERAL DE EDUCACAO CIENCIA E TECNOLOGIA CAMPUS CAMBORIU</td><td>42070406 </td><td>FEDERAL </td><td style="text-align: right">8</td></tr>
+<tr><td>JI PADRE SERGIO MAYKOT</td><td>42070155</td><td>MUNICIPAL </td><td style="text-align: right">2</td></tr>
+<tr><td colspan="3" style="text-align: right"><strong>Total de alunos deste município ( Camboriú ):</strong></td><td style="text-align: right"><strong>2747</strong></td></tr>
+
+</table>
+
+<br>
+<br>
+
+<strong>Frequência 75% (antigo BVJ)</strong><br>
+<table border="1">
+<tr><td style="text-align: center"><strong>escola</strong></td><td style="text-align: center"><strong>INEP</strong></td><td style="text-align: center"><strong>Dependência Administrativa</strong></td><td style="text-align: center"><strong>Alunos</strong></td></tr>
+
+<tr><td>EBM ANITA BERNARDES GANANCINI </td><td>42142172 </td><td>MUNICIPAL </td><td style="text-align: right">32</td></tr>
+<tr><td>EBM PROFESSORA IVONE TEREZINHA GARCIA </td><td>42202230 </td><td>MUNICIPAL</td><td style="text-align: right">4</td></tr>
+<tr><td>EEB ALCUINO GONCALO VIEIRA </td><td>42109159 </td><td>ESTADUAL </td><td style="text-align: right">8</td></tr>
+<tr><td>EEB PROF MARIO GARCIA </td><td>42101212 </td><td>ESTADUAL</td><td style="text-align: right">16</td></tr>
+<tr><td>EEB PROFª MARIA TEREZINHA GARCIA</td><td>42070392</td><td>ESTADUAL</td><td style="text-align: right">26</td></tr>
+<tr><td>EEB PROFº JOSE ARANTES</td><td>42070384 </td><td>ESTADUAL</td><td style="text-align: right">33</td></tr>
+<tr><td>GEM PROFESSORA CLOTILDE RAMOS CHAVES </td><td>42070201 </td><td>MUNICIPAL</td><td style="text-align: right">7</td></tr>
+<tr><td colspan="3" style="text-align: right"><strong>Total de alunos deste município ( Camboriú ):</strong></td><td style="text-align: right"><strong>218</strong></td></tr>
+
+</table>
+
+</div> 
+<!-- TEXTO -->
+ 
+</div> <!-- Fim da div box -->
+
+<div id=rodape></div>
+
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+
+</html>

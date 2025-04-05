@@ -1,0 +1,519 @@
+﻿<html>
+
+<head>
+
+<link href='imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>
+Sala de Informática
+</title>
+
+<link href="noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id=box>
+
+<div>
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+
+<img src="imagens/link_prefeitura_camboriu.jpg" title="Clique aqui para acessar o Site da Prefeitura de Camboriú" width="798" height="39" border="0" />
+
+</a>
+
+<br>
+
+<a href="index.htm" target="_blank">
+
+<img src="imagens/portal_topo.jpg" title="Clique aqui para acessar o Portal da Educação de Camboriú" width="798" height="39" border="0" />
+
+</a>
+
+<br>
+
+<br>
+
+<img src="imagens/sala_de_informatica.jpg" width="798" height="39" border="0" />
+
+</div> <!-- CABEÇALHO -->
+
+<!-- Coluna esquerda -->
+<div id=divbotoes>
+<center>
+<br>
+<div id=divbotao03linha> <!-- Inicio Botão Link Mestre 02 - 05-->
+<a href="http://www.bussolaescolar.com.br/" target="_blank"><img src="imagens/bussola_escolar.jpg" width="215" height="47" border="0"></a>
+</div> <!-- Botão Bussola Escolar -->
+<br>      
+<div id=divbotao03linha> <!-- Inicio Botão Link Mestre 02 - 06-->
+          <a href="http://www.brasilescola.com/" target="_blank"><img src="imagens/brasil_escola.jpg" width="216" height="56" border="0"></a>
+        </div> <!-- Botão Brasil Escola -->
+<br>        
+<div id=divbotao03linha> <!-- Inicio Botão Link Mestre 02 - 07-->
+          <a href="http://portaldoprofessor.mec.gov.br/index.html" target="_blank"><img src="imagens/portal_do_professor.jpg" width="176" height="61" border="0"></a>
+        </div> <!-- Botão Portal do Professor -->
+<br>
+<br>
+<FORM method=GET action="http://www.google.com/search">
+<a href="http://www.google.com.br" target="_blank">
+<img src="imagens/google.jpg" width="90" height="30" border="0">
+</a>
+<INPUT TYPE=text name=q size=25 maxlength=200 value="">
+<br> <br>
+<INPUT TYPE=hidden name=hl value="pt-br">
+<INPUT type=submit name=btnG VALUE="Pesquisa Google">
+</FORM> <!-- busca do google -->
+<br>
+<object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="145" height="155">
+        <param name="movie" value="imagens/flashvortex.swf">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="8.0.35.0">
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="imagens/flashvortex.swf" width="145" height="155">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="8.0.35.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conte&uacute;do desta p&aacute;gina requer uma vers&atilde;o mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+</object> <!-- reloginho -->
+<br>
+
+<div style="font-size:12px; font-weight:bold;">
+
+<p><div id=divbotao01linha><img src="imagens/escolas_isoladas.jpg" width="198" height="15"></div></p>
+
+<p><a href="isoladas/ei_adolfo/index.html" target="_blank">           
+<div>
+
+EI Adolfo<br>
+Ovidio Coppi
+
+</div>
+</a></p>
+            
+<p><a href="isoladas/ei_braco_macacos/index.html" target="_blank">           
+<div>
+
+EI Braço Macacos
+
+</div>
+</a></p>
+           
+<p><a href="isoladas/ei_caetes/index.html" target="_blank">           
+<div>
+
+EI Caetés
+
+</div>
+</a></p>
+            
+<p><a href="isoladas/ei_lageado/index.html" target="_blank">           
+<div>
+
+EI Lageado
+
+</div>
+</a></p>
+            
+<p><a href="isoladas/ei_hercilio_zimermann/index.html" target="_blank">           
+<div>
+
+EI Hercílio<br>
+Zimmermann
+
+</div>
+</a></p>
+            
+<p><a href="isoladas/ei_santa_luzia/index.html" target="_blank">           
+<div>
+
+EI Santa Luzia
+
+</div>
+</a></p>
+
+</div>
+
+</center>
+</div>
+<!-- /Coluna esquerda -->
+
+<!-- Coluna centro -->  
+<div id=divcentral>
+
+<div>
+<center>
+<img src="imagens/computador.jpg" width="300" height="300" border="0" />
+</center>
+</div> <!-- Computador -->
+
+<div style="padding:4px; font-size:14px;">
+
+Segundo pesquisas recentes foi constatado que para aprendemos usamos: COMPUTADOR<br>
+<br>
+<strong>
+* 83% visão;<br>
+* 11% audição;<br>
+* 3,5% olfato;<br>
+* 1,5% tato<br>
+* 1% gustação.<br>
+</strong>
+<br>
+E que retemos:<br>
+<br>
+<strong>
+* 10% quando lemos;<br>
+* 20% quando ouvimos;<br>
+* 30% quando vemos;<br>
+* 50% quando vemos e executamos;<br>
+* 70% quando ouvimos e logo abordamos;<br>
+* 90% quando ouvimos e logo realizamos.<br>
+</strong>
+<br>
+<strong>COMPUTADOR</strong><br>
+<br>
+Através da Informática, podemos acelerar todo esse processo. Utilizando recursos com a Internet, Softwares Educacionais e atividades multimídia personalizadas, aliados ao embasamento pedagógico, a Informática constitui-se numa poderosa ferramenta para a formação.<br>
+<br>
+Por tudo isso, nossa escola possui a Sala de informática onde, uma vez por semana, a professora leva seus alunos para que ela possa reforçar todo o conhecimento adquirido em sala de aula de maneira lúdica, prática e eficiente. Além disso, nossa sala de informática conta com a presença do Orientador de Informática que é responsável pelo desenvolvimento das atividades solicitadas pelos professores, bem como, pela manutenção da sala de informática.<br>
+
+</div> <!-- Texto da Sala de Info -->
+
+</div>
+<!-- /Coluna centro -->
+
+<!-- Coluna direita -->
+<div id=divlinksuteis>
+
+<div>
+    <br>
+    <strong>Escreva sua mensagem para o Portal da Educação:</strong><br>
+    <br>
+        
+        <form action="formulario_email_para_webmaster.php" method="POST">
+
+		Seu Nome : <br> 
+		<input name="nome" type="text" size="20">
+		<br>
+		<br>
+
+		Seu E-mail : <br>
+		<input name="email" type="text" size="20">
+		<br>
+		<br>
+        
+        Comentários : <br>
+		<textarea name="comentarios" cols="20" rows="5"></textarea>
+		<br>
+
+		<input type="submit" value="Enviar">
+
+		</form>  
+  
+                  
+        </div> <!-- Mensagem a webmaster -->
+<br>
+
+<div style="font-size:12px; font-weight:bold;"> 
+<center>
+       
+<p><div id=divbotao01linha><img src="imagens/escolas.jpg" width="100" height="15"></div></p>
+ 
+<p><a href="escolas/escola_caic/index.html" target="_blank" title="Bairro Monte Alegre">           
+<div>
+
+CAIC<br>
+Jovem Ailor Lotério
+
+</div>
+</a></p>
+
+<p><a href="ceis/cei_recanto/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+<div>
+
+CE Abelardo<br>
+Torquato Rosa
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_anita/index.html" target="_blank" title="Bairro Monte Alegre">           
+<div>
+
+EBM Anita<br>
+Bernardes Ganancini
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_domingos/index.html" target="_blank" title="Bairro Tabuleiro">           
+<div>
+
+EBM<br>Domingos Fonseca
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_lucinira/index.html" target="_blank" title="Bairro Rio Pequeno">           
+<div>
+
+EBM Lucinira<br>
+Melo Rebelo
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_artur/index.html" target="_blank" title="Bairro Centro">           
+<div>
+
+EBM Professor<br>
+Artur Sichmann
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_ivone/index.html" target="_blank" title="Bairro Santa Regina">           
+<div>
+
+EBM Professora<br>
+Ivone Terezinha<br>
+Garcia
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_abalor/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+<div>
+
+EBM Professor<br>
+Abalor Américo<br>
+Madeira
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_andronico/index.html" target="_blank" title="Bairro São Francisco de Assis">           
+<div>
+
+GEM Andrônico<br>
+Pereira
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_marlene_zuchi/index.html" target="_blank" title="Localidade Jardim Paraíso">           
+<div>
+
+GEM Marlene<br>
+Pereira Zuchi
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_joaquim/index.html" target="_blank" title="Bairro Rio Pequeno">           
+<div>
+
+GEM Professor<br>
+Joaquim Magalhães
+
+</div>
+</a></p>
+            
+<p><a href="escolas/escola_clotilde/index.html" target="_blank" title="Bairro Areias">           
+<div>
+
+GEM Professora<br>
+Clotilde Ramos<br>
+Chaves
+
+</div>
+</a></p>
+
+<p><div id=divbotao01linha><img src="imagens/creches_(cei).jpg" width="175" height="19"></div></p>
+            
+<p><a href="ceis/cei_caic/index.html" target="_blank" title="Bairro Monte Alegre">           
+<div>
+
+CEI CAIC
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_conde/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+<div>
+
+CEI Eurípedes<br>
+de Paula Silva
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_judite/index.html" target="_blank" title="Localidade Jardim Paraíso">           
+<div>
+
+CEI Judite<br>
+Da Rocha Dalago
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_julita/index.html" target="_blank" title="Bairro Tabuleiro">           
+<div>
+
+CEI Julita Pereira
+
+</div>
+</a></p>
+
+<p><a href="ceis/cei_maria_russi/index.html" target="_blank" title="Bairro Rio Pequeno">           
+<div>
+
+CEI Maria Russi
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_saut/index.html" target="_blank" title="Bairro Centro">           
+<div>
+
+CEI Maria<br>
+Bittencourt Saut
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_menino_jesus/index.html" target="_blank" title="Bairro São Francisco de Assis">           
+<div>
+
+CEI Menino Jesus
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_monte_alegre/index.html" target="_blank" title="Bairro Monte Alegre">           
+<div>
+
+CEI Monte Alegre
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_neide_merisio/index.html" target="_blank" title="Bairro Areias">           
+<div>
+
+CEI Neide Merísio<br>
+Molleri
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_odete/index.html" target="_blank" title="Bairro Centro">           
+<div>
+
+CEI Odete Ramos<br>
+Poltronieri
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_otilia/index.html" target="_blank" title="Bairro Santa Regina">           
+<div>
+
+CEI Professora<br>
+Otília Santos<br>
+da Silva
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_tania/index.html" target="_blank" title="Bairro Tabuleiro">           
+<div>
+
+CEI Professora<br>
+Tania Regina Garcia
+
+</div>
+</a></p>
+            
+<p><a href="ceis/cei_rio_do_meio/index.html" target="_blank" title="Bairro Rio do Meio">           
+<div>
+
+CEI Rio do Meio
+
+</div>
+</a></p>
+            
+<p><a href="ceis/ji_maykot/index.html" target="_blank" title="Bairro Centro">           
+<div>
+
+JI Padre Sérgio<br>
+Maykot
+
+</div>
+</a></p>
+
+</center>
+</div> <!-- Escolas e Creches -->
+
+</div>
+<!-- /Coluna direita -->
+
+</div>
+
+<div id=rodape>
+    
+</div> <!-- RODAPÉ -->
+
+</body>
+
+</html>

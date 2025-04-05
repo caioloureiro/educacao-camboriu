@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script language=JavaScript>
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- Desabilita o botão direito do mouse -->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Palavra da Secretária da Educação e Cultura</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#titulo {
+margin:30 0 0 290px;
+position:absolute;
+left:290px;
+top:60px;
+width:442px;
+height:178px;
+z-index:3;
+text-align:center;
+color:#060;
+font-size:24px;
+}
+
+#titulo_transparente {
+	position:absolute;
+	width:800px;
+	height:315px;
+	z-index:1;
+	background:url(../../imagens/fundo_titulo.png);
+	top: 39px;
+}
+
+#fundo_template {
+	margin:0 0 0 0px;
+	position:absolute;
+	z-index:2;
+	top: 39px;
+}
+
+</style>
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#conteudo').hide(); // esta div irá desaparecer
+$ ('#equipe').hide(); // esta div irá desaparecer
+$ ('#historia').hide(); // esta div irá desaparecer
+$ ('#patronesse').hide(); // esta div irá desaparecer
+$ ('#ppp').hide(); // esta div irá desaparecer
+$ ('#projetos').hide(); // esta div irá desaparecer
+$ ('#app').hide(); // esta div irá desaparecer
+$ ('#pdde').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				// nextTxt: "Próxima",
+				// prevTxt: "Anterior",
+				// boxId: "superbox", // Id attribute of the "superbox" element
+				// boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "800", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				// loadTxt: "Loading...", // Loading text
+				// closeTxt: "Close", // "Close" button text
+				// prevTxt: "Previous", // "Previous" button text
+				// nextTxt: "Next" // "Next" button text
+
+			};
+			$.superbox();
+		});
+
+</script> <!-- Blog -->
+<!-- Modelar o Box Modal --> <!-- Modal -->
+
+<!-- Mudar fundo de Div -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script>
+<!-- mudar fundo de div -->
+
+<script type='text/javascript'>
+<!--
+function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+<div id=box> <!-- Inicio da div box -->
+
+<div id=cabecalho>
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+<img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" />
+</a>
+<img src="imagens/fundo_palavra.jpg" width="800" height="310" /><br>
+<a target="_self" href="javascript:FecharJanela()">
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+</a>  
+</div> <!-- Cabeçalho -->
+
+<table>
+<tr>
+<td id=divdescricao02>
+
+	Esta página é um espaço para a Secretária da Educação e Cultura de Camboriú entrar em contato com o público, mostrando assim toda a transparência na administração desta Secretaria.
+    
+    </td>
+</tr>
+<tr>    
+<td id=divpostadoem>
+    
+    <img src="../../imagens/representante.jpg" width="162" height="15" />
+    
+    </td>
+</tr>
+<tr>    
+<td id=divdescricao>
+
+<table border="1" width="100%">
+
+<tr><td rowspan="3" width="15%"><img src="imagens/celi.jpg" width="114" height="150" /></td></tr>
+
+<tr><td width="85%">Nome: <strong>Celi Utrera Stevanin</strong></td></tr>
+
+<tr><td>Função: <strong>Secretária da Educação e Cultura</strong></td></tr>
+
+</table>
+
+</td> <!-- Descrição -->
+</tr>
+<tr>
+<td style="width:900px; height:500px;">
+
+<!-- <iframe src ="http://engeducacaocamboriu.blogspot.com" width="800px" height="900px" frameborder="0"></iframe> -->
+
+</td> <!-- IFRAME do blog -->
+</tr>
+<tr>
+<td style="width:100%; height:330px; background:#CCC; font-size:13px; font-weight:bold;">
+<center><br>
+<strong>Escreva sua mensagem para a Secretária:</strong><br><br>
+<form action="http://www.cidadedecamboriu.sc.gov.br/postman/postman.php" method=post>
+Seu Nome : <br> 
+<input value="" size="100"><br>
+<br>
+<input type="hidden" name="To" value="educacao@cidadedecamboriu.sc.gov.br">
+Seu E-mail : <br>
+<input name="frm" value="" size="100"><br>
+<br>        
+<input type="hidden" name="subjct" value="Portal da Educacao de Camboriu" size=40>
+Comentários : <br>
+<textarea cols="75" rows="5" name="Bdy"></textarea><br><br>
+<input type="submit" value="Enviar">
+</form>  
+</center>
+</td> <!-- Mensagem para a escola --> 
+</tr>
+</table>
+</div> <!-- Fim da div box -->
+
+<div id=rodape> </div> <!-- Rodapé -->
+
+</body>
+
+</html>

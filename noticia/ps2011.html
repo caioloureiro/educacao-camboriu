@@ -1,0 +1,269 @@
+﻿<html>
+
+<head>
+
+<link href='../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Notícias</title>
+
+<link href="../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<!-- fechar janela -->
+<script language="javascript" src="funcao.js"></script>
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script>
+<!-- fechar janela -->
+
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style>
+</head>
+
+<body>
+<div id=box>
+
+<div id=cabecalho> <a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank"><img src="../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" /></a>
+    <br />
+    
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="265">
+      <param name="movie" value="../imagens/fundocima.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+
+      <param name="swfversion" value="6.0.65.0" />
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="../imagens/fundocima.swf" width="800" height="265">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conteúdo desta página requer uma versão mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+
+      </object>
+      <!--<![endif]-->
+    </object>
+    <br>
+    <br>
+    <br>
+    <a href="javascript:FecharJanela()"><img src="../imagens/pagina01.jpg" width="160" height="18" border="0" longdesc="../index.htm" /></a>
+  
+  </div>
+    
+
+<div id=divtitulo>
+	
+Processo Seletivo 2011    
+</div> <!-- TITULO -->
+
+<div id=divpostadoem>
+<strong>Camboriú, quarta-feira, 27 de Junho de 2012.</strong>
+</div> <!-- POSTADO EM - FIXO -->
+
+<div id=divfoto>
+    
+
+<img src="../imagens/slider/ps2011_grande.jpg" />
+
+</div> <!-- FOTO -->
+
+<div id=divdescricao>
+
+<p><a href="../processo_seletivo_2011/chamamento52.pdf" target="_blank" style="cursor:pointer">52º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento51.pdf" target="_blank" style="cursor:pointer">51º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento50.pdf" target="_blank" style="cursor:pointer">50º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento49.pdf" target="_blank" style="cursor:pointer">49º chamamento -  Professor de Anos Finais</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento48.pdf" target="_blank" style="cursor:pointer">48º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento47.pdf" target="_blank" style="cursor:pointer">47º chamamento -  Professor dos Anos Finais e Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento46.pdf" target="_blank" style="cursor:pointer">46º chamamento -  Professor dos Anos Finais e Professor de Educação Especial</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento45.pdf" target="_blank" style="cursor:pointer">45º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento44.pdf" target="_blank" style="cursor:pointer">44º chamamento -  Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento43.pdf" target="_blank" style="cursor:pointer">43º chamamento -  Professor de Ed. Física (retorno a lista)</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento42.pdf" target="_blank" style="cursor:pointer">42º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento41.pdf" target="_blank" style="cursor:pointer">41º chamamento - Professor dos Anos Finais: Educação Física</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento40.pdf" target="_blank" style="cursor:pointer">40º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento39.pdf" target="_blank" style="cursor:pointer">39º chamamento - Professor de Anos Finais: Lingua Portuguesa, Lingua Inglesa e Ciências</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento38.pdf" target="_blank" style="cursor:pointer">38º chamamento - Professor de Anos Finais, Zelador e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento37.pdf" target="_blank" style="cursor:pointer">37º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento36.pdf" target="_blank" style="cursor:pointer">36º chamamento - Professor de Anos Finais: Educaçao Física e Geografia</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento35.pdf" target="_blank" style="cursor:pointer">35º chamamento - Professor de Anos Finais: Educaçao Física e Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento34.pdf" target="_blank" style="cursor:pointer">34º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento33.pdf" target="_blank" style="cursor:pointer">33º chamamento - Professor de Anos Finais: Educaçao Física e Geografia</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento32.pdf" target="_blank" style="cursor:pointer">32º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento31.pdf" target="_blank" style="cursor:pointer">31º chamamento - Professor de Anos Finais: Educaçao Física</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento30.pdf" target="_blank" style="cursor:pointer">30º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento29.pdf" target="_blank" style="cursor:pointer">29º chamamento - Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento28.pdf" target="_blank" style="cursor:pointer">28º chamamento - Vigia</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento27.pdf" target="_blank" style="cursor:pointer">27º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento26.pdf" target="_blank" style="cursor:pointer">26º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento25.pdf" target="_blank" style="cursor:pointer">25º chamamento - Professor de Anos Finais: Educaçao Física</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento24.pdf" target="_blank" style="cursor:pointer">24º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento23.pdf" target="_blank" style="cursor:pointer">23º chamamento - Professor dos Anos Finais: Educação Física, Vigia e Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento22.pdf" target="_blank" style="cursor:pointer">22º chamamento - Professor dos Anos Finais: Educação Física, Servente e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento21.pdf" target="_blank" style="cursor:pointer">21º chamamento - Servente e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento20.pdf" target="_blank" style="cursor:pointer">20º chamamento - Professor dos Anos Finais: Educação Física e Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento19.pdf" target="_blank" style="cursor:pointer">19º chamamento - Professor dos Anos Finais: Educação Física, História e Lingua Portuguesa</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento18.pdf" target="_blank" style="cursor:pointer">18º chamamento - Servente e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento17.pdf" target="_blank" style="cursor:pointer">17º chamamento - Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento16.pdf" target="_blank" style="cursor:pointer">16º chamamento - Professor dos Anos Finais: Geografia</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento15.pdf" target="_blank" style="cursor:pointer">15º chamamento - Servente e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento14.pdf" target="_blank" style="cursor:pointer">14º chamamento - Professor de Anos Finais (Ciências e Geografia), Servente e Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento13.pdf" target="_blank" style="cursor:pointer">13º chamamento - Professor de Anos Iniciais e Professor de Anos Finais: Educaçao Física</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento12.pdf" target="_blank" style="cursor:pointer">12º chamamento - Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento11.pdf" target="_blank" style="cursor:pointer">11º chamamento - Professor dos Anos Iniciais, Professor dos Anos Finais, Merendeira e Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento10errata.pdf" target="_blank" style="cursor:pointer">10º chamamento - ERRATA - Monitor de Educação Infantil</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento10.pdf" target="_blank" style="cursor:pointer">10º chamamento - Professor de Anos Finais (Ciências, Lingua Portuguesa, Matemática e Educação Física), Professor de Anos Iniciais, Professor de Educação Infantil e Zelador</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento09.pdf" target="_blank" style="cursor:pointer">9º chamamento - Servente e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento08.pdf" target="_blank" style="cursor:pointer">8º chamamento - Mntr EI, Prof Anos Iniciais e Prof Anos Finais</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento07.pdf" target="_blank" style="cursor:pointer">7º chamamento - Servente, Merendeira, Mntr de Inclusão, Mntr de EI, Prof. de EI, Prof. AI, Prof. AF</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento06.pdf" target="_blank" style="cursor:pointer">6º chamamento - Professor de Anos Iniciais e Professor de Educação Infantil</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento05.pdf" target="_blank" style="cursor:pointer">5º chamamento - Professor de Anos Finais: Ciências, Lingua Inglesa, Lingua Portuguesa, História e Educação Física</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento04.pdf" target="_blank" style="cursor:pointer">4º chamamento - Monitor de Educação Infantil e Merendeira</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento03.pdf" target="_blank" style="cursor:pointer">3º chamamento - Monitor de inclusão, Profº Ensino Religioso, Profº Matemática e Servente</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento02.pdf" target="_blank" style="cursor:pointer">2º chamamento - Monitor de Educação Infantil</a></p>
+
+<p><a href="../processo_seletivo_2011/chamamento01.pdf" target="_blank" style="cursor:pointer">1º chamamento</a></p>
+
+<p><a href="../processo_seletivo_2011/local_de_prova_2012.pdf" target="_blank" style="cursor:pointer">Local de Prova e Ensalamento</a></p>
+
+<p><a href="../processo_seletivo_2011/homologacao_de_inscritos.pdf" target="_blank" style="cursor:pointer">Homologação de Inscritos</a></p>
+
+<p><a href="../processo_seletivo_2011/retificacao02.pdf" target="_blank" style="cursor:pointer">Retificação 22/12/2011</a></p>
+
+<p><a href="../processo_seletivo_2011/rol_de_inscritos.pdf" target="_blank" style="cursor:pointer">Rol de Inscritos</a></p>
+
+<p><a href="../processo_seletivo_2011/retificacao_01-2011-11-29.pdf" target="_blank" style="cursor:pointer">Retificação 29/11/2011</a></p>
+
+<p><a href="../processo_seletivo_2011/processo_seletivo_2011-edital.pdf" target="_blank" style="cursor:pointer">Edital</a></p>
+
+<p><a href="../processo_seletivo_2011/processo_seletivo_2011-cronograma.pdf" target="_blank" style="cursor:pointer">Cronograma</a></p>
+
+</div> <!-- TEXTO -->
+
+</div>
+
+<div id=rodape>
+    
+</div>
+
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+
+</script>
+</body>
+
+</html>

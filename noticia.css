@@ -1,0 +1,326 @@
+body {
+	background:url(imagens/camboriu.jpg) fixed no-repeat;
+	font-family: Arial, Georgia, "Times New Roman", Serif, tahoma;
+	font-size:10px;
+	margin:0px;
+	}
+	
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #06F;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+	
+#box{
+width:800px;
+height:1600px;
+background:#fff;
+margin:0 auto;
+}
+
+#textoescolas {
+overflow:auto;
+margin:0 4 0 4px;
+padding:4 8 0 6px;
+height:350px;
+font-size:13px;
+text-align:justify;
+background:#EEE;
+}
+
+#tabela {
+width:382px;
+height:133px;
+border:2px solid;
+font-size:13px;
+margin:0 4 0 4px;
+padding:0 2 0 2px;
+}
+
+#divnomecom02colunas01 {
+width:400px;
+height:90px;
+float:left;
+}
+
+#divnomecom02colunas02 {
+width:400px;
+height:90px;
+float:right;
+}
+
+#divnomecom03colunas01 {
+width:266px;
+float:left;
+}
+
+#divnomecom03colunas02 {
+width:266px;
+float:left;
+}
+
+#box02 {
+width:800px;
+height:2850px;
+background:#fff;
+margin:0 auto;
+clear:both;
+}
+
+#box03{
+width:800px;
+height:1500px;
+background:#fff;
+margin:0 auto;
+}
+
+#divsite {
+height:1100px;
+background:#FFF;
+}
+	
+#cabecalho {
+height:400px;
+background:#FFF;
+text-align:center;
+}
+
+#textocentral {
+height:400px;
+background:#FFF;
+text-align:center;
+}
+
+#divtitulo {
+height:70px;
+font:30px Tahoma, Georgia, "Times New Roman", Serif, Arial;
+font-weight:bold;
+text-align:center;
+padding:2px;
+}
+
+#divpostadoem {
+height:17px;
+background:#FFF;
+font:9px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+font-weight:normal;
+text-align:left;
+padding:0 0 0 2px;
+}
+
+#divfoto {
+height:300px;
+background:#FFF;
+text-align:center;
+}
+
+#divdescricao {
+padding:5px;
+height:100px;
+background:url(imagens/fundo_descricao.jpg);
+font:15px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+font-weight:normal;
+text-align:left;
+}
+
+#divdescricao02 {
+height:65px;
+background:#FFF;
+font:18px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+font-weight:normal;
+text-align:center;
+padding:2px;
+}
+
+#divbotoes {
+width:200px;
+height:900px;
+float:left;	
+}
+
+#divlinksuteis {
+width:200px;
+height:900px;
+float:right;	
+}
+
+#divcentral {
+width:400px;
+height:900px;
+float:left;
+}
+
+#clear {
+clear:both;
+}
+
+#boxanita {
+width:800px;
+height:1600px;
+background:#fff;
+margin:0 auto;	
+}
+
+#divcentralanita {
+width:800px;
+height:900px;
+float:left;
+}
+
+#divbotoesanita {
+width:100px;
+height:900px;
+float:left;	
+}
+
+#divlinksuteisanita {
+width:100px;
+height:900px;
+float:right;	
+}
+
+#overflow{
+height:500px;
+overflow:auto;
+font-size:18px;
+text-align:center;
+background:url(imagens/caderno4.png);
+}
+
+#assinatura{
+height:100px;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+}
+
+#rodape {
+width:800px;
+height:100px;
+font:13px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+background:url(imagens/barradown.jpg);
+margin: 0 auto;
+}
+
+#textonormal {
+font:18px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+font-weight:normal;
+text-align:center;
+padding:2px;
+}
+
+#textonormal02 {
+font:10px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+font-weight:normal;
+text-align:center;
+}
+
+#botao_escolas {
+overflow:auto;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas02 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas03 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas04 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas05 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas06 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas07 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas08 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas09 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+}
+
+#botao_escolas10 {
+overflow:auto;
+margin:4 0 0 0px;
+padding:0 0 0 2px;
+background:#CCC;
+font-size:16px;
+font-weight:bold;
+height:25px;
+} <!-- botão escola 01 até 10 -->

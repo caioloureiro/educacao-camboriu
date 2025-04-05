@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gerador de Memorandos</title>
+<script language="JavaScript" type="text/JavaScript">
+
+<!--
+function MM_reloadPage(init) {//reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+</script>
+
+<script type='text/javascript'>
+
+<!--
+function FecharJanela()
+{
+ww = window.open(window.location, "_self");
+ww.close();
+}
+-->
+
+</script>
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#item02').hide(); // esta div irá desaparecer
+$ ('#item03').hide(); // esta div irá desaparecer
+$ ('#item04').hide(); // esta div irá desaparecer
+$ ('#item05').hide(); // esta div irá desaparecer
+$ ('#item06').hide(); // esta div irá desaparecer
+$ ('#item07').hide(); // esta div irá desaparecer
+$ ('#item08').hide(); // esta div irá desaparecer
+$ ('#item09').hide(); // esta div irá desaparecer
+$ ('#item10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				// nextTxt: "Próxima",
+				// prevTxt: "Anterior",
+				// boxId: "superbox", // Id attribute of the "superbox" element
+				// boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "1000", // Default width of the box
+				boxHeight: "600", // Default height of the box
+				// loadTxt: "Loading...", // Loading text
+				// closeTxt: "Close", // "Close" button text
+				// prevTxt: "Previous", // "Previous" button text
+				// nextTxt: "Next" // "Next" button text
+
+			};
+			$.superbox();
+		});
+
+</script> <!-- Modelar o Box Modal -->
+
+</head>
+
+<body style="margin:0 auto; background:url(imagens/camboriu.jpg) fixed no-repeat;">
+<center>
+
+<form style="width:1000px; background:url(imagens/fundo_titulo.png);" action="memorando.php" method="post">
+<h1><em><strong>GERADOR DE MEMORANDOS</strong></em></h1>
+Nome da Instituição (se for da Secretaria de Educação e Cultura deixar em branco):<br>
+<input name="instituicao" type="text" size="100" /><br>
+<br>
+Remetente:<br>
+<input name="remetente" type="text" size="100" /><br>
+<br>
+Função do Remetente:<br>
+<input name="funcao" type="text" size="50" /><br>
+<br>
+Forma de tratamento:<br>
+<select name="tratamento" class="" size="1">
+
+<option>-----</option>
+<option>Ilmo(a).</option>
+<option>Exmo(a).</option>
+</select><br>
+<br>
+Destinatário:<br>
+<input name="destino" type="text" size="100" /><br>
+<br>
+Função do Destinatário:<br>
+<input name="funcao_destino" type="text" size="100" /><br>
+<br>
+Memorando nº <input name="oficio" type="text" size="6" /><br>
+<br>
+Texto:<br>
+<textarea name="texto" cols="80" rows="5"></textarea><br>
+<br>
+<br>
+<input type="submit" value="Gerar Memorando"><br>
+<br>
+<br>
+</form>
+
+</center>
+</body>
+
+</html>

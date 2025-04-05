@@ -1,0 +1,1597 @@
+﻿<html> <!-- Portal desenvolvido por Caio Loureiro -->
+
+<head>
+
+<META http-equiv="content-type" content="text-html" charset="utf-8"> <!-- Charset -->
+
+<META NAME="KeyWords" CONTENT="educação, Camboriú, SC, Governo, Municipal, cidadedecamboriu"> <!-- Keyword -->
+
+<meta name="author" content="Caio Loureiro"> <!-- autor -->
+
+<meta name="copyright" content="© 2010 Prefeitura Municipal de Camboriu" /> <!-- direitos -->
+
+<meta http-equiv="imagetoolbar" content="no" /> <!-- image tool bar -->
+
+<script LANGUAGE="JavaScript"> 
+
+function agregar(){
+   if ((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4)) {
+      var url="http://www.educacao.cidadedecamboriu.sc.gov.br/";
+      var titulo="O Portal da Educação de Camboriú";
+      window.external.AddFavorite(url,titulo);
+   }
+   else {
+      if(navigator.appName == "Netscape")
+         alert ("Pressione Crtl+D para agregar este site em seus Favoritos");
+   }
+}
+</script> <!-- Adicionar aos favoritos -->
+
+<script language=JavaScript> 
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script> <!-- Desabilita o botão direito do mouse -->
+ 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<title>
+Secretaria da Educação e Cultura de Camboriú - SC
+</title> <!-- titulo -->
+
+<link href="estilo.css" type="text/css" rel="stylesheet"> <!--load o arquivo estilo.css nesta página-->
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="feed/rss.xml" /> <!--load o arquivo RSS nesta página-->
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script> <!-- load flash -->
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script> <!-- função reload page -->
+
+<script language="javascript" type="text/javascript" src="Scripts/Mobile2Detect.js"></script> <!-- Localizar Celular -->
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:950px;
+	top:343px;
+	width:101px;
+	height:96px;
+	z-index:23;
+}
+#apDiv2 {
+	position:absolute;
+	left:896px;
+	top:2342px;
+	width:137px;
+	height:144px;
+	z-index:23;
+}
+.GEORGIA {
+	font-family: Arial;
+}
+body p {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+body p {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.arial {
+	font-family: Arial;
+	font-size: 10px;
+}
+.arial {
+	font-family: Arial;
+	font-size: 12px;
+}
+#apDiv3 {
+	position:absolute;
+	left:223px;
+	top:986px;
+	width:352px;
+	height:62px;
+	z-index:23;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #06F;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+#apDiv4 {
+	position:absolute;
+	left:871px;
+	top:1645px;
+	width:222px;
+	height:170px;
+	z-index:23;
+}
+#apDiv5 {
+	position:absolute;
+	left:228px;
+	top:899px;
+	height:328px;
+	z-index:23;
+}
+#apDiv6 {
+	position:absolute;
+	left:226px;
+	top:325px;
+	width:349px;
+	height:47px;
+	z-index:23;
+}
+#apDiv7 {
+	position:absolute;
+	left:896px;
+	top:0px;
+	width:76px;
+	height:1662px;
+	z-index:23;
+}
+#apDiv8 {
+	position:absolute;
+	left:866px;
+	top:1396px;
+	width:122px;
+	height:109px;
+	z-index:23;
+}
+#apDiv9 {
+	position:absolute;
+	left:866px;
+	top:114px;
+	width:123px;
+	height:138px;
+	z-index:23;
+}
+#apDiv10 {
+	position:absolute;
+	left:415px;
+	top:1774px;
+	width:350px;
+	height:156px;
+	z-index:1;
+}
+#apDiv11 {
+	position:absolute;
+	left:56px;
+	top:1865px;
+	width:72px;
+	height:18px;
+	z-index:1;
+}
+#apDiv12 {
+	position:absolute;
+	left:385px;
+	top:2162px;
+	width:349px;
+	height:103px;
+	z-index:2;
+}
+
+#apDiv13 {
+	position:absolute;
+	left:385px;
+	top:2390px;
+	width:349px;
+	height:340px;
+	z-index:1;
+}
+</style> <!-- estilos prontos -->
+
+<link href='imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- scripts slider -->
+<link rel="stylesheet" type="text/css" media="all" href="content-slider.css">
+
+<script type="text/javascript" src="Scripts/jquery-1.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-ui.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery_002.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-easing-1.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-easing-compatibility.js">
+</script>
+
+<script type="text/javascript" src="Scripts/coda-slider.js">
+</script>
+
+<script type="text/javascript" src="Scripts/content-slider.js">
+</script>
+<!-- scripts slider -->
+
+<!-- CHAVE DE MENU NO HEAD - expansiva **********************************-->
+
+<script src="Scripts/prototype.js"></script>
+
+<script src="Scripts/Formulario2.js"></script>
+	
+<script src="Scripts/myPrototype.htm"></script>
+
+<!-- CHAVE DE MENU NO HEAD - expansiva ********************************-->
+
+</head>
+
+<body onLoad="MM_preloadImages('imagens/hora_atividade_on.jpg')">
+<center>
+<table style="background:#FFF; width:800px; text-align:center;">
+
+<tr>
+<td colspan="3">
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+<img src="imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0">
+</a>
+</td>
+</tr> <!-- Imagem Site Prefeitura -->
+
+<tr>
+<td colspan="3">
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="265" id="FlashID" title="Portal da Educação de Camboriú">
+<param name="movie" value="imagens/fundocima.swf">
+<param name="quality" value="high">
+<param name="wmode" value="opaque">
+<param name="swfversion" value="6.0.65.0">
+<!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+
+<param name="expressinstall" value="Scripts/expressInstall.swf">
+<!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+<!--[if !IE]>-->
+<object type="application/x-shockwave-flash" data="imagens/fundocima.swf" width="800" height="265">
+<!--<![endif]-->
+<param name="quality" value="high">
+<param name="wmode" value="opaque">
+<param name="swfversion" value="6.0.65.0">
+<param name="expressinstall" value="Scripts/expressInstall.swf">
+
+<!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+<div>
+<h4>O conte&uacute;do desta p&aacute;gina requer uma vers&atilde;o mais recente do Adobe Flash Player.</h4>
+<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+</div>
+<!--[if !IE]>-->
+</object>
+
+<!--<![endif]-->
+</object>
+
+</td>
+</tr> <!-- Flash Abertura -->
+
+<tr>
+
+<td width="25%" style="vertical-align:top;">
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Setores da Secretaria</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class=""><a href="departamentos/palavra_da_secretaria/index.html" target="_blank">           
+
+Palavra da Secretária
+
+</a></li>
+<li class=""><a href="departamentos/departamento_recepcao/index.html" target="_blank">           
+
+Recepção
+
+</a></li>
+<li class=""><a href="departamentos/departamento_telefonista/index.html" target="_blank">           
+
+Telefonista
+
+</a></li>
+<li class=""><a href="departamentos/departamento_cemja/index.html" target="_blank">           
+
+Coordenação CEMJA
+
+</a></li>
+<li class=""><a href="departamentos/departamento_administrativo/index.html" target="_blank">           
+
+Administrativo
+
+</a></li>
+<li class=""><a href="departamentos/departamento_compras/index.html" target="_blank">           
+
+Compras
+
+</a></li>
+<li class=""><a href="departamentos/departamento_copias/index.html" target="_blank">           
+
+Departamento<br>
+de Cópias
+
+</a></li>
+<li class=""><a href="departamentos/departamento_educacao_especial/index.html" target="_blank">           
+
+Educação Especial
+
+</a></li>
+<li class=""><a href="departamentos/departamento_educacao_infantil/index.html" target="_blank">           
+
+Educação Infantil
+
+</a></li>
+<li class=""><a href="departamentos/departamento_engenharia/index.html" target="_blank">           
+
+Engenharia
+
+</a></li>
+<li class=""><a href="departamentos/departamento_escolas_isoladas/index.html" target="_blank">           
+
+Escolas Isoladas
+
+</a></li>
+<li class=""><a href="departamentos/departamento_informatica/index.html" target="_blank">           
+
+Informática
+
+</a></li>
+<li class=""><a href="departamentos/departamento_manutencao/index.html" target="_blank">           
+
+Departamento de Manutenção
+
+</a></li>
+<li class=""><a href="departamentos/departamento_nutricao/index.html" target="_blank">           
+
+Nutricionista
+
+</a></li>
+<li class=""><a href="epartamentos/departamento_passe_escolar/index.html" target="_blank">           
+
+Passe Escolar
+
+</a></li>
+<li class=""><a href="departamentos/departamento_prestacao_de_contas/index.html" target="_blank">           
+
+Prestação de Contas
+
+</a></li>
+<li class=""><a href="departamentos/departamento_transporte/index.html" target="_blank">           
+
+Transporte Escolar
+
+</a></li>
+<li class=""><a href="departamentos/departamento_anos_iniciais/index.html" target="_blank">           
+
+Departamento Pedagógico<br>
+Anos Iniciais
+
+</a></li>
+<li class=""><a href="departamentos/departamento_anos_finais/index.html" target="_blank">           
+
+Departamento Pedagógico<br>
+Anos Finais
+
+</a></li>
+<li class=""><a href="departamentos/departamento_pessoal/index.html" target="_blank">           
+
+Departamento Pessoal
+
+</a></li>
+<li class=""><a href="departamentos/deposito/index.html" target="_blank">           
+
+Almoxarifado
+
+</a></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG DEPARTAMENTOS -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Escolas</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class=""><a href="escolas/escola_caic/index.html" target="_blank" title="Bairro Monte Alegre">           
+
+CAIC Jovem Ailor Lotério
+
+
+</a></li>
+<li class=""><a href="escolas/escola_abelardo/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+
+CEM Abelardo Torquato Rosa
+
+</a></li>        
+<li class=""><a href="escolas/escola_anita/index.html" target="_blank" title="Bairro Monte Alegre">           
+
+EBM Anita Bernardes Ganancini
+
+</a></li>
+<li class=""><a href="escolas/escola_domingos/index.html" target="_blank" title="Bairro Tabuleiro">           
+
+EBM Domingos Fonseca
+
+</a></li>            
+<li class=""><a href="escolas/escola_lucinira/index.html" target="_blank" title="Bairro Rio Pequeno">           
+
+EBM Lucinira Melo Rebelo
+
+</a></li>            
+<li class=""><a href="escolas/escola_artur/index.html" target="_blank" title="Bairro Centro">           
+
+EBM Professor Artur Sichmann
+
+</a></li>
+<li class=""><a href="escolas/escola_ivone/index.html" target="_blank" title="Bairro Santa Regina">           
+
+EBM Professora Ivone Terezinha Garcia
+
+</a></li>
+<li class=""><a href="escolas/escola_abalor/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+
+EBM Professor Abalor Américo Madeira
+
+</a></li>
+<li class=""><a href="escolas/escola_andronico/index.html" target="_blank" title="Bairro São Francisco de Assis">           
+
+GEM Andrônico Pereira
+
+</a></li>
+<li class=""><a href="escolas/escola_marlene_zuchi/index.html" target="_blank" title="Localidade Jardim Paraíso">           
+
+GEM Marlene Pereira Zuchi
+
+</a></li>
+<li class=""><a href="escolas/escola_joaquim/index.html" target="_blank" title="Bairro Rio Pequeno">           
+
+GEM Professor Joaquim Magalhães
+
+</a></li>
+<li class=""><a href="escolas/escola_clotilde/index.html" target="_blank" title="Bairro Areias">           
+
+GEM Professora Clotilde Ramos Chaves
+
+</a></li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG ESCOLAS -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Creches (CEI)</a>
+
+  <ul style="display: none;" id="secretaria_menu">
+
+<li class=""><a href="ceis/cei_caic/index.html" target="_blank" title="Bairro Monte Alegre">           
+
+CEI CAIC
+
+
+</a></li>
+<li class=""><a href="ceis/cei_conde/index.html" target="_blank" title="Localidade Conde Vila Verde">           
+
+CEI Eurípedes Paula da Silva
+
+</a></li>
+<li class=""><a href="ceis/cei_judite/index.html" target="_blank" title="Localidade Jardim Paraíso">           
+
+CEI Judite Da Rocha Dalago
+
+</a></li>
+<li class=""><a href="ceis/cei_julita/index.html" target="_blank" title="Bairro Tabuleiro">           
+
+CEI Julita Pereira
+
+</a></li>
+<li class=""><a href="ceis/cei_maria_russi/index.html" target="_blank" title="Bairro Rio Pequeno">           
+
+CEI Maria Russi
+
+</a></li>
+<li class=""><a href="ceis/cei_saut/index.html" target="_blank" title="Bairro Centro">           
+
+CEI Maria Bittencourt Saut
+
+</a></li>
+<li class=""><a href="ceis/cei_menino_jesus/index.html" target="_blank" title="Bairro São Francisco de Assis">           
+
+CEI Menino Jesus
+
+</a></li>
+<li class=""><a href="ceis/cei_monte_alegre/index.html" target="_blank" title="Bairro Monte Alegre">           
+
+CEI Monte Alegre
+
+</a></li>
+<li class=""><a href="ceis/cei_neide_merisio/index.html" target="_blank" title="Bairro Areias">           
+
+CEI Neide Merísio Molleri
+
+</a></li>
+<li class=""><a href="ceis/cei_odete/index.html" target="_blank" title="Bairro Centro">           
+
+CEI Odete Ramos Poltronieri
+
+</a></li>
+<li class=""><a href="ceis/cei_otilia/index.html" target="_blank" title="Bairro Santa Regina">           
+
+CEI Professora Otília Santos da Silva
+
+</a></li>
+<li class=""><a href="ceis/cei_tania/index.html" target="_blank" title="Bairro Tabuleiro">           
+
+CEI Professora Tania Regina Garcia
+
+</a></li>
+<li class=""><a href="ceis/cei_rio_do_meio/index.html" target="_blank" title="Bairro Rio do Meio">           
+
+CEI Rio do Meio
+
+</a></li>
+<li class=""><a href="ceis/ji_maykot/index.html" target="_blank" title="Bairro Centro">           
+
+JI Padre Sérgio Maykot
+
+</a></li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG CEIs -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Escolas Isoladas</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class=""><a href="isoladas/ei_adolfo/index.html" target="_blank">           
+
+EI Adolfo Ovidio Coppi
+
+</a></li>
+<li class=""><a href="isoladas/ei_caetes/index.html" target="_blank">           
+
+EI Caetés
+
+</a></li>
+<li class=""><a href="isoladas/ei_lageado/index.html" target="_blank">           
+
+EI Lageado
+
+</a></li>
+<li class=""><a href="isoladas/ei_hercilio_zimermann/index.html" target="_blank">           
+
+EI Hercílio Zimmermann
+
+</a></li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG ISOLADAS -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Conselhos</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class="">
+<a href="conselhos/merenda/index.html" target="_blank">Conselho de Alimentação Escolar CAE</a>
+</li>
+
+<li class="">
+<a href="">Conselho do FUNDEB</a>
+</li>
+
+<li class="">
+<a href="">Conselho Municipal de Educação CME</a>
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG CONSELHOS -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Links Úteis</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class="">
+
+<a href="http://www.brasil.gov.br/" target="_blank" title="Ir para BRASIL.gov.br">           
+<div style="height:80px; text-align:center;">
+
+<img src="imagens/brasil.gov.br.gif" width="190" height="50" border="0">
+
+</div>
+</a> <!-- Botão brasil.gov -->
+
+</li>
+
+<li class="">
+
+<a href="http://portal.mec.gov.br/index.php" target="_blank" title="Ir para o PORTAL MEC">           
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/mec.jpg" width="190" height="39" border="0">
+
+</div>
+</a> <!-- Botão mec -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.fnde.gov.br/" target="_blank" title="Fundo Nacional do Desenvolvimento da Educação">           
+<div style="height:80px; text-align:center;">
+
+<img src="imagens/fnde.jpg" width="178" height="58" border="0">
+
+</div>
+</a> <!-- Botão fnde -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.inep.gov.br/" target="_blank" title="Instituto Nacional de Estudos e Pesquisas Professor Anisio Teixeira">           
+<div style="height:80px; text-align:center;">
+
+<img src="imagens/inep.jpg" width="178" height="54" border="0">
+
+</div>
+</a> <!-- Botão inep -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.cultura.gov.br/site/" target="_blank" title="Ir para Ministério da Cultura">           
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/ministerio_cultura.gif" width="150" height="37" border="0">
+
+</div>
+</a> <!-- Botão min cultura -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.sed.sc.gov.br/secretaria/" target="_blank" title="Ir para Secretaria Estadual da Educação">           
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/sed-sc.jpg" width="189" height="40" border="0">
+
+</div>
+</a> <!-- Botão sed estado -->
+
+</li>
+
+<li class="">
+
+<a href="http://tvescolaitajai.blogspot.com/2010/10/acervo-fitas-vhs.html" target="_blank" title="Ótimo para trabalhos escolares">
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/tv_escola_itajai.jpg" width="181" height="50" border="0">
+
+</div>
+</a> <!-- Botão TV Escola Itajai -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.bussolaescolar.com.br/" target="_blank" title="Ótimo para trabalhos escolares">
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/bussola_escolar.jpg" width="215" height="47" border="0">
+
+</div>
+</a> <!-- Botão Bussola Escolar -->
+
+</li>
+
+<li class="">
+
+<a href="http://www.brasilescola.com/" target="_blank" title="Ótimo para trabalhos escolares">
+<div style="height:70px; text-align:center;">
+
+<img src="imagens/brasil_escola.jpg" width="216" height="56" border="0">
+
+</div>
+</a> <!-- Botão Brasil Escola -->
+
+</li>
+
+<li class="">
+
+<a href="http://portaldoprofessor.mec.gov.br/index.html" target="_blank" title="Ótimo para trabalhos escolares">
+<div style="height:80px; text-align:center;">
+
+<img src="imagens/portal_do_professor.jpg" width="176" height="61" border="0">
+
+</div>
+</a> <!-- Botão Portal do Professor -->
+
+</li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG LINKS UTEIS -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Legislação</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class="">
+<a href="http://www.planalto.gov.br/ccivil_03/Leis/L8112cons.htm" target="_blank" onMouseOver="MM_swapImage('Image88','','imagens/botton_estatuto_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="imagens/botton_estatuto_off.jpg" name="Image88" width="223" height="71" border="0"></a> <!-- estatuto do servidor público -->
+</li>
+<li class="">
+<a href="http://www.planalto.gov.br/ccivil_03/Leis/L9394.htm" target="_blank" onMouseOver="MM_swapImage('Image89','','imagens/ldb_on.jpg',1)" onMouseOut="MM_swapImgRestore()">
+      <br>
+      <img src="imagens/ldb_off.jpg" name="Image89" width="223" height="71" border="0"></a> <!-- LDB -->
+</li>
+<li class="">
+<a href="http://www.leismunicipais.com.br/cgi-local/showingimg.pl?number=19&year=2008&city=Cambori%FA&state=SC&typ=c&wordkeytxt=carreira" target="_blank" onMouseOver="MM_swapImage('Image90','','imagens/plano_de_carreira_on.jpg',1)" onMouseOut="MM_swapImgRestore()">
+      <br>
+      <img src="imagens/plano_de_carreira_off.jpg" name="Image90" width="223" height="71" border="0"></a> <!-- Plano de carreira -->
+</li>
+<li class="">
+<a href="resolucao_001-2011.pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('001/2011','','imagens/hora_atividade_on.jpg',1)"><img src="imagens/hora_atividade_off.jpg" title="Estabelece normas que dispõe sobre dia letivo, dia de efetivo trabalho escolar e hora-aula, matriz curricular - carga horária por disciplina, hora-atividade, hora-janela, hora-ociosa a serem ministradas nas escolas de ensino fundamental da Rede Pública Municipal de Camboriú." name="001/2011" width="223" height="41" border="0"></a> <!-- hora atividade -->
+</li>
+<li class="">
+
+</li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG LEGISLAÇÃO -->
+
+<div>
+  
+<ul id="menu1" class="menu menu_esquerda_sombra">
+
+<li class="submenu"><a href="" class="principal">Projetos</a>
+
+<ul style="display: none;" id="secretaria_menu">
+
+<li class="">
+<a href="projetos/projeto_resgatando_valores/index.htm" target="_blank">Resgatando Valores</a>
+</li>
+
+<li class="">
+<a href="projetos/projeto_natureza/index.html" target="_blank">Natureza Preservada Cidadão Feliz</a>
+</li>
+
+<li class="">
+<a href="projetos/projeto_segundo_tempo/index.html" target="_blank">Segundo Tempo</a>
+</li>
+
+<li class="">
+<a href="projetos/projeto_inclusao_social/index.html" target="_blank">Inclusão Social</a>
+</li>
+
+<li class="">
+<a href="projetos/projeto_cidadao_mirim/index.html" target="_blank">Cidadão Mirim</a>
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+<li class="">
+
+</li>
+
+</ul>
+</li>
+</ul>
+</div> <!-- TAG PROJETOS -->
+
+<div id=divespacoleftbase>
+        
+        <strong><font color="#333">Escreva sua sugestão para o Portal:</font></strong>
+        
+        <form action="http://www.cidadedecamboriu.sc.gov.br/postman/postman.php" method=post>
+        
+		Seu Nome : <br> 
+		<input value="" size="20">
+		<br>
+        <input type="hidden" name="To" value="prestacaodecontas.educacao@cidadedecamboriu.sc.gov.br">
+
+		Seu E-mail : <br>
+		<input name="frm" value="" size="20">
+		<br>        
+        <input type="hidden" name="subjct" value="Portal da Educacao de Camboriu" size=40>
+
+		Comentários : <br>
+		<textarea cols="20" rows="5" name="Bdy"></textarea>
+		<br>
+
+		<input type="submit" value="Enviar">
+
+		</form>        
+             
+        </div> <!-- Espaço Mensagem de email -->
+
+<a href="hino_de_camboriu.html" target="_blank" title="Hino de Camboriú">
+<div style="height:80px; text-align:center;">
+
+  <img src="imagens/hino_de_camboriu.png" width="176" height="61" border="0">
+  
+</div>
+</a> <!-- Hino de Camboriú -->
+
+<a href="http://www.webmail.redel.com.br/index.php" target="_blank"><div><img src="imagens/redel_webmail.jpg" width="224" height="138" border="0">
+</div></a> <!-- email Redel -->
+
+<div style="margin:30 0 0 0px; text-align:center;">
+<FORM method=GET action="http://www.google.com/search">
+<a href="http://www.google.com.br" target="_blank">
+<img src="imagens/google.jpg" width="90" height="30" border="0">
+</a>
+<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+<br>
+<br>
+<INPUT TYPE=hidden name=hl value="pt-br">
+<INPUT type=submit name=btnG VALUE="Pesquisa Google">
+</FORM>
+</div> <!-- busca do google -->
+      
+<div style="margin:30 0 0 0px; text-align:center;">
+<object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="145" height="155">
+  <param name="movie" value="imagens/flashvortex.swf">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="8.0.35.0">
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="imagens/flashvortex.swf" width="145" height="155">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="8.0.35.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conte&uacute;do desta p&aacute;gina requer uma vers&atilde;o mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+</object>
+
+</div> <!-- reloginho -->
+
+<div style="margin:30 0 0 0px; text-align:center;">
+	<a href="javascript:agregar()">
+    <img src="imagens/botao_favoritos.jpg" width="200" height="48" border="0">
+    </a>
+</div> <!-- favoritos -->
+
+<a href="protocolo.html" target="_blank">
+<div style="text-align:center; height:73px; background:url(imagens/logo.png) no-repeat; margin:30 0 0 0px; text-align:center;">
+<font size="+2"><strong>Gerador de Protocolos</strong></font>
+</div>
+</a> <!-- Gerador de Protocólo -->
+
+<a href="oficio.html" target="_blank">
+<div style="text-align:center; height:73px; background:url(imagens/logo.png) no-repeat; margin:30 0 0 0px; text-align:center;">
+<font size="+2"><strong>Gerador<br>de<br>Ofícios</strong></font>
+</div>
+</a> <!-- Gerador de Ofícios -->
+
+<a href="memorando.html" target="_blank">
+<div style="text-align:center; height:73px; background:url(imagens/logo.png) no-repeat; margin:30 0 0 0px; text-align:center;">
+<font size="+2"><strong>Gerador<br>de<br>Memorandos</strong></font>
+</div>
+</a> <!-- Gerador de Ofícios -->
+   
+<div id="clear">
+             
+</div> <!-- div clear -->
+
+</td> <!-- Coluna esquerda -->
+
+<td width="50%" style="vertical-align:top;">
+
+
+<div style="width:338px; height:360px; border:0 solid;">
+
+<iframe scrolling="no" src ="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia_central.html" width="100%" height="100%" frameborder="0">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+
+</div> <!-- noticia central -->
+
+<div style="width:347px; height:165px; border:0 solid;">
+
+<iframe scrolling="no" src ="http://www.educacao.cidadedecamboriu.sc.gov.br/processo_seletivo_2010.html" width="100%" height="100%" frameborder="0">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+
+</div> <!-- Processo Seletivo 2010 -->
+          
+<div style="height:50px;">
+
+<a href="informatica.html" target="_blank">
+
+<img src="imagens/sala_de_informatica_pequeno.jpg" title="Clique aqui para acessar a Sala de Informática" width="350" height="39" border="0">
+
+</a>
+
+</div> <!-- sala de informática -->
+
+<div style="height:50px;"> 
+
+<a href="casa_da_cultura/index.html" target="_blank">
+<img src="imagens/casa_de_cultura.jpg" width="350" height="45" border="0">
+</a>
+
+</div> <!-- fim div cultura-->
+         
+<div id="divlinksmestre01">
+
+<div id="divcampolink01">
+
+<div id="divtitulolink"> <!-- inicio div titulo-->              
+Libera&ccedil;&atilde;o de Recursos do FNDE
+</div> <!-- titulo -->
+
+<div id="divimagemlink"> <!-- inicio div imagem-->
+<a href="https://www.fnde.gov.br/pls/simad/internet_fnde.liberacoes_01_pc" target="_blank">
+<img src="imagens/liberacao_de_recursos_fnde.jpg" width="158" height="68" border="0">
+</a>
+</div> <!-- imagem -->
+
+<div id="divtextolink">
+<a target="_blank" href="https://www.fnde.gov.br/pls/simad/internet_fnde.liberacoes_01_pc">
+Libera&ccedil;&atilde;o de recursos dos programas do FNDE.
+</a>
+</div> <!-- texto -->
+
+</div> <!-- QUADRO 01 - LIBERAÇÃO DE RECURSOS -->
+
+<div id="divcampolink02">
+
+<div id="divtitulolink">PDDERex</div> <!-- titulo -->
+
+<div id="divimagemlink">
+
+<a href="https://www.fnde.gov.br/pls/simad/internet_fnde.pdderex_1_pc" target="_blank">
+
+<img src="imagens/pddrex.png" width="158" height="68" border="0">
+
+</a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink">
+
+<a target="_blank" href="https://www.fnde.gov.br/pls/simad/internet_fnde.pdderex_1_pc">
+
+Rela&ccedil;&atilde;o de unidades executoras atendidas pelo PDDE.
+
+</a>
+
+</div> <!-- texto -->
+
+</div> <!-- QUADRO 02 - PDDERex -->
+
+</div> <!-- QUADRO 01 E QUADRO 02 -->
+        
+<div id="divlinksmestre01">
+
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+
+IDEB
+
+</div> <!-- titulo -->
+
+<div id="divimagemlink">
+
+<a href="http://sistemasideb.inep.gov.br/resultado/" target="_blank"><img src="imagens/ideb.jpg" width="158" height="68" border="0"></a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink">
+
+<a href="http://sistemasideb.inep.gov.br/resultado/" target="_blank">Confira como ficou seu estado, munic&iacute;pio ou ecola. </a>
+
+</div> <!-- texto-->
+
+</div> <!-- QUADRO 03 - IDEB -->
+
+<div id="divcampolink02">
+
+<div id="divtitulolink">
+
+Data Escola Brasil
+
+</div> <!-- titulo -->
+
+<div id="divimagemlink">
+
+<a href="http://www.dataescolabrasil.inep.gov.br/dataEscolaBrasil/home.seam" target="_blank">
+<img src="imagens/data_escola_brasil.jpg" width="158" height="68" border="0">
+</a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink">
+
+<a href="http://www.dataescolabrasil.inep.gov.br/dataEscolaBrasil/home.seam" target="_blank">
+Informa&ccedil;&otilde;es dispon&iacute;veis para consulta  referentes aos dados finais do Censo Escolar.
+</a>
+
+</div> <!-- texto -->
+
+</div> <!-- QUADRO 04 - DATA ESCOLA BRASIL-->
+
+</div> <!-- QUADRO 03 E QUADRO 04 -->
+         
+<div id="divlinksmestre01">
+                
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+Sitio do EDUCACENSO
+</div> <!-- titulo-->
+
+<div id="divimagemlink">
+
+<a href="http://sitio.educacenso.inep.gov.br/" target="_blank">
+<img src="imagens/sitio_educacenso.JPG" width="158" height="68" border="0">
+</a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink">
+
+<a href="http://sitio.educacenso.inep.gov.br/" target="_blank">
+Acesse aqui o passo-a-passo do sistema Educacenso e veja como &eacute; f&aacute;cil responder ao Censo Escolar.
+</a>
+
+</div> <!-- texto-->
+
+</div> <!-- QUADRO 05 - SITIO DO EDUCACENSO -->
+
+<div id="divcampolink02">
+
+<div id="divtitulolink">
+Programa SEGUNDO TEMPO
+</div> <!-- titulo-->
+
+<div id="divimagemlink">
+
+<a href="http://portal.esporte.gov.br/snee/segundotempo/" target="_blank">
+<img src="imagens/segundo_tempo_sitio.png" width="94" height="58" border="0">
+</a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink"> <!-- inicio div texto-->
+
+<a href="http://portal.esporte.gov.br/snee/segundotempo/" target="_blank">
+O esporte e do lazer como direito de cada um e dever do Estado.
+</a>
+
+</div> <!-- texto-->
+
+</div> <!-- QUADRO 06 - SEGUNDO TEMPO -->
+
+</div> <!-- QUADRO 05 E QUADRO 06 -->
+<br>
+<div id="divfeedburner">
+            
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onSubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=PortalDaEducaoDeCambori', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+
+Inscreva-se  aqui e receba todas as nossas noticias no seu e-mail!<br>
+Digite seu e-mail abaixo:<br>
+
+<input type="text" style="width:280px" name="email"/>
+
+<input type="hidden" value="PortalDaEducaoDeCambori" name="uri"/>
+
+<input type="hidden" name="loc" value="pt_BR"/>
+
+<input type="submit" value="Subscribe" /><br>
+
+Entregue pelo
+
+<a href="http://feedburner.google.com" target="_blank">
+
+FeedBurner
+
+</a>
+
+</form> <!-- Increver-se nos feeds -->
+
+<a href="http://feeds.feedburner.com/PortalDaEducaoDeCambori">
+
+<img src="http://feeds.feedburner.com/~fc/PortalDaEducaoDeCambori?bg=FF6633&amp;fg=444444&amp;anim=1&amp;label=Inscritos" height="26" width="110" style="border:0" alt="" />
+
+</a> <!-- contador de feeders -->
+
+<div>
+            
+<a href="feed/rss.xml" target="_blank">
+
+<img src="imagens/rss.jpg" width="350" height="102" border="0">
+
+</a>
+
+</div> <!-- link RSS -->
+              
+</div> <!-- fim div RSS -->
+
+<div>
+<a>
+
+<small>
+
+Encontre-nos no mapa.
+
+</small>
+
+</a>
+
+<iframe width="345" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=%22secretaria+municipal+de+educa%C3%A7%C3%A3o++e+cultura+de+cambori%C3%BA%22&amp;sll=-27.019492,-48.855869&amp;sspn=1.044779,2.688904&amp;ie=UTF8&amp;hq=%22secretaria+municipal+de+educa%C3%A7%C3%A3o++e+cultura+de+cambori%C3%BA%22&amp;hnear=&amp;t=h&amp;cid=6400829813200255166&amp;ll=-27.024514,-48.654306&amp;spn=0.005734,0.006437&amp;z=16&amp;iwloc=A&amp;output=embed">
+
+</iframe>
+
+<br />
+
+<small>
+
+<a href="http://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=%22secretaria+municipal+de+educa%C3%A7%C3%A3o++e+cultura+de+cambori%C3%BA%22&amp;sll=-27.019492,-48.855869&amp;sspn=1.044779,2.688904&amp;ie=UTF8&amp;hq=%22secretaria+municipal+de+educa%C3%A7%C3%A3o++e+cultura+de+cambori%C3%BA%22&amp;hnear=&amp;t=h&amp;cid=6400829813200255166&amp;ll=-27.024514,-48.654306&amp;spn=0.005734,0.006437&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left">
+
+Exibir mapa ampliado
+
+</a>
+
+</small>
+
+</div> <!-- google maps -->
+
+<div id="divlinksmestre01">
+<br>
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+
+Calendário Escolar 2011<br>
+Educação Infantil - CEIs
+
+</div> <!-- titulo-->
+
+<div id="divimagemlink">
+
+<a href="calendario_educacao_infantil_2011.pdf" target="_blank">
+
+<img src="imagens/calendario.png" width="92" height="68" border="0">
+
+</a>
+
+</div> <!-- imagem -->
+
+<div id="divtextolink">
+
+<a href="calendario_educacao_infantil_2011.pdf" target="_blank">
+
+CALENDÁRIO ESCOLAR DA EDUCAÇÃO INFANTIL 2011. Clique aqui e faça o download.
+
+</a>
+
+</div> <!-- texto -->
+
+</div> <!-- CALENDÁRIO EI 2011 -->
+
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+
+Calendário Escolar 2011<br>
+Anos Iniciais
+
+</div> <!-- titulo -->
+
+<div id="divimagemlink">
+
+<a href="calendario_anos_ini_2011.pdf" target="_blank">
+
+<img src="imagens/calendario.png" width="92" height="68" border="0">
+
+</a>
+
+</div> <!-- imagem -->
+
+<div id="divtextolink">
+
+<a href="calendario_anos_ini_2011.pdf" target="_blank">
+
+CALENDÁRIO ESCOLAR DOS ANOS INICIAIS 2011. Clique aqui e faça o download.
+
+</a>
+
+</div> <!-- texto-->
+
+</div> <!-- CALENDÁRIO Anos Iniciais 2011 -->
+
+</div> <!-- calendario EI 2011 - Calendário anos iniciais 2011 -->
+
+<div id="divlinksmestre01">
+<br>
+<br>
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+
+Calendário Escolar 2011<br>
+Anos Finais
+
+</div> <!-- titulo -->
+
+<div id="divimagemlink">
+
+<a href="calendario_anos_ini_2011.pdf" target="_blank">
+
+<img src="imagens/calendario.png" width="92" height="68" border="0">
+
+</a>
+
+</div> <!-- imagem-->
+
+<div id="divtextolink">
+
+<a href="calendario_anos_ini_2011.pdf" target="_blank">
+
+CALENDÁRIO ESCOLAR DOS ANOS FINAIS 2011. Clique aqui e faça o download.
+
+</a>
+
+</div> <!-- texto -->
+
+</div> <!-- CALENDÁRIO Anos Finais 2011 -->
+
+<div id="divcampolink01">
+
+<div id="divtitulolink">
+
+Edital de matrícula de alunos 2011
+
+</div> <!-- titulo -->
+
+<div id="divimagemlink">
+<br>
+<a href="edital_de_matriculas_alunos_2011.pdf" target="_blank">
+
+<img src="imagens/pdf.gif" width="31" height="32" border="0"> </a>
+
+</div> <!-- imagem -->
+
+<div id="divtextolink">
+
+<a href="edital_de_matriculas_alunos_2011.pdf" target="_blank">
+
+Edital para matrícula de alunos no Ensino Fundamental de 2011.
+
+</a>
+
+</div> <!-- texto-->
+
+</div> <!-- Edital de Matrícula de Alunos 2011 -->
+
+</div> <!-- calendário Anos Finais 2011 - EDITAL DE MATRICULAS-->
+
+</td> <!-- Coluna central -->
+
+<td width="25%" style="vertical-align:top;">
+
+<div style="height:40px; text-align:center;">
+<a href="http://189.72.73.90:8080/educaWeb/login.jsf" target="_blank" title="Novo Sistema de Gestão de Alunos">
+<img src="imagens/educaweb.jpg" width="222" height="37" border="0">
+</a>
+</div> <!-- EducaWeb -->
+
+<a href="http://www.educacenso.inep.gov.br/Autenticacao/sair" target="_blank" title="Ir para o EDUCACENSO">           
+<div style="padding:20 0 0 0px; height:60px; text-align:center;">
+
+<img src="imagens/educacenso.jpg" width="222" height="51" border="0">
+
+</div>
+</a> <!-- Botão educacenso -->
+
+<a href="http://frequenciaescolarpbf.mec.gov.br//presenca/controller/login/efetuarLogin.php" target="_blank" title="Frequência Escolar do Bolsa Família">           
+<div style="padding:20 0 0 0px; height:60px; text-align:center;">
+
+<img src="imagens/projeto_presenca.jpg" width="222" height="54" border="0">
+
+</div>
+</a> <!-- Botão pojeto presença -->
+
+<a href="http://siasi.redevencer.org.br/loginredevencer.aspx" target="_blank" title="Ir para Gestão Nota 10">
+<img src="imagens/gestao_nota_10.jpg" width="222" height="125" border="0">
+</a> <!-- Botão ayrton senna -->
+
+<a href="http://simec.mec.gov.br/" target="_blank" title="PAR, PDE-Escola e outros programas do MEC">           
+<div style="height:45px; text-align:center;">
+
+<img src="imagens/simec.jpg" width="156" height="39" border="0">
+
+</div>
+</a> <!-- Botão simec -->
+
+<a href="http://portal.mec.gov.br/index.php?Itemid=86&id=12372&option=com_content&view=article" target="_blank" title="Programa Mais Educação">           
+<div style="padding:0 0 0 0px; height:60px; text-align:center;">
+
+<img src="imagens/mais_educacao.jpg" width="216" height="77" border="0">
+
+</div>
+</a> <!-- Botão mais educação -->
+
+<a href="http://www.leismunicipais.com.br/legislacao-municipal-da-prefeitura/4535/leis-de-camboriu.html" target="_blank" title="Ir para Leis Municipais">           
+<div style="margin:30 0 0 0px; height:70px; text-align:center;">
+
+<img src="imagens/liz.jpg" width="190" height="51" border="0">
+
+</div>
+</a> <!-- Botão leis -->
+
+<br>
+<br>
+<div><img src="imagens/previsao_do_tempo.jpg" width="160" height="15"></div> <!-- imagem previsao do tempo -->
+            
+<div id=divprevisaodotempo>
+
+<iframe src='http://selos.climatempo.com.br/selos/MostraSelo.php?CODCIDADE=1622&SKIN=verde' scrolling='no' frameborder='0' width=150 height='170' marginheight='0' marginwidth='0'></iframe>
+
+</div> <!-- previsão do tempo -->
+
+<a href="noticia/tutorial_rss_feedburner.html"><img src="imagens/tutorial_feedburner.jpg" width="224" height="201" border="0">
+<br>
+</a> <!-- tutorial feed -->
+
+<div>
+<br>
+<strong>Ajude a divulguar o Portal:</strong>
+  <img src="imagens/anuncie.jpg" width="200" height="73" border="0">
+	
+    <div id=boxanuncie>
+    
+    <textarea name="mensagem_fale2"  onclick="this.select();" onMouseOver="this.select();" style="width:220px; height:110px; color:#444; border:0px">
+    <a href="http://www.educacao.cidadedecamboriu.sc.gov.br/" target="_blank" title="clique aqui!"><img 
+
+src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/anuncie.jpg" border="0" alt="clique 
+
+aqui!" /></a>
+	</textarea>
+    
+    </div>  
+</div> <!-- divulgue no blog -->
+          
+<!-- Tag Contador de Pessoas On line -->          
+<script type="text/javascript" src="http://widgets.amung.us/tab.js"></script>
+<script type="text/javascript">WAU_tab('8fl912adm7xv', 'left-lower')
+            </script>
+<!-- Tag Contador de Pessoas On line -->
+    
+<div id="clear"></div> <!-- div clear -->
+
+</td> <!-- Coluna direita -->
+
+</tr> <!-- Três Colunas -->
+
+<tr>
+
+<td id="rodape" colspan="3">
+
+<strong>Rua Goiânia, 104 - CEP 88340-000 - Fone: (47) 3365-0020<br>
+Camboriú - SC - Brasil</strong>
+<br>
+<br>
+<br>
+<br>
+<div id="ultimaatualizacao">
+        
+Última atualização: <!-- #BeginDate format:fcSw1m -->Quinta-feira, 10 Novembro, 2011  11:43<!-- #EndDate -->
+
+</div>
+        
+</td>
+
+</tr> <!-- rodape -->
+
+</table>
+</center>
+<script type="text/javascript">
+swfobject.registerObject("FlashID2");
+</script> <!-- script do flash -->
+<script type="text/javascript" src="Scripts/jquery-1.js"></script>
+<script type="text/javascript" src="Scripts/init.js"></script>
+</body>
+
+</html>

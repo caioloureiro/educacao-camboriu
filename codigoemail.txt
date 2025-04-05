@@ -1,0 +1,14 @@
+<form action="http://www.cidadedecamboriu.sc.gov.br/postman/postman.php" method=post>
+Seu Nome : <br>
+<input value="" size="20">
+<br>
+<input type="hidden" name="To" value="prestacaodecontas.educacao@cidadedecamboriu.sc.gov.br">
+Seu E-mail : <br>
+<input name="frm" value="" size="20">
+<br>        
+<input type="hidden" name="subjct" value="Portal da Educacao de Camboriu" size=40>
+Comentários : <br>
+<textarea cols="20" rows="5" name="Bdy"></textarea>
+<br>
+<input type="submit" value="Enviar">
+</form> 

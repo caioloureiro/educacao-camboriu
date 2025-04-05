@@ -1,0 +1,608 @@
+﻿<html>
+
+<head>
+
+<script language=JavaScript>
+
+<!-- Desabilita o botão direito do mouse -->
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Projeto Educativo Familiar Resgatando Valores</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style>
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#conteudo').hide(); // esta div irá desaparecer
+$ ('#equipe').hide(); // esta div irá desaparecer
+$ ('#historia').hide(); // esta div irá desaparecer
+$ ('#patronesse').hide(); // esta div irá desaparecer
+$ ('#ppp').hide(); // esta div irá desaparecer
+$ ('#projetos').hide(); // esta div irá desaparecer
+$ ('#app').hide(); // esta div irá desaparecer
+$ ('#pdde').hide(); // esta div irá desaparecer
+$ ('#album01').hide(); // esta div irá desaparecer
+$ ('#album02').hide(); // esta div irá desaparecer
+$ ('#album03').hide(); // esta div irá desaparecer
+$ ('#album04').hide(); // esta div irá desaparecer
+$ ('#album05').hide(); // esta div irá desaparecer
+$ ('#album06').hide(); // esta div irá desaparecer
+$ ('#album07').hide(); // esta div irá desaparecer
+$ ('#album08').hide(); // esta div irá desaparecer
+$ ('#album09').hide(); // esta div irá desaparecer
+$ ('#album10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				nextTxt: "Próxima",
+				prevTxt: "Anterior",
+				boxId: "superbox", // Id attribute of the "superbox" element
+				boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "1000", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				
+			};
+			$.superbox();
+		});
+
+</script> <!-- Blog -->
+<!-- Modelar o Box Modal --> <!-- Modal -->
+
+<!-- Mudar fundo de Div -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script>
+<!-- mudar fundo de div -->
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+
+<div id=box> <!-- Inicio da div box -->
+
+<div id=cabecalho>
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+
+<img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" />
+
+</a>
+
+<img src="imagens/topo_resgatando_valores.jpg" width="800" height="310" border="0"><br>
+
+<a target="_self" href="javascript:FecharJanela()">
+
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+
+</a>
+
+</div> <!-- Cabeçalho -->
+
+<div id=divsite> <!-- Inicio da div Site -->
+
+<div id=divdescricao02>
+
+	Programa de linha preventiva que visa trabalhar orientação e integração dos pais filhos e escola com foco na família.
+    
+</div> <!-- Descrição -->
+    
+<div id=divpostadoem>
+    
+    <img src="../../imagens/representante_s_.jpg" width="162" height="15" />
+    
+    </div> <!-- Imagem Representante -->
+    
+<div id=divdescricao>
+
+	<p>Nome: <strong>Hortência Del Carmen Bardales Pezo</strong><br>
+    Nome: <strong>Victor Arturo Gallardo Rojas</strong><br>
+	Telefone: <strong>(47) 3365-0020</strong><br>
+    E-mail: <strong>hortencia_pezo@hotmail.com</strong></p>
+    
+</div> <!-- Dados do Representante -->
+
+<div id=divbotoes>
+
+<a href="#historia" rel="superbox[content]">
+<div id=botao_escolas02>
+
+Justificativa 2011
+
+</div>
+</a> <!-- botão 01 -->
+
+<a href="#patronesse" rel="superbox[content]">
+<div id=botao_escolas03>
+
+Cronograma
+
+</div>
+</a> <!-- botão 02 -->
+
+<a href="#ppp" rel="superbox[content]">
+<div id=botao_escolas05>
+
+Histórico do Projeto
+
+</div>
+</a> <!-- botão 03 -->
+
+<a href="#projetos" rel="superbox[content]">
+<div id=botao_escolas06>
+
+Desenvolvimento
+
+</div>
+</a><!-- botão 04 -->
+
+<!-- <a href="#app" rel="superbox[content]">
+<div id=botao_escolas07>
+
+
+botão 05
+
+</div>
+</a> --><!-- botão 05 -->
+
+<div style="font-size:12px; text-align:center; margin:4 0 0 2px; border:1px solid;">
+<div style="font-size:10px; text-align:center; background:#CCC; margin:4px; border:1px solid;">
+<h1>
+<em>
+Galeria de Fotos
+</em>
+</h1>
+</div>
+
+<a href="album_copa_do_mundo_2010.html" target="_blank">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+16/06/2010<br>
+Formatura 2010
+
+</a> <!-- Album de 03/05/2011 -->
+
+<br><br>
+
+<!-- <a href="festa_de_despedida_da_educacao_infantil_-_formatura.html" target="_blank">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Festa de despedida da Educação Infantil - Formatura
+
+</a> -->
+
+<br>
+
+<!-- <a href="#pdde" rel="superbox[content]">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Halloween
+
+</a> -->
+
+<br>
+
+<!-- <a href="#pdde" rel="superbox[content]">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Inauguração do Novo Centro de Educação Infantil
+
+</a> -->
+
+<br>
+
+<!-- <a href="#pdde" rel="superbox[content]">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Primavera
+
+</a> -->
+
+<br>
+
+<!-- <a href="#pdde" rel="superbox[content]">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Projeto África
+
+</a> -->
+
+<br>
+
+<!-- <a href="#pdde" rel="superbox[content]">
+
+<img src="../../imagens/gallery.png" width="60" height="60" border="0"><br>
+Projeto Literatura Infantil - Ler Sem Saber Ler
+
+</a> -->
+
+</div> <!-- Fotos do Ano -->
+
+</div> <!-- Coluna Esquerda -->
+
+<div id=divcentral>
+
+<div style="margin:4px; border:2px solid;">
+<h2><center><em>
+<p>"O lar não e simplesmente o espaço entre quatro paredes e o santuário da afeição".</p></em>
+</center></h2>
+</div> <!-- Frase -->
+
+<br>
+
+<div id=textoescolas>
+
+<p>
+
+<img src="imagens/hortencia.jpg" width="132" height="100" border="2" title="Professora Neia" align="left">
+
+</p>
+
+<p> A família é o primeiro grupo social ao qual somos inseridos. Esta como unidade nuclear do individuo, deve nos acolher, permitindo-nos desenvolver nossas habilidades, experiências, vivencias e novas relações humanas. E o ambiente em que a pessoa recebe todo o apoio afetivo, psicológico, valores humanos, cristão e ético. Além de outras ferramentas necessárias para seu desenvolvimento saudável para cada um de seus membros. (Gonzáles 1999; Oliveira e Jorge 1998)</p>
+
+<p>Iniciamos este programa com a certeza de que a família  será sempre  a instituição que funciona como base do convívio social, já que ela que prepara o ser humano para enfrentar o mundo exterior e inseri-lo definitivamente em uma comunidade na qual interagira e formara novas famílias.</p>
+
+<p>Sendo que o PROGRAMA FAMILIAR RESGATANDO VALORES com foco na família e especificamente direcionado aos pais das escolas municipais, porem também participam   pais em conflitos familiares encaminhado pelo fórum, e  comunidade no geral que queiram aprimorar o convívio familiar e social.</p>
+
+<p>Neste momento e importante destacar que assistimos a um acontecimento que talvez não tenha precedentes na historia familiar, que é a dissolução do grupo patriarcal. Observando-se o alto índice de violência acometida no seio familiar. E assim pela primeira vez a instituição familiar esta desaparecendo, e as conseqüências são imprevisíveis, a isso vem se somando o declínio da figura paterna levando a perda da hierarquia familiar.</p>
+
+<p>Observa-se também que cada dia as instituições de acolhimento de crianças e adolescentes sejam abrigos, lares, casas de passagem, centros de internamentos provisórios para adolescentes infratores (CIP) estão abrigando mais crianças e adolescentes vitimas dos mais diversos tipos de violência intra-familiar tais como: violências físicas, psicológicas, verbais, e todo tipo de negligenciais entre outras. Além disso, não podemos deixar de mencionar a estatística das violências e crimes cometidos por adolescentes que assustam sendo que isto muitas vezes é o reflexo da violência intra-familiar.</p>
+
+<p>Os conflitos observados no contexto escolar na pratica do desrespeito em função das perdas de hierarquias (professores) e colegas.</p>
+
+
+</div> <!-- Mensagem Principal -->
+
+<br>
+
+<div id=tabela>
+<center>
+<h1>Onde Estamos:</h1>
+
+<h1>JI Padre Sergio Maykot</h1>
+
+Até 06 de julho de 2011
+</center>
+</div> <!-- Primeiro espaço -->
+
+<br>
+
+<!-- <div id=tabela>
+<strong>Número Atual de Alunos<br><br></strong>
+<table style="width:100%; height:100px; border:1px solid; font-size:13px; font-weight:bold;">
+
+<tr> 
+<td align="center" valign="middle" style="border:1px solid">
+
+Dados até 09/12/2009
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" valign="middle" style="border:1px solid">
+
+140<br>
+alunos
+
+</td>
+
+</tr>
+
+</table>
+</div> --> <!-- segundo espaço -->
+
+</div> <!-- Coluna Central -->
+
+<div id=divlinksuteis>
+
+<div>
+
+<a href="#conteudo" rel="superbox[content]" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blog','','imagens/blog_on.jpg',1)">
+
+<img src="imagens/blog_off.jpg" title="Clique aqui para ir ao Blog da Escola" name="blog" width="200" height="67" border="0">
+
+</a>
+
+</div> <!-- Botão blog -->
+
+<div style="font-size:12px;" align="center">
+<br>
+<img src="../../imagens/no_ie_pequeno.png" width="100" height="100" border="0"><br>
+<font color="#FF0000">
+Está página <strong>não</strong> foi desevolvida para o <strong>Internet Explorer</strong>, por favor utilize outro navegador.
+</font>
+<br>
+<br>
+<a href="http://br.mozdev.org/download/" target="_blank">
+<img src="../../imagens/firefox_pequeno.png" width="200" height="200" border="0"><br>
+Clique aqui para fazer download do Firefox.
+</a><br>
+<br>
+<a href="http://www.google.com/chrome?hl=pt-BR" target="_blank">
+<img src="../../imagens/chrome_pequeno.png" width="200" height="200" border="0"><br>
+Clique aqui para fazer download do Google Chrome.
+</a><br>
+<br>
+
+</div> <!-- Aviso do IE -->
+
+</div> <!-- Coluna Direita -->
+
+</div> <!-- fim da div Site -->
+
+<div id=clear>
+
+</div> <!-- Div Clear -->
+
+<div id=conteudo>
+<iframe src ="http://resgatando-valores.blogspot.com" width="100%" height="100%">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+</div> <!-- Blog em página modal -->
+
+<div id=historia style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<h3>
+<center>
+Justificativa 2011
+</center>
+</h3>
+
+<p>Diante desta realidade o Município de Camboriú juntamente com a Secretaria da Educação e Cultura que tem como primeiro pressuposto a educação e o envolvimento em todos os aspectos preventivos oportunizou o desenvolvimento do programa familiar visando minimizar os diversos tipos de violência e negligencias que muitas vezes são cometidos pelos pais ou responsáveis pelo fato de não saberem reconhecer e lidar com condutas naturais e esperadas do processo evolutivo da criança e adolescentes. </p>
+
+<h3>
+<center>
+OBJETIVOS DO PROGRAMA 
+</center>
+</h3>
+
+<p>Sendo que o programa e de linha PREVENTIVA de informação, orientação,  sensibilização e principalmente de mudanças comportamentais em promoção da  afetividade.
+O objetivo principal e desenvolver atividades que despertem a consciência de assumir com segurança o seu papel de pais por parte das famílias (pais –filhos) incentivando-o a convivência harmônica baseada no dialogo em torno de recuperar algo perdido ou simplesmente não adquirido no processo evolutivo familiar que é a pratica do respeito dos valores. 
+Acrescentar o nível de informação de como lidar com comportamentos não esperados nas crianças e adolescentes 
+Informar aos participantes das conseqüências dos castigos físicos e psicológicos que vem a refletir no contexto escolar e social.</p>
+
+</div> <!-- Justificativa em página modal -->
+
+<div id=patronesse style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<p>21/03/2011 até 07/05/2011 - CEI Maria Bittencourt Saut</p>
+
+<p>22/03/2011 até 17/05/2011 - EBM Professora Ivone Terezinha Garcia</p>
+
+<p>11/05/2011 até 06/07/2011 - JI Padre Sergio Maykot</p>
+
+</div> <!-- Cronograma em página modal -->
+
+<div id=ppp style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<p>O programa teve seu inicio na Escola Municipal Lucinira Mello Rebelo no ano de 2000, sendo observado pela profissional que na época atuava como professora de espanhol a pouca habilidades dos alunos de se comunicarem de forma verbal – afetiva. Feito a pesquisa familiar foi comprovado que 80% dos alunos vinham reproduzindo o modelo comportamental –verbal –agressivo experienciado em casa.</p>
+<p>Em função dessa pesquisa nasceu o projeto Escola para Pais visando trabalhar prevenção, orientação e mudanças comportamentais assertivas com resultados positivos. Atualmente temos o Programa Familiar Resgatando Valores com o mesmo perfil psico social comportamental que visa prevenir orientar e conseguintemente ajudar a minimizar todo tipo de violência e incrementar condutas baseado no dialogo e afeto.</p> 
+<p>Este programa é desenvolvido pelos psicólogos: </p>
+<p>Hortencia Del Carmen Bardales Pezo Psicóloga Clinica _Educativa com dezesseis anos de experiência autora executora do Programa Familiar Resgatando Valores entre outros projetos psicossociais no Município de Camboriú. Com basta experiência nos trabalhos clínicos e sócio educativo com crianças, adolescentes, e adolescentes infratores. (CIP) </p>
+<p>Co autor Victor Arturo Gallardo Rojas Psicólogo clinico educativo especializado em violência domestica contra crianças e adolescentes na universidade de São Paulo. Com basta experiência 17 anos na área educativa professor de escolas de nível fundamental, médio e superior, professor de pós graduação na universidade. </p>
+
+</div> <!-- historico em página modal -->
+
+<div id=app style="overflow:auto; font-size:16px; font-weight:bold;">
+
+
+
+</div> <!-- botão05 em página modal -->
+
+<div id=projetos style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<p>O programa Familiar Resgatando valores tem uma duração de 2 (dois) meses com um encontro semanal, com dia e horário fixo de inicio e termino previamente agendado pelos pais participantes. </p>
+<p>Durante os oito (8) encontro são trabalhados diversos temas propostos pelos pais em função de suas próprias realidades familiares, contamos com a colaboração de diversos profissionais convidados como conselho tutelar, pedagogos médicos entre outros. </p>
+<p>O método indutivo dedutivo e induzindo aos pais a expor sua duvidas e experiências e encorajando-os a mudanças comportamentais.   O trabalho é desenvolvido na forma de oficinas. </p>
+<p>No termino (oitavo encontro) os pais participantes recebem um certificado do programa que os faculta a serem multiplicadores do mesmo. </p>
+<p>Observação: temos na evidencia depoimentos explanados por eles relatando suas experiências de contribuição e mudanças comportamentais adquiridas na participação do programa. </p>
+
+</div> <!-- desenvolvimento em página modal -->
+
+</div> <!-- Fim da div box -->
+
+<div id=rodape></div> <!-- rodape -->
+
+</body>
+
+</html>

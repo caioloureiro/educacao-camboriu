@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Departamento Pessoal</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+<div id=box> <!-- Inicio da div box -->
+
+	<div id=cabecalho> <a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank"><img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" /></a><img src="imagens/fundo_departamento_pessoal.jpg" width="800" height="310" border="0" /><br>
+    <a href="../../index.htm"><img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" /></a>
+  
+</div>
+
+<!-- ********************************* div site ****************************************-->
+<div id=divsite>
+
+	<div id=divdescricao02>
+
+	Recursos Humanos da Secretaria de Educação e Cultura.
+    
+    </div>
+    
+    <div id=divpostadoem>
+    
+    <img src="../../imagens/representante_s_.jpg" width="172" height="15" />
+    
+    </div>
+    
+<div id=divdescricao>
+    
+    <div id=divnomecom02colunas01> <!-- Nome 01 -->
+
+    Nome: <strong>Nélio Nunes</strong>
+    <br>
+    <br>
+    Função: <strong>RH</strong>
+    <br>
+    <br>
+    E-mail: <strong>rh.educacao@cidadedecamboriu.sc.gov.br</strong>
+    <br>
+       
+    </div> <!-- fim Nome 01 -->
+    
+    <div id=divnomecom02colunas02> <!-- Nome 02 -->
+
+    Nome: <strong>Mirian dos S. Alves</strong>
+    <br>
+    <br>
+    Função: <strong>RH</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </div> <!-- fim Nome 02 -->
+    
+    
+    <div id=clear></div>
+        
+    </div>
+    
+    <div id=divdescricao>
+    
+    <div id=divnomecom02colunas01> <!-- Nome 01 -->
+
+    Nome: <strong>Marcia Beatriz Melo Fuck</strong>
+    <br>
+    <br>
+    Função: <strong>RH</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </div> <!-- fim Nome 01 -->
+    
+    <div id=divnomecom02colunas02> <!-- Nome 02 -->
+
+    Nome: <strong>Jorge H. Nunes</strong>
+    <br>
+    <br>
+    Função: <strong>RH</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </div> <!-- fim Nome 02 -->
+    
+    </div>
+    
+    <div id=divbotoes>
+         
+    <div>
+    <br>
+    <strong>Escreva sua mensagem para o Departamento Pessoal:</strong><br>
+    <br>
+        
+        <form action="formulario_email_para_rh.php" method="POST">
+
+		Seu Nome : <br> 
+		<input name="nome" type="text" size="20">
+		<br>
+		<br>
+
+		Seu E-mail : <br>
+		<input name="email" type="text" size="20">
+		<br>
+		<br>
+
+		Comentários : <br>
+		<textarea name="comentarios" cols="20" rows="5"></textarea>
+		<br>
+
+		<input type="submit" value="Enviar">
+
+		</form>        
+                  
+      </div> <!-- fim Espaço Mensagem a secretária -->
+        
+    </div> <!-- fim da div botoes -->
+    
+    <div id=divcentral>
+       
+    </div>
+    
+    <div id=divlinksuteis>
+    
+    </div>
+
+</div>
+<!-- ********************************* /div site ****************************************-->
+  
+<div id=rodape> </div>
+    
+</div> <!-- Fim da div box -->
+</body>
+
+</html>

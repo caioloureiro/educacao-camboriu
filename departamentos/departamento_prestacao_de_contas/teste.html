@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script language=JavaScript>
+
+<!-- Desabilita o botão direito do mouse -->
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- DESABILITA BOTÃO DIREITO DO MOUSE -->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!-- Charset -->
+
+<title>Departamento de Prestação de Contas</title> <!-- Título -->
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style> <!-- Estilos prontos -->
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#pdde').hide(); // esta div irá desaparecer
+$ ('#pnae').hide(); // esta div irá desaparecer
+$ ('#pnate').hide(); // esta div irá desaparecer
+$ ('#pde-escola').hide(); // esta div irá desaparecer
+$ ('#frequencia').hide(); // esta div irá desaparecer
+$ ('#album04').hide(); // esta div irá desaparecer
+$ ('#album05').hide(); // esta div irá desaparecer
+$ ('#album06').hide(); // esta div irá desaparecer
+$ ('#album07').hide(); // esta div irá desaparecer
+$ ('#album08').hide(); // esta div irá desaparecer
+$ ('#album09').hide(); // esta div irá desaparecer
+$ ('#album10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				nextTxt: "Próxima",
+				prevTxt: "Anterior",
+				boxId: "superbox", // Id attribute of the "superbox" element
+				boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "800", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				
+			};
+			$.superbox();
+		});
+
+</script> <!-- Modal -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script> <!-- mudar fundo de div -->
+
+<script language="javascript" src="funcao.js"></script> <!-- Load Função.js -->
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+
+<table id=box>
+
+<tr>
+<td colspan="3">
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+<img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" />
+</a>
+
+</td>
+</tr> <!-- Prefeitura -->
+
+<tr>
+<td colspan="3">
+
+<img src="imagens/fundo_prestacao_de_contas.jpg" width="800" height="310" border="0" />
+
+</td>
+</tr> <!-- Template Título -->
+
+<tr>
+<td colspan="3">
+
+<a href="javascript:FecharJanela()">
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+</a>
+
+</td>
+</tr> <!-- Fechar Janela -->
+
+<tr>
+<td colspan="3" id=divdescricao02>
+
+O Departamento de Prestação de Contas é responsável pelos programas do FNDE e sua devida prestação de contas, coordena o EDUCACENSO (Censo Escolar) da Rede de Ensino e desenvolve o Portal da Educação.
+
+</td>
+</tr> <!-- Função -->
+
+<tr>
+<td colspan="3" id=divpostadoem>
+
+<img src="../../imagens/representante.jpg" width="162" height="15" />
+
+</td>
+</tr> <!-- Imagem "Representante" -->
+
+<tr>
+<td colspan="3" id=divdescricao>
+
+Nome: <strong>Caio Vinicius Ourique Loureiro</strong>
+<br>
+Função: 
+<br><strong>Prestação de Contas; EDUCACENSO (Censo Escolar); Frequência Escolar e WebMaster<br></strong>
+Ramal: <strong>204</strong>
+<br>
+E-mail: <strong>prestacaodecontas.educacao@cidadedecamboriu.sc.gov.br</strong>
+
+</td>
+</tr> <!-- Dados do Responsável -->
+
+<tr>
+
+<td style="width:200px; vertical-align:top">
+
+<table>
+
+<tr><td style="background:#F5F5F5; margin:2px; border:2px solid">
+
+<div id=textonormal02>
+
+<h1>Prestação de Contas</h1><br>
+
+<a href="#pdde" rel="superbox[content]">
+<img src="imagens/pdde_logo.png" width="105" height="68" border="0" title="Programa Dinheiro Direto na Escola"/><br>
+</a><br>
+
+<a href="#pnae" rel="superbox[content]">
+<img src="imagens/pnae_logo.png" width="105" height="68" border="0" title="Programa Nacional de Alimentação Escolar (Merenda Escolar)" /><br>
+</a><br>
+
+<a href="#pnate" rel="superbox[content]">
+<img src="imagens/pnate_logo.png" width="105" height="68" border="0" title="Programa Nacional de Apoio ao Transporte Escolar" /><br>
+</a><br>
+
+<a href="#pde-escola" rel="superbox[content]">
+<img src="imagens/pde-escola_logo.png" width="105" height="68" border="0" title="Plano de Desenvolvimento da Educação na Escola" /><br>
+</a><br>
+<br>
+
+</div>
+
+</td></tr> <!-- Prestações de Contas -->
+
+<tr><td id=divespacoleftbase>
+
+<strong>
+
+<font color="#333">
+
+Escreva sua sugestão para o Portal:
+
+</font>
+
+</strong>
+
+<form action="http://www.cidadedecamboriu.sc.gov.br/postman/postman.php" method=post>
+
+Seu Nome :<br> 
+
+<input value="" size="20"><br>
+
+<input type="hidden" name="To" value="prestacaodecontas.educacao@cidadedecamboriu.sc.gov.br">
+
+Seu E-mail :<br>
+
+<input name="frm" value="" size="20"><br>
+
+<input type="hidden" name="subjct" value="Portal da Educacao de Camboriu" size=40>
+
+Comentários :<br>
+
+<textarea cols="20" rows="5" name="Bdy"></textarea><br>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+</td></tr> <!-- Espaço Mensagem de email -->
+
+<tr><td>
+
+
+
+</td></tr>
+
+</table>
+
+</td> <!-- Coluna Esquerda -->
+
+<td style="width:400px; vertical-align:top">
+
+<table>
+
+<tr><td style="background:#060; margin:2px; border:2px solid; text-align:center;">
+
+<a href="#frequencia" rel="superbox[content]">
+<img src="imagens/frequencia_tutorial.jpg" width="351" height="245" border="0" />
+</a>
+
+</td></tr> <!-- Espaço Frequencia Escolar -->
+
+<tr><td style="background:#AEFFAE; margin:2px; border:2px solid; text-align:center;">
+
+<h1>A data base do EDUCACENSO 2011: dia 25/05/2011</h1>
+
+</td></tr> <!-- Espaço EDUCACENSO -->
+
+<tr><td style="background:#CCC; margin:2px; border:2px solid; text-align:center; font-size:15px;">
+
+<table border="1">
+
+<tr><td>
+<h1><a href="../../pdde/index.html" target="_blank">APRENDA A TRABALHAR COM O PDDE COM ESSE PASSO-À-PASSO</a></h1>
+</td></tr>
+
+<tr><td>
+<h3>
+Agendamento para Prestação de Contas do PDDE 2011
+</h3>
+
+<p>
+Todas as escolas e CEI cadastradas nos programas PDDE e PDE-Escola devem entrar em contato com o setor de Prestação de Contas e agendar um horário para efetuar a prestação de contas destes programas entre os dias 21/11/2011 e 16/12/2011. Vale lembrar que a escola que entregar a prestação de contas estará terminando as atividades financeiras destes programas em 2011.
+</p>
+</td></tr>
+
+<tr><td>
+<h1>
+
+<a href="../../noticia/prestacaodecontas_2011_documentos.html" target="_blank">
+Documentos para Elaboração da Prestação de Contas dos Programas do FNDE
+</a>
+</h1>
+</td></tr>
+
+</table>
+
+</td></tr> <!-- Espaço FNDE -->
+
+<tr><td>
+
+
+
+</td></tr>
+
+</table>
+
+</td> <!-- Coluna Central -->
+
+<td style="width:200px; vertical-align:top">
+
+<table>
+
+<tr><td style="background:#F5F5F5; margin:2px; border:2px solid;">
+
+<div id=textonormal02>
+
+<h3>Arquivos para a Prestação de Contas PDDE 2010</h3><br>
+<br>
+
+<a href="../../noticia/prestacaodecontas_2011_documentos.html" target="_blank">
+<img src="imagens/word.gif" width="30" height="30" border="0" /><br>
+Prestação de Contas<br>
+Documentos Necessários
+</a><br>
+<br>
+
+<a href="../../imagens/oficio_2011_11_21_179_2011.jpg" target="_blank">
+<img src="imagens/word.gif" width="31" height="30" border="0" /><br>
+Ofício 179/2011: Fialização das Atividades Financeiras do PDDE
+</a><br>
+<br>
+
+<a href="pdde_matriz.xls">
+<img src="imagens/excel.gif" width="30" height="30" border="0" /><br>
+Prestação de Contas<br>
+DEx<br>
+para preencher
+</a><br>
+<br>
+
+<a href="relacao_de_bens.xls">
+<img src="imagens/excel.gif" width="30" height="30" border="0" /><br>
+Prestação de Contas<br>
+Relação de Bens<br>
+para preencher
+</a><br>
+<br>
+
+<a href="dex_02_paginas.xls">
+<img src="imagens/excel.gif" width="30" height="30" border="0" /><br>
+Prestação de Contas<br>
+DEx<br>
+02 páginas
+</a><br>
+<br>
+
+<a href="consumo_e_permanente_2010.pdf">
+<img src="imagens/pdf.gif" width="31" height="32" border="0" /><br>
+Lista de exemplos de Consumo e Permanente
+</a><br>
+<br>
+
+</div>
+
+</td></tr> <!-- Arquivos de Prestação de Contas -->
+
+<tr><td>
+
+
+
+</td></tr>
+
+<tr><td>
+
+
+
+</td></tr>
+
+</table>
+
+</td> <!-- Coluna Direita -->
+
+</tr> <!-- Três Colunas -->
+
+<tr>
+<td colspan="3" id=rodape>
+
+
+
+</td>
+</tr> <!-- Rodapé -->
+
+</table>
+
+<!-- ******** INICIO DAS MODAIS ******** -->
+
+<div id=pdde style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<table>
+
+<tr>
+
+<td colspan="3" style="text-align:center;"><h1>Programa Dinheiro Direto na Escola</h1></td>
+
+</tr>
+
+<tr>
+
+<td width="199" style="text-align:center;"><a href="pdde2008.pdf" target="_blank"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO CONSOLIDADO DA EXECUÇÃO FÍSICO-FINANCEIRA DAS UNIDADES EXECUTORAS PRÓPRIAS" /><br>
+Consolidado 2008</a></td>
+
+<td width="199" style="text-align:center;"><a href="pdde2009.pdf" target="_blank"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO CONSOLIDADO DA EXECUÇÃO FÍSICO-FINANCEIRA DAS UNIDADES EXECUTORAS PRÓPRIAS" /><br>
+Consolidado 2009</a></td>
+
+<td width="199" style="text-align:center;"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO CONSOLIDADO DA EXECUÇÃO FÍSICO-FINANCEIRA DAS UNIDADES EXECUTORAS PRÓPRIAS (EM APROVAÇÃO)" /><br>
+Consolidado 2010</td>
+
+</tr>
+
+<tr>
+
+<td style="height:15px; text-align:center;"></td>
+
+<td style="height:15px; text-align:center;"></td>
+
+<td style="height:15px; text-align:center;"></td>
+
+</tr>
+
+<tr>
+
+<td width="199" style="text-align:center;"><a href="pdde2008_prefeitura.pdf" target="_blank"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS" /><BR>
+Demonstrativo Escolas Isoladas 2008</a></td>
+
+<td width="199" style="text-align:center;"><a href="pdde2009_prefeitura.pdf" target="_blank"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS" /><BR>
+Demonstrativo Escolas Isoladas 2009</a></td>
+
+<td width="199" style="text-align:center;"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS (EM APROVAÇÃO)" /><BR>
+Demonstrativo Escolas Isoladas 2010</td>
+
+</tr>
+
+</table>
+
+</div> <!-- PDDE em página modal -->
+
+<div id=pnae style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<table>
+
+<tr>
+
+<td colspan="3" style="text-align:center;"><h1>Programa Nacional de Alimentação Escolar (Merenda Escolar)</h1></td>
+
+</tr>
+
+<tr>
+
+<td width="199" style="text-align:center;"><a href="pnae2008.pdf"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO SINTÉTICO ANUAL DA EXECUÇÃO FÍSICO-FINANCEIRA" /><br>2008</a></td>
+
+<td width="199" style="text-align:center;"><a href="pnae2009.pdf"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO SINTÉTICO ANUAL DA EXECUÇÃO FÍSICO-FINANCEIRA" /><br>2009</a></td>
+
+<td width="199" style="text-align:center;"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO SINTÉTICO ANUAL DA EXECUÇÃO FÍSICO-FINANCEIRA (EM APROVAÇÃO)" /><br>2010</td>
+
+</tr>
+
+</table>
+
+</div> <!-- PNAE em página modal -->
+
+<div id=pnate style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<table>
+
+<tr>
+
+<td colspan="3" style="text-align:center;"><h1>Programa Nacional de Apoio ao Transporte Escolar</h1></td>
+
+</tr>
+
+<tr>
+
+<td width="199" style="text-align:center;"><a href="pnate2008.pdf"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS" /><br>2008</a></td>
+
+<td width="199" style="text-align:center;"><a href="pnate2009.pdf"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS" /><br>2009</a></td>
+
+<td width="199" style="text-align:center;"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS (EM APROVAÇÃO)" /><br>2010</td>
+
+</tr>
+
+</table>
+
+</div> <!-- PNATE em página modal -->
+
+<div id=pde-escola style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<table>
+
+<tr>
+
+<td colspan="3" style="text-align:center;"><h1>Plano de Desenvolvimento da Educação na Escola</h1></td>
+
+</tr>
+
+<tr>
+
+<td width="199" style="text-align:center;"><img src="imagens/pdf.gif" width="31" height="32" border="0" title="DEMONSTRATIVO DA EXECUÇÃO DA RECEITA E DA DESPESA E DE PAGAMENTOS EFETUADOS (EM APROVAÇÃO)" /><br>2010</td>
+
+<td width="199" style="text-align:center;"></td>
+
+<td width="199" style="text-align:center;"></td>
+
+</tr>
+
+</table>
+
+</div> <!-- PDE-Escola em página modal -->
+
+<div id=frequencia style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<img src="imagens/frequencia_tutorial_grande.jpg" width="699" height="489" border="0" />
+
+</div> <!-- frequencia em página modal -->
+
+<!-- ******** FINAL DAS MODAIS ******** -->
+
+</body>
+
+</html>

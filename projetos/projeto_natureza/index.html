@@ -1,0 +1,528 @@
+﻿<html>
+
+<head>
+
+<script language=JavaScript>
+
+<!-- Desabilita o botão direito do mouse -->
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Projeto Natureza Preservada, Cidadão Feliz</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style>
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#conteudo').hide(); // esta div irá desaparecer
+$ ('#equipe').hide(); // esta div irá desaparecer
+$ ('#historia').hide(); // esta div irá desaparecer
+$ ('#patronesse').hide(); // esta div irá desaparecer
+$ ('#ppp').hide(); // esta div irá desaparecer
+$ ('#projetos').hide(); // esta div irá desaparecer
+$ ('#app').hide(); // esta div irá desaparecer
+$ ('#pdde').hide(); // esta div irá desaparecer
+$ ('#album01').hide(); // esta div irá desaparecer
+$ ('#album02').hide(); // esta div irá desaparecer
+$ ('#album03').hide(); // esta div irá desaparecer
+$ ('#album04').hide(); // esta div irá desaparecer
+$ ('#album05').hide(); // esta div irá desaparecer
+$ ('#album06').hide(); // esta div irá desaparecer
+$ ('#album07').hide(); // esta div irá desaparecer
+$ ('#album08').hide(); // esta div irá desaparecer
+$ ('#album09').hide(); // esta div irá desaparecer
+$ ('#album10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				nextTxt: "Próxima",
+				prevTxt: "Anterior",
+				boxId: "superbox", // Id attribute of the "superbox" element
+				boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "1000", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				
+			};
+			$.superbox();
+		});
+
+</script> <!-- Blog -->
+<!-- Modelar o Box Modal --> <!-- Modal -->
+
+<!-- Mudar fundo de Div -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script>
+<!-- mudar fundo de div -->
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+
+<div id=box> <!-- Inicio da div box -->
+
+<div id=cabecalho>
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+
+<img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" />
+
+</a>
+
+<img src="imagens/topo_natureza.jpg" width="800" height="310" border="0"><br>
+
+<a target="_self" href="javascript:FecharJanela()">
+
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+
+</a>
+
+</div> <!-- Cabeçalho -->
+
+<div id=divsite> <!-- Inicio da div Site -->
+
+<div id=divdescricao02>
+
+	O Projeto "Natureza Preservada, Cidadão Feliz" tem como objetivos trabalhar a temática turística, sócioambiental e sua relação com a educação.
+    
+</div> <!-- Descrição -->
+    
+<div id=divpostadoem>
+    
+    <img src="../../imagens/representante_s_.jpg" width="162" height="15" />
+    
+    </div> <!-- Imagem Representante -->
+    
+<div id=divdescricao>
+
+	<p>Nome: <strong>Teresinha Dalla Rosa</strong><br>
+    Nome: <strong>Maria Conceição Borba</strong><br>
+	Telefone: <strong>(47) 3365-3387</strong><br>
+    E-mail: <strong>fredericodallarosa@yahoo.com.br</strong></p>
+    
+</div> <!-- Dados do Representante -->
+
+<div id=divbotoes>
+
+<a href="#historia" rel="superbox[content]">
+<div id=botao_escolas02>
+
+Justificativa 2011
+
+</div>
+</a> <!-- botão 01 -->
+
+<!--<a href="#patronesse" rel="superbox[content]">
+<div id=botao_escolas03>
+
+Cronograma
+
+</div>
+</a> --> <!-- botão 02 -->
+
+<a href="#ppp" rel="superbox[content]">
+<div id=botao_escolas05>
+
+O que é Turismo?
+
+</div>
+</a> <!-- botão 03 -->
+
+<!-- <a href="#projetos" rel="superbox[content]">
+<div id=botao_escolas06>
+
+botão 04
+
+</div>
+</a> --> <!-- botão 04 -->
+
+<!-- <a href="#app" rel="superbox[content]">
+<div id=botao_escolas07>
+
+
+botão 05
+
+</div>
+</a> --><!-- botão 05 -->
+
+</div> <!-- Coluna Esquerda -->
+
+<div id=divcentral>
+
+<div style="margin:4px; border:2px solid;">
+<h2><center><em>
+<p>"Se a educação não for ambiental, então, não é educação".</p></em>
+(MAURO GRÜN, 1996)
+</center></h2>
+</div> <!-- Frase -->
+
+<br>
+
+<div id=textoescolas>
+
+<p>
+
+<img src="imagens/15.jpg" width="132" height="100" border="2" title="Professora Neia" align="left">
+
+</p>
+
+<h3>Turismo, Sustentabilidade e Educação Infantil</h3>
+
+<p>A temática socioambiental é abordada a todo o momento no ambiente escolar, se entendermos que as  questões relativas ao meio ambiente, devem ser  representadas como o conjunto de fatores ecológicos e sociais (preservação de recursos, cuidado e respeito com outras espécies animais, solidariedade, etc).</p>
+
+<p>É também a  proposta do Projeto  sensibilizar os  educandos  quanto à importância da preservação do meio ambiente e do estabelecimento de relações mais  harmônicas entre o homem e o meio do qual faz parte.</p>
+
+<p>Conhecendo as características e qualidades do meio, as crianças  são capazes de se sensibilizar  para sua preservação, ou seja, só protegemos aquilo que amamos e valorizamos.</p>
+
+</div> <!-- Mensagem Principal -->
+
+<br>
+
+<!-- <div id=tabela>
+<center>
+<h1>Onde Estamos:</h1>
+
+<h1>CEIs</h1>
+
+Até novembro de 2011
+</center>
+</div> --> <!-- Primeiro espaço -->
+
+<br>
+
+<!-- <div id=tabela>
+<strong>Número Atual de Alunos<br><br></strong>
+<table style="width:100%; height:100px; border:1px solid; font-size:13px; font-weight:bold;">
+
+<tr> 
+<td align="center" valign="middle" style="border:1px solid">
+
+Dados até 09/12/2009
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" valign="middle" style="border:1px solid">
+
+140<br>
+alunos
+
+</td>
+
+</tr>
+
+</table>
+</div> --> <!-- segundo espaço -->
+
+</div> <!-- Coluna Central -->
+
+<div id=divlinksuteis>
+
+<div>
+
+<a href="#conteudo" rel="superbox[content]" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blog','','../../imagens/blog_on.png',1)">
+
+<img src="../../imagens/blog_off.png" title="Clique aqui para ir ao Blog da Escola" name="blog" width="200" height="68" border="0">
+
+</a>
+
+</div> <!-- Botão blog -->
+
+<div style="font-size:12px;" align="center">
+<br>
+<img src="../../imagens/no_ie_pequeno.png" width="100" height="100" border="0"><br>
+<font color="#FF0000">
+Está página <strong>não</strong> foi desevolvida para o <strong>Internet Explorer</strong>, por favor utilize outro navegador.
+</font>
+<br>
+<br>
+<a href="http://br.mozdev.org/download/" target="_blank">
+<img src="../../imagens/firefox_pequeno.png" width="200" height="200" border="0"><br>
+Clique aqui para fazer download do Firefox.
+</a><br>
+<br>
+<a href="http://www.google.com/chrome?hl=pt-BR" target="_blank">
+<img src="../../imagens/chrome_pequeno.png" width="200" height="200" border="0"><br>
+Clique aqui para fazer download do Google Chrome.
+</a><br>
+<br>
+
+</div> <!-- Aviso do IE -->
+
+</div> <!-- Coluna Direita -->
+
+</div> <!-- fim da div Site -->
+
+<div id=clear>
+
+</div> <!-- Div Clear -->
+
+<div id=historia style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<h3>
+<center>
+<p>Em 2011, o projeto estendeu suas atividades junto aos CEIs (Centros de Educação Infantil).</p>
+<p>O trabalho será realizado com os professores através de atividades teóricas e práticas (palestra e aula passeio).</p>
+<p>Com esta metodologia de trabalho é possivel que os professores sejam os articuladores junto aos alunos, em função da faixa etária dos educandos, entendemos que a maneira mais adequada é que os professores sejam os multiplicadores.</p>
+</center>
+</h3>
+
+</div> <!-- Justificativa em página modal -->
+
+<div id=patronesse style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<p>Obs. 01: Atenção diretor(a), com exceção do JI Padre Sergio Maykot que realizará as aulas passeio nos dias 30/06 matutino e 29/06 vespertino, todos os demais CEIs terão as aulas passeio em suas respectivas datas</p>
+<p><strong><em>Obs. 02: Senhor(a) diretor(a), não esqueça de levar o Datashow para a sua unidade de ensino um dia antes!</em></strong></p>
+<p>03/05/2011 - CEI Eurípides de Paula Silva</p>
+<p>12/05/2011 - CEI Julita Pereira</p>
+<p>17/05/2011 - CEI Maria Bittencourt Saut</p>
+<p>19/05/2011 - CEI Maria Russi</p>
+<p>31/05/2011 - CEI Menino Jesus</p>
+<p>02/06/2011 - CE Abelardo Torquato Rosa</p>
+<p>17/06/2011 - JI Padre Sergio Maykot</p>
+<p>02/08/2011 - CEI CAIC</p>
+<p>04/08/2011 - CEI Neide Merisio Molleri</p>
+<p>09/08/2011 - CEI Odete Ramos Poltronieri</p>
+<p>23/08/2011 - CEI Monte Alegre</p>
+<p>27/09/2011 - CEI Rio do Meio</p>
+<p>29/09/2011 - CEI Tânia Regina Garcia</p>
+<p>18/10/2011 - CEI Judite da Rocha Dalago</p>
+<p>26/10/2011 - CEI Otilia dos Santos da Silva</p>
+
+</div> <!-- Cronograma em página modal -->
+
+<div id=ppp style="overflow:auto; font-size:16px; font-weight:bold;">
+
+<iframe style="margin:20px;" src ="folder_natureza/n01.htm" width="800px" height="450px" frameborder="0">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+
+</div> <!-- folder em página modal -->
+
+<div id=app style="overflow:auto; font-size:16px; font-weight:bold;">
+
+Equipe da Associação de Pais e Professores
+
+</div> <!-- botão04 em página modal -->
+
+<div id=projetos style="overflow:auto; font-size:16px; font-weight:bold;">
+
+Projetos da Escola
+
+</div> <!-- botão05 em página modal -->
+
+<div id=conteudo>
+<iframe src ="http://projetonaturezacamboriu.blogspot.com/" width="100%" height="100%">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+</div> <!-- Blog modal -->
+
+</div> <!-- Fim da div box -->
+
+<div id=rodape></div> <!-- rodape -->
+
+</body>
+
+</html>

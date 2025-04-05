@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Departamento de Nutrição</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+</style>
+
+<script type='text/javascript'>
+<!--
+function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+<div id=box> <!-- Inicio da div box -->
+
+<div id=cabecalho>
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+
+<img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" />
+</a>
+
+<img src="imagens/fundo_nutricao.jpg" width="800" height="310" border="0" /><br>
+
+<a target="_self" href="javascript:FecharJanela()">
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+</a>
+  
+</div>
+
+<div style="height:1400px; background:#FFF;">
+
+<div id=divdescricao02>
+
+	O Departamento de Nutrição é responsável pela elaboração e implementação da Merenda Escolar da Rede Municipal de Ensino.
+    
+    </div>
+
+    
+<div id=divpostadoem>
+    
+    <img src="../../imagens/representante_s_.jpg" width="172" height="15" />
+    
+    </div>
+    
+<div id=divdescricao>
+<table>
+<tr>
+<td>
+<br>
+Nome: <strong>Cristina Sgnaolin</strong>
+<br>
+Função: <strong>Nutricionista</strong>
+<br>
+Ramal: <strong>202</strong>
+<br>    
+E-mail: <strong>nutri.educacao@cidadedecamboriu.sc.gov.br</strong>
+</td>
+<td>
+<br>
+Nome: <strong>Lísia Carla Toniazzo</strong>
+<br>
+Função: <strong>Nutricionista</strong>
+<br>
+Ramal: <strong>202</strong>
+<br>    
+E-mail: <strong>nutri.educacao@cidadedecamboriu.sc.gov.br</strong>
+</td>
+</tr>
+</table>
+</div> <!-- nomes -->
+
+<div style="width:900px; height:500px;">
+<iframe src ="http://nutricaocamboriu.blogspot.com" width="800px" height="900px" frameborder="0"></iframe>
+
+</div> <!-- IFRAME do blog -->
+
+<br>
+<br>
+    
+<div style="margin-top:400px;">
+
+<strong>
+
+<font color="#333">Escreva sua mensagem ao Departamento:</font></strong>
+
+<form action="http://www.cidadedecamboriu.sc.gov.br/postman/postman.php" method=post>
+
+<table>
+<tr>
+
+<td>
+
+Seu Nome : <br> 
+
+<input value="" size="30">
+
+<br>
+
+<input type="hidden" name="To" value="nutri.educacao@cidadedecamboriu.sc.gov.br">
+
+Seu E-mail : <br>
+
+<input name="frm" value="" size="30">
+
+<br>        
+
+<input type="hidden" name="subjct" value="Portal da Educacao de Camboriu" size=40>
+
+</td>
+
+<td>
+
+Mensagem : <br>
+
+<textarea cols="69" rows="5" name="Bdy"></textarea>
+
+<br>
+
+<input type="submit" value="Enviar">
+
+</td>
+</tr>
+
+</table>
+
+</form>        
+
+</div> <!-- Espaço Mensagem de email -->
+
+</div> <!-- site -->
+  
+<div id=rodape></div> <!-- rodapé -->
+    
+</div> <!-- box -->
+</body>
+</html>

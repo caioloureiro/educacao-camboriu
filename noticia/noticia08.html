@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link href='../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Notícias</title>
+
+<link href="../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+<div id=box> <!-- Inicio da div box -->
+
+	<div id=cabecalho>
+    <img src="../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" />
+    <br />
+    
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="265">
+      <param name="movie" value="../imagens/fundocima.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+      <param name="swfversion" value="6.0.65.0" />
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="../imagens/fundocima.swf" width="800" height="265">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conteúdo desta página requer uma versão mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object>
+  </div>
+    
+    <div id=divtitulo>
+	
+    Titulo
+    
+	</div>
+
+	<div id=divpostadoem>
+    
+    Postado em 
+      <!-- #BeginDate format:fcIt1m -->Quarta-feira, 6-10-2010  17:57<!-- #EndDate -->
+</div>
+
+	<div id=divfoto>
+    
+    <img src="../imagens/prefeita_natureza.JPG" width="429" height="285" />
+    
+    </div>
+
+	<div id=divdescricao>
+	
+    O texto deverá ser digitado neste espaço.
+    onde toda a noticia deverá conter as informações restantes.
+    
+	</div>
+    
+    <div id=rodape>
+    
+    </div>
+    
+</div> <!-- Fim da div box -->
+
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+
+</html>

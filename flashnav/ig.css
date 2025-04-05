@@ -1,0 +1,967 @@
+/*Reset*/
+*{margin:0;padding:0;border:0;outline:0;list-style:none;text-decoration:none}
+
+body{font:12px arial,helvetica;text-align:left;}
+
+/*usados nos componentes*/
+.minAltura{min-height:1392px;_height:1392px;*height:1392px}
+.clear{clear:both!important}
+.nomg{margin:0!important}
+.nomgt{margin-top:0!important}
+.nomgr{margin-right:0!important}
+.nomgb{margin-bottom:0!important}
+.nomgl{margin-left:0!important}
+.nopd{padding:0!important}
+.nopdt{padding-top:0!important}
+.nopdr{padding-right:0!important}
+.nopdb{padding-bottom:0!important}
+.nopdl{padding-left:0!important}
+.nobd{border:none!important}
+.nobdt{border-top:0!important}
+.nobdr{border-right:0!important}
+.nobdb{border-bottom:0!important}
+.nobdl{border-left:0!important}
+.nobg{background:none!important}
+.dn{display:none!important}
+.borda_b{float:left;border-bottom:1px dotted #d7d7d7}
+u{text-decoration:underline!important}
+.pd20{margin-bottom:15px!important;padding-bottom:17px!important}
+.mb20{margin-bottom:15px!important}
+.w988{width:988px!important}
+.fr{float:right}
+.fl{float:left}
+.fn{float:none !important}
+.gd3{width:148px}
+.gd4{width:204px}
+.gd6{width:316px}
+.gd8{width:428px}
+.gd9{width:484px}
+.gd10{width:540px}
+.gd12{width:652px}
+.gd18{width:988px}
+.pdl19{padding-left:19px !important}
+.comfoco{color:#333!important}
+
+/*Sprite*/
+header form .campo,
+header form .campo span,
+input.submit,
+#buscaGoogle,
+#buscaGoogle #searchContainer .botao-buscar,
+.submenu .aba a,
+.corpoSubmenu .content .coluna ul li.sub,
+.corpoSubmenu .content .comimagens ul li ul li,
+.HOLIE07406 .tvFlashNav a,
+.HOLIE07406 .tvFlashNav div,
+.HOLIE07406 .tvFlashNav a span,
+.HOCHE07506 ul li,
+.HOLIE09012 ul li span,
+.HOLIE09012 ul li h3,
+.HOLIE09012 ul li a.botao,
+.HOCHE09418 ul,
+.HOCHE09418 div.barra,
+.CHA19906 ul li,
+.HOLIE10506 ul li ol li,
+.FEA08806 ul.links li,
+.SLrotate .SLnavigation a,
+.SLrotate.SLsingle a.btn,
+.SLrotate.SLbranded a.btn,
+form#formShopping input.botao-ok,
+.HOHEE08612 h2 a,
+.HOHEE08906 h2 a,
+.headRetranca h2 a,
+.HOLIE09218 ul li.primeiro a,
+.HOLIE09218 ul li.retranca a,
+#buscaGoogle #searchOn,
+.ig-shopping.headRetranca h3 a,
+form#formShopping input,
+a.img span.play,
+.sprite{background:#E1FFE1 no-repeat}
+
+section{margin:auto;clear:both;width:988px}
+#topo{padding:5px 0 6px;height:90px}
+#topo h1{float:left;margin:10px 55px 0 11px;width:66px;height:69px;overflow:hidden}
+#topo #PPA02114{float:left;height:90px;width:728px}
+#topo .publicidade{height:90px;width:33px;overflow:hidden;cursor:pointer;float:right;margin-right:95px}
+#topo .publicidade img{margin-left:-67px}
+header{height:60px}
+header form{float:left;margin-top:17px;width:600px}
+header form label{float:left;font-weight:bold;color:#fff;margin:5px 10px 0 1px}
+header form label.senha{margin-right:9px}
+header form .campo{float:left;height:26px;padding:0 7px 0 8px;margin-right:5px;background-position:0 -91px}
+header form .campo input{float:left;background:transparent;font-size:1em;color:#999;height:18px;line-height:18px;padding:4px 0 4px}
+header form .campo.mail{width:195px;margin-right:18px}
+header form .campo.senha{padding-right:0}
+header form .campo span{float:left;width:3px;height:26px;background-position:-207px -91px}
+#headerFormEmail{width:190px}
+#headerFormSenha{padding-right:6px;width:67px}
+input.submit.ok{float:left;margin:1px 11px 0 0;background-position:-102px 0;width:34px;height:24px;font-weight:bold;font-size:0.917em;cursor:pointer}
+input.submit.ok:hover{background-position:-544px -169px}
+input.submit.ok:active{background-position:-579px -169px}
+header form ul{float:left;width:106px}
+header form ul li{line-height:1em}
+header form ul li.first{margin:-2px 0 3px}
+header form ul li a{color:#dff3ff;font-size:0.833em;font-weight:bold}
+#buscaGoogle *{margin:0;outline:0 none;padding:0}
+#buscaGoogle{float:right;height:26px;position:relative;width:376px;background-position:0 -118px}
+#buscaGoogle #searchContainer{height:26px;left:0;position:absolute;top:0;width:376px}
+#buscaGoogle #searchContainer #buscar{background:transparent;float:left;font: 1em/2.083em Arial;height:24px;margin: 2px 0 0 30px;width: 210px;color:#666}
+#buscaGoogle #searchContainer .botao-buscar {background-position:-149px 0;color:#333;cursor:pointer;float:left;font: bold 0.917em arial;height:25px;margin-top:1px;text-indent:-15000px;text-transform: uppercase;width:66px}
+#buscaGoogle cite{color:#fff;float:right;width:62px;font:0.833em/14px arial}
+#buscaGoogle #searchOn{position:absolute;top:26px;left: 0;width: 306px;height: 90px;overflow: hidden;background-position:-693px -58px;z-index:5}
+#buscaGoogle #searchOn a{display: block;width: 284px;height: 14px;margin: 0 0 0 1px!important;padding: 8px 10px;text-decoration: none;font: normal 1em/1em Arial;cursor:pointer;}
+#buscaGoogle #searchOn a.active{background:#f8f8f8}
+#buscaGoogle #searchOn a.nobd-b{border-bottom: 0!important;height: 12px!important}
+
+/* clearfix */
+.clearfix:after { content: "."; display: block;	clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix {	display: inline-block; }
+html[xmlns] .clearfix {	display: block;	}
+* html .clearfix { height: 1%; }
+/* clearfix */
+
+#include-menu{z-index:300;}
+#main { width: 988px; margin: 0 auto; background: #EEE; height: 1000px; font: normal 13px arial; }
+#main-menu { clear: both;position: relative; }
+#main-menu .item-menu {float: left;border-right:1px solid #D8D8D8;border-left:1px solid #fff}
+#main-menu .item-menu .link { display: block; height: 41px; padding-left: 11px; font:bold 1.167em/41px Arial; color: #08629A;background: url(../images/spriteHome-smush.png) no-repeat;}
+#main-menu .item-menu div.menuContainer { position: absolute; top: 40px; left: 0; height: 0; width: 988px; visibility: hidden; z-index:200 }
+#main-menu .item-menu:hover{height:40px;border: 1px solid #BBCAD5;border-bottom:none;background:#fff}
+#main-menu .item-menu:hover div.menuContainer { visibility: visible;z-index:200 }
+#main-menu .item-menu:hover .link{background-color:#fff; z-index:300}
+#main-menu .item-menu .size { background: #fff; float: left; position: relative; min-height: 50px; min-width: 80px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding: 20px 1px 1px;border: 1px solid #BBCAD5;z-index:200}
+#main-menu .item-menu .size:last-child { margin-right:2px; border-top-right-radius:0; }
+#main-menu .item-menu .coluna {float: left; margin: 0 5px 0 0; padding: 0 30px;}
+
+#main-menu .item-menu.item1 {border-left:1px solid #D8D8D8}
+#main-menu .item-menu.item1 .link{width:84px;background-position:74px -145px;}
+#main-menu .item-menu.item1:hover .link{background-position:74px -186px;}
+#main-menu .item-menu.item2 .link{width: 97px;background-position: 86px -145px;}
+#main-menu .item-menu.item2:hover .link{background-position:86px -186px;}
+#main-menu .item-menu.item3 .link{width: 92px;background-position: 81px -145px;}
+#main-menu .item-menu.item3:hover .link{background-position:81px -186px;}
+#main-menu .item-menu.item4 .link{width: 72px;background-position: 61px -145px;}
+#main-menu .item-menu.item4:hover .link{background-position:61px -186px;}
+#main-menu .item-menu.item5 .link{width: 68px;background-position: 57px -145px;}
+#main-menu .item-menu.item5:hover .link{background-position:57px -186px;}
+#main-menu .item-menu.item6 .link{width: 77px;background-position: 66px -145px;}
+#main-menu .item-menu.item6:hover .link{background-position:66px -186px;}
+#main-menu .item-menu.item7 .link{width: 100px;background-position: 89px -145px;}
+#main-menu .item-menu.item7:hover .link{background-position: 89px -186px;}
+#main-menu .item-menu.item6 .link{background-position:67px -145px;}
+#main-menu .item-menu.item8 .link{width: 100px;background-position: 89px -145px;}
+#main-menu .item-menu.item8:hover .link{background-position:89px -186px;}
+#main-menu .item-menu.item9 .link {color: #2A9CDD;padding-left: 45px;width:145px;border-right:1px solid #D8D8D8;background-position: 171px -145px;}
+#main-menu .item-menu.item9:hover .link{background-position:171px -186px;}
+#main-menu .item-menu.item9 {border-right:1px solid #fff}
+#main-menu .item-menu:hover .link{position:relative;background:#fff url(../images/spriteHome-smush.png) no-repeat;background-position:74px -186px; z-index:300}
+#main-menu .content .faixa{background: url(../images/bg-submenu.png) repeat-x bottom;}
+#main-menu .borda-right{border-right:1px solid #d7d7d7}
+
+#main-menu .item-menu .coluna ul li {margin-top:13px}
+#main-menu .item-menu .coluna ul li a {font:bold 14px Arial;color:#000}
+#main-menu .item-menu .coluna ul li a span {color: #1189C7;font:normal 13px Arial;letter-spacing: -2px;}
+#main-menu .item-menu .coluna ul li.sub{margin-top: 6px;padding-left: 8px;background: url(../images/spriteHome-smush.png) no-repeat -311px 6px;}
+#main-menu .item-menu .coluna ul li.sub a {font:normal 12px Arial;color:#08629A;}
+#main-menu .item-menu .temasDoMomento .faixa{margin:0;}
+#main-menu .item-menu .temasDoMomento ul li{float: left;color: #6D8495;font-size:12px;padding: 4px 10px 2px 9px;border-left: 1px solid #D8D8D8}
+#main-menu .item-menu .temasDoMomento ul li.chamadaTemas {border: 0;margin-left: 15px;}
+/*Componente menu com imagens */
+#main-menu .item-menu .coluna.direita{width:255px;}
+#main-menu .item-menu .coluna img.dest {float: left;width: 92px;height: 69px;margin-right: 19px;}
+#main-menu .item-menu .coluna h4 {float:left;width:144px;font-size:18px;color: #6D8495;margin: -4px 0 1px;}
+#main-menu .item-menu .comimagens ul li{margin-top:16px;height:73px}
+#main-menu .item-menu .comimagens ul li.first{margin-top:5px;}
+#main-menu .item-menu .comimagens ul li ul{float:left}
+#main-menu .item-menu .comimagens ul li ul li {padding:0 0 0 8px;height:auto;margin-top: 3px;background: url(../images/spriteHome-smush.png) no-repeat -311px -10px;}
+#main-menu .item-menu .comimagens ul li ul li a {color: #08629A;font:normal 12px Arial;}
+
+#main-menu .edicao:hover{padding-top:20px!important;padding-bottom:20px!important;margin-top:-20px!important}
+#main-menu .dropLista{bottom:-8px!important}
+
+div#temas-do-momento-servicos-digitais cite{display:none}
+
+#corpo{padding-top:27px}
+
+/*Componentes*/
+/*.CHE00112 (destaque texto principal)*/
+.CHE00112{border-bottom:1px dotted #d7d7d7;padding-bottom:15px;}
+.CHE00112 h2{float:left;font:bold 2.833em arial;margin-top:-4px}
+.CHE00112 h2 a{float:left; color:#08629a}
+.CHE00112 p{float:left;clear:both;font:normal 1.167em/1.5em Arial;width:100%;}
+.CHE00112 p a{color: #666;}
+.CHE00112.larguraB{width:988px!important}
+
+/*CHE02903 (ChapÃƒÂ©u, Imagem, TÃƒÂ­tulo)*/
+.CHE02903 {margin:0 20px 17px 0}
+.CHE02903 h3 {margin-bottom:6px;width:100%;font-size:0.917em;text-transform:uppercase;}
+.CHE02903 h3 a{color:#333;}
+.CHE02903 img{float:left;width:148px;height:111px;border:none}
+.CHE02903 p a{float:left;font:1.5em arial;padding-top:5px}
+
+/*CHE03106 (chapÃƒÂ©u, Imagem e TÃƒÂ­tulo*/
+.CHE03106{margin:0 20px 15px 0;padding-bottom:15px}
+.CHE03106 div{float:left;width:316px}
+.CHE03106 div div{float:none;width:auto;padding-top:7px;clear:both}
+.CHE03106 div h3{font-size:0.917em;margin-bottom:5px;text-transform:uppercase}
+.CHE03106 div h3 a{color:#333;}
+.CHE03106 div div p a b{display:block;font:bold 2em Arial;color:#08629a;padding-bottom:4px}
+.CHE03106 div div p a:hover b{text-decoration:underline}
+.CHE03106 div div p a span{display:block;font:normal 14px Arial;color:#333}
+.CHE03106 div img{display:block}
+
+/* HOCHE10406 */
+.CHE03106 div div p a b{font:normal 1.5em Arial;}
+
+/*getHover*/
+.getHover a.image,.getHover a.image img{float:left;overflow:hidden}
+.getHover a.image.hover{border:3px solid #08629A !important}
+.getHover a.image.hover img{margin:-3px !important}
+    
+/*HOLIE07406*/
+.HOLIE07406{background:#f8f8f8}
+.HOLIE07406 div.tv{float:left;width:316px;height:300px;overflow:hidden;position:relative}
+.HOLIE07406 ul{float:left;width:316px;height:300px;position:relative;}
+.HOLIE07406 ul li{float:left;width:316px;height:300px}
+.HOLIE07406 ul li h3{float:none!important;clear:both;margin-bottom:3px;padding:14px 10px 0;font-size:0.917em;text-transform:uppercase}
+.HOLIE07406 ul li h3 a{color:#333}
+.HOLIE07406 ul li h4{float:none;padding:0 10px;font-size:1.333em}
+.HOLIE07406 ul li h4 a{color:#08629a}
+.HOLIE07406 .tvFlashNav{float:left;padding:4px 3px 0;height:32px;background:#F2F4F5}
+.HOLIE07406 .tvFlashNav a{float:left;width:77px;height:29px;background-position:-100px -61px;color:#08629a;font-size:0.917em;line-height:29px}
+.HOLIE07406 .tvFlashNav a:hover{background-position:-534px -236px;text-decoration:none}
+.HOLIE07406 .tvFlashNav a:hover span,.HOLIE07406 .tvFlashNav a:active span{background-position:-672px -146px}
+.HOLIE07406 .tvFlashNav a:active{background-position:-614px -236px}
+.HOLIE07406 .tvFlashNav a.avancar{background-position:-179px -61px}
+.HOLIE07406 .tvFlashNav a.avancar:hover{background-position:-535px -236px}
+.HOLIE07406 .tvFlashNav a.avancar:active{background-position:-615px -236px}
+.HOLIE07406 .tvFlashNav a span{float:left;width:7px;height:11px;background-position:-105px -32px;margin:9px 6px 0 11px}
+.HOLIE07406 .tvFlashNav a.avancar span{background-position:-113px -32px;margin:9px 0 0 5px}
+.HOLIE07406 .tvFlashNav a.avancar:hover span,.HOLIE07406 .tvFlashNav a.avancar:active span{background-position:-683px -146px}
+.HOLIE07406 .tvFlashNav a strong{float:left}
+.HOLIE07406 .tvFlashNav a:hover strong{cursor:pointer}
+.HOLIE07406 .tvFlashNav a.avancar strong{margin-left:11px}
+.HOLIE07406 .tvFlashNav div{float:left;width:156px;text-align:center;height:29px;background-position:-100px -61px;font-size:1.167em;color:#6d8495;line-height:29px}
+.HOLIE07406 .tvFlashNav div cite{font-style:normal;font-weight:bold}
+.HOLIE07406 object,
+.HOLIE07406 embed {cursor:pointer}
+
+/*HOCHE07506*/
+.HOCHE07506 a{color:#08629a}
+.HOCHE07506 h3{font-size:0.917em;margin:2px 0;text-transform:uppercase}
+.HOCHE07506 h3 a{color:#333}
+.HOCHE07506 h4{font-size:1.5em;font-weight:normal;line-height:24px}
+.HOCHE07506 ul li{margin-top:3px;padding-left: 8px;background-position: -311px -10px}
+
+/*HOPPA07612*/
+.HOPPA07612{background:#F8F8F8;clear:both;padding:8px 0;}
+.HOPPA07612 li{float:left}
+#HOPPA07612-1, #HOPPA07612-2 {float:left;height:58px;width:300px}
+#HOPPA07612-1{border-right:1px solid #d8d8d8;padding:0 17px 0 8px}
+#HOPPA07612-2{border-left:1px solid #fff;padding:0 3px 0 17px}
+
+/*HOHEE08612, HOHEE08903 headRetranca*/
+.HOHEE08612,.HOHEE08906,.headRetranca{border-top:2px solid #6d8495}
+.HOHEE08612 h2,.HOHEE08906 h2,.headRetranca h2{border-top:1px solid #fff;font-size:1.667em;background:url(../images/bg-retranca.gif);padding:0 7px 0 12px;height:45px;line-height:44px}
+.headRetranca form{border-top:1px solid #fff;background:url(../images/bg-retranca.gif);height:39px;padding-top:5px}
+.HOHEE08612 h2 a, .HOHEE08906 h2 a,.headRetranca h2 a{float:left;color:#3B454E;background-position:right -322px;padding-right:15px}
+.HOHEE08612 h2 a span, .HOHEE08906 h2 a span,.headRetranca h2 a span{color:#0b73b4;font-size:1em;font-weight:normal;letter-spacing:-4px;text-indent:-1500em;display:none}
+
+/*HOCHE07906*/
+.HOCHE07906 img{float:left;margin-right:15px}
+.HOCHE07906 div{float:right;width:148px;margin-top:18px}
+.HOCHE07906 div h3{font-size:0.917em;margin-bottom:3px;text-transform:uppercase}
+.HOCHE07906 div h3 a{color:#333;}
+.HOCHE07906 div h4{font-size:1.5em;font-weight:normal}
+
+/*HOCHE0810, HOCHE083066, HOCHE10806*/
+.HOCHE08106 h3,.HOCHE08306 h3, .chamada11-18 h3{font-size:0.917em;margin-bottom:3px;text-transform:uppercase}
+.HOCHE08106 h4,.HOCHE08306 h4, .chamada11-18 h4{font-size:1.5em;font-weight:normal;margin-bottom:10px}
+.HOCHE08106 p,.HOCHE08306 p{font-size:1em}
+.HOCHE08106 h3 a{color:#333}
+/*HOCHE08306*/
+.HOCHE08306 h4{font-size:2em}
+
+/*HOHEE07712*/
+.HOHEE08906,.HOHEE07712,.HOHEE08612{position:relative;}
+.HOHEE07712 a, .HOHEE08906 a{position: absolute;top: 7px;right: 10px;}
+.HOHEE08612 a{position: absolute;top: 7px;right: 10px;}
+.HOHEE07712 h2 a, .HOHEE08906 h2 a, .HOHEE08612 H2 a{float: left;color: #3B454E;background-position: right -322px;padding-right: 15px;position:relative;top: 0;right: 0;}
+
+/*HOCHE08406*/
+.HOCHE08406 img{float:left}
+.HOCHE08406 div{float:right;width:148px;margin-top:18px;margin:18 0 7px 15px}
+.HOCHE08406 div h3{font-size:0.917em;margin-bottom:3px;text-transform:uppercase}
+.HOCHE08406 div h4{font-size:1.5em;font-weight:normal}
+.HOCHE08406 p{clear:both;font-size:1em}
+
+/*PPA00612*/
+.PPA00612{background:#F8F8F8;clear:both}
+.PPA00612 ul{float:left;padding:10px;width:632px}
+.PPA00612 ul li{float:left;padding-right:38px;margin-right:38px;border-right:1px solid #dfdfdf}
+.PPA00612 ul li.posRight{float:right;padding-right:0!important;margin-right:0!important}
+#PPA00612-1, #PPA00612-2, #PPA00612-3{float:left;width:158px;height:58px}
+
+/*HOHEE08612*/
+.HOHEE08612 p{border-top:1px solid #fff;padding:0 10px;color:#fff;background:#bdc7d0;font-size:1.5em;height:31px;line-height:31px}
+
+/*HOCHE08703*/
+.HOCHE08703{margin-right:20px;}
+.HOCHE08703 h3{font-size:0.917em;margin-bottom:3px;text-transform:uppercase}
+.HOCHE08703 h3 a{color:#333}
+.HOCHE08703 img{display:block}
+.HOCHE08703 h4{padding-top:5px;clear:both;font-size:1.5em}
+.HOCHE08703 h4 a{font-weight:normal}
+
+/*HOHEE08906*/
+.HOHEE08906{margin:0 20px 20px 0}
+.HOHEE08906 div.adRetranca{float:right;margin:-40px 10px 0 0;}
+
+/* HOCHE07806 */
+.HOCHE07806 h3{font:bold 11px Arial;text-transform:uppercase;margin-bottom:1px}
+.HOCHE07806 h3 a{color:#333}
+.HOCHE07806 h4 a{font:bold 24px Arial}
+
+/* HOCHE08212 */
+.HOCHE08212 {float:left;margin-top:20px;height:310px;overflow:hidden;}
+.HOCHE08212 ul{overflow:hidden;height:232px;background:#f2f4f5;margin-top:20px}
+.HOCHE08212 ul li{display:block;width:652px;position:relative}
+.HOCHE08212 ul li img.destaque{float:left;margin-right:20px;margin-top: -20px;}
+.HOCHE08212 ul li h3 {font:bold 0.917em Arial;margin:20px 0 5px 0;text-transform:uppercase;}
+.HOCHE08212 ul li h3 a {color:#333;}
+.HOCHE08212 ul li h4 {font:bold 2em Arial;margin-bottom:15px}
+.HOCHE08212 ul li p a {color:#333;font:normal 1em Arial;}
+.HOCHE08212 ul li a.all{background:url(../images/spriteHome-smush.png) no-repeat -312px -10px;padding-left:9px;position:absolute;left:400px;bottom:50px;font:bold 12px Arial;}
+
+/* Retranca com navegaÃƒÂ§ÃƒÂ£o */
+.headRetranca nav.tvFlashNav{visibility:hidden;float:right;padding:10px;background:url(../images/bg-retranca.gif)}
+.headRetranca nav.tvFlashNav div{float:left}
+.headRetranca nav.tvFlashNav a{display:block;width:24px;height:24px;background:url(../images/spriteHome-smush.png) no-repeat;background-position:-24px -149px;float:left;text-indent:-9999px}
+.headRetranca nav.tvFlashNav a.voltar{margin-right:6px}
+.headRetranca nav.tvFlashNav a.avancar:hover,.headRetranca nav.tvFlashNav a.voltar:hover {background-position:-50px -149px;}
+.headRetranca nav.tvFlashNav a.voltar:active{background-position:-617px -170px}
+.headRetranca nav.tvFlashNav a.avancar {background-position:-24px -173px;margin-left:6px;}
+.headRetranca nav.tvFlashNav a.avancar:hover{background-position:-50px -173px}
+.headRetranca nav.tvFlashNav a.avancar:active{background-position:-642px -170px}
+.headRetranca nav.tvFlashNav .slide{width:9px;background-position:-92px -146px;margin:0 3px}
+.headRetranca nav.tvFlashNav .slide.ativo{background-position:-82px -146px;}
+
+/*HOLIE09012*/
+.HOLIE09012 {position:relative;float:left;margin-top:20px;height:310px;overflow:hidden}
+.HOLIE09012 ul{overflow:hidden;height:242px;margin-top:20px}
+.HOLIE09012 ul.slider .nomgr{margin-right:20px!important}
+.HOLIE09012 ul li{position:relative;display:block;width:138px;height:232px;border:1px solid #dce4e9;margin-right:20px;padding:4px}
+.HOLIE09012 ul li h3 {font-size:1.167em;text-transform:uppercase;height:34px;line-height:34px;text-align:center;margin-bottom:10px;color:#fff;background-position:-131px -26px}
+.HOLIE09012 ul li a.figure{float:left;position:relative;width:138px;height:86px;margin-bottom:3px}
+.HOLIE09012 ul li span{position:absolute;width:3px;height:3px}
+.HOLIE09012 ul li span.canto-se{top:0;left:0;background-position:-106px -54px}
+.HOLIE09012 ul li span.canto-sd{top:0;right:0;background-position:-109px -54px}
+.HOLIE09012 ul li span.canto-ie{bottom:0;left:0;background-position:-106px -57px}
+.HOLIE09012 ul li span.canto-id{bottom:0;right:0;background-position:-109px -57px}
+.HOLIE09012 ul li span.fora{background-color:#e8edf0}
+.HOLIE09012 ul li span.canto-se.fora{top:-1px;left:-1px}
+.HOLIE09012 ul li span.canto-sd.fora{top:-1px;right:-1px}
+.HOLIE09012 ul li span.canto-ie.fora{bottom:-1px;left:-1px}
+.HOLIE09012 ul li span.canto-id.fora{bottom:-1px;right:-1px}
+.HOLIE09012 ul li h4 {clear:both;font:bold 1em Arial;font-weight:normal;padding:4px;height:54px}
+.HOLIE09012 ul li a.botao{float:left;width:81px;height:32px;line-height:31px;text-align:center;margin-left:26px;background-position:-699px -151px;font-size:1em;font-weight:bold}
+.HOLIE09012 ul li a.botao:hover{background-position:-782px -151px;text-decoration:none}
+.HOLIE09012 ul li a.botao:active{background-position:-865px -151px}
+
+/*HOLIE09218 - RodapÃƒÂ©*/
+.HOLIE09218{border-top:7px solid #6d8495;background:#f5f7f7;padding:16px 0 12px}
+.HOLIE09218 .column{position:relative;float:left;border-right:1px dotted #d7d7d7;padding:0 10px 0 20px;width:137px}
+.HOLIE09218 .coluna1{padding-left:10px}
+.HOLIE09218 .coluna6{border:none;width:132px;padding-right:6px}
+.HOLIE09218 ul li{font-size:1em;line-height:20px;float:left;width:100%}
+.HOLIE09218 ul li.primeiro a,.HOLIE09218 ul li.retranca a{font-size:1.167em;font-weight:bold;color:#333;background-position:right -334px;padding-right:15px;float:left}
+.HOLIE09218 ul li a span{color:#0b73b4;font-size:1.417em;font-weight:normal;letter-spacing:-4px;background-position:-631px -177px;text-indent:-1500em;display:none}
+.HOLIE09218 ul li.primeiro{margin:-4px 0 9px}
+.HOLIE09218 ul li.retranca{margin:27px 0 9px}
+
+/*HOCHE09318*/
+.HOCHE09318 li{float:left;border-right:1px dotted #d7d7d7;padding:38px 10px 38px 20px;width:137px;line-height:14px;position:relative}
+.HOCHE09318 figure{float:left;width:30px;height:31px;overflow:hidden;margin-right:10px}
+.HOCHE09318 li.twitter img{margin:-53px 0 0 -271px}
+.HOCHE09318 li.twitter{padding-left:10px}
+.HOCHE09318 li.facebook img{margin:-53px 0 0 -302px}
+.HOCHE09318 li.rss img{margin:-53px 0 0 -333px}
+.HOCHE09318 li.sms img{margin:-53px 0 0 -364px}
+.HOCHE09318 li.newsletter img{margin:-53px 0 0 -395px}
+.HOCHE09318 li.widget img{margin:-53px 0 0 -426px}
+.HOCHE09318 li.widget{border:0;padding-right:0}
+.HOCHE09318 h3{float:left;width:96px;font-size:1.167em;margin-top:-1px}
+.HOCHE09318 h3 a{color:#333}
+.HOCHE09318 h4{font-style:normal;font-weight:bold;font-size:0.833em}
+
+/*HOCHE09418*/
+.HOCHE09418 ul{float:left;width:550px;height:21px;padding: 9px 0 8px;margin-top:12px;background-position:0 -279px}
+.HOCHE09418 ul li{float:left;height:20px;line-height:20px;padding:0 7px 1px 7px;border-right:1px solid #26609e;border-left:1px solid #297eb4}
+.HOCHE09418 ul li.primeiro{border-left:0;padding-left:18px}
+.HOCHE09418 ul li.ultimo{border-right:0}
+.HOCHE09418 li a{color:#fff;font-size:0.917em;font-weight:bold}
+.HOCHE09418 div.barra{float:left;margin-top:12px;height:38px;line-height:38px;width:322px;background-position:0 -237px;font-size:0.917em;font-weight:bold;color:#fff;padding-left:53px;padding-rigth:9px}
+.HOCHE09418 div.barra a{color:#fff;font-weight:bold}
+.HOCHE09418 a.ig{float:left;width:53px;height:50px;overflow:hidden}
+.HOCHE09418 a.ig img{margin:-34px 0 0 -466px}
+
+/*HOCHE09112*/
+.HOCHE09112{background:#333;height:238px;padding:20px;width:612px;position:relative;margin:20px 0 10px 0;border-radius:5px;}
+.HOCHE09112 h2.tvIg{width:95px;height:33px;overflow:hidden;display:block;margin-bottom:30px}
+.HOCHE09112 h2.tvIg img{margin:-149px 0 0 -99px}
+.HOCHE09112 .tvFlashNav{display:none;}
+.HOCHE09112 .tvFlashNav a.voltar, .HOCHE09112 .tvFlashNav a.avancar{display:none;}
+.HOCHE09112 .tvFlashNav div a{width:128px;height:26px;background:url(../images/spriteHome-smush.png) no-repeat -204px -184px;display:block;font:bold 12px Arial;color:#949494;padding:9px 0 0 10px;margin-bottom:5px}
+.HOCHE09112 .tvFlashNav div a.ativo{background-position: -204px -149px;color:#fff}
+.HOCHE09112 div.videos{overflow:hidden;width:455px;height:206px;border-bottom:2px solid #484848;float:right;position:relative;}
+.HOCHE09112 div.videos ul li{float:left;margin-right:25px;width:204px;height:206px;}
+.HOCHE09112 div.videos ul li h3{font:bold 11px Arial;text-transform:uppercase;margin:5px 0 3px 0;}
+.HOCHE09112 div.videos ul li h3 a{color:#999;}
+.HOCHE09112 div.videos ul li h4 a{font:bold 14px Arial;color:#fff;}
+.HOCHE09112 ol{position:absolute;top:245px;right:30px;color:#7e7e7e;font:bold 12px Arial;}
+.HOCHE09112 ol li{float:left;border-right:1px solid #7e7e7e;padding:0 10px;}
+.HOCHE09112 ol li.last, .HOCHE09112 ol li.chamadaTemas{border:none;padding-right:0;}
+.HOCHE09112 ol li a{color:#fff;}
+.HOCHE09112 ul li a.img{float:left;margin-bottom:8px;width:204px;height:115px;position:relative}
+.HOCHE09112 ul li a.img span.play{float:left;width:38px;height:29px;position:absolute;bottom:5px;left:5px;background-position:-101px -186px}
+
+/*FEA08806*/
+.FEA08806 {width:316px;overflow x:hidden;color:#6d8495;font:normal 12px Arial;}
+.FEA08806 .headRetranca{margin-bottom:20px}
+.FEA08806 .cRed{color:red!important;font-size:12px!important;}
+.FEA08806 label{font-weight:bold;margin-bottom:5px;line-height:20px;}
+.FEA08806 div{float:left;}
+.FEA08806 .half{width:149px;}
+.FEA08806 .rgh{float:right;}
+.FEA08806 .full{margin-bottom:20px;position:relative}
+.FEA08806 .full div{width:296px;height:32px;line-height:32px;background-color:#f5f7f7;color:#dadfdf;font-size:36px;font-weight:bold;padding:10px;}
+.FEA08806 .full cite{color:#6d8495;font-size:10px;float:right;margin-top:4px;}
+.FEA08806 ul li{margin-top:3px;font-size:1em;padding-left:8px;background-position:-311px -10px !important}
+.FEA08806 a{color:#08629a;text-decoration:none;}
+.FEA08806 #valor {background: url(../images/sprite-fe-moedas.png) repeat scroll -184px -88px transparent;height:36px;line-height:38px;padding:0 15px 0 10px;width:289px;color:#dadfdf;font-size:18px;font-weight:bold;}
+.FEA08806 #cvt {background: url("../images/sprite-fe-moedas.png") repeat scroll -690px -6px transparent;color:#fff;cursor:pointer;font:bold 12px Arial;height:32px;width:96px;top:22px;*top:23px;right:2px;position:absolute}
+.FEA08806 #cvt:hover{background-position:-690px -52px}
+.FEA08806 #cvt:active{background-position:-584px -52px;-ms-background-position-x: 1px; -ms-background-position-y: -29px}
+.FEA08806 .box-drop{width:157px;height:32px;background:url(../images/sprite-fe-moedas.png) 0px 0px;color:#CCC;position:relative;margin-bottom:20px;}
+.FEA08806 .box-drop.aberto{background-position:0px -88px;}
+.FEA08806 .box-drop a.open-drop{display:block;color:#666;width:137px;padding:8px 5px;text-decoration:none;font-weight:bold;}
+.FEA08806 .box-drop-extended{z-index:99990000;height:220px;overflow-x:hidden;width:148px;}
+.FEA08806 .drop-extended {border-right:1px solid #ddd}
+.FEA08806 .drop-extended li{width:140px;border-right:none!important}
+.FEA08806 .drop-extended li a{display:block;width:126px;line-height:15px;padding:5px 5px;color:#666;text-decoration:none;}
+.FEA08806 .drop-bg-bottom{width:148px}
+
+/*HOCHE09712*/
+.HOCHE09712 div.cont{float:left;background:url(../images/bg-retranca.gif);width:652px;padding-bottom:12px}
+.HOCHE09712 cite{display:block;font-size:0.917em;text-transform:uppercase;font-style:normal;font-weight:bold;padding-left:20px;height:20px;line-height:20px}
+.HOCHE09712 h2{font-size:2.833em;padding:10px 0 0 20px;border-top:2px solid #fff}
+.HOCHE09712 ul li{margin-top:3px;padding-left: 8px;background-position: -311px -10px;font-size:1em;font-weight:bold;margin-left:20px}
+
+/* HOCHE09812 e HOCHE15812 */
+.HOCHE09812 div.cont{background:url(../images/bg-retranca.gif);width:652px}
+.HOCHE09812 cite{display:block;font-size:0.917em;text-transform:uppercase;font-style:normal;font-weight:bold;padding-left:20px;height:20px;line-height:20px}
+.HOCHE09812 h2{font-size:2.833em;padding:10px 20px 13px 20px;border-top:2px solid #fff}
+.HOCHE09812.HOCHE15812 h2{border:none;}
+/* destaques HOCHE15812*/
+.HOCHE15812 div.destaques, .HOCHE09812 div.destaques {margin-top:10px}
+.HOCHE15812 div.destaques div, .HOCHE09812 div.destaques div{margin-right:20px;}
+.HOCHE15812 div.destaques div h3, .HOCHE09812 div.destaques div h3{display:block;font:bold 11px/22px Arial;width:100%;text-transform:uppercase;color:#333;}
+.HOCHE15812 div.destaques div a, .HOCHE09812 div.destaques div a{font:bold 16px Arial;color:#08629a;}
+
+
+/*HOCHE10912*/
+.HOCHE10912 div.cont{float:left;background:url(../images/bg-retranca.gif);width:652px;margin-bottom:12px}
+.HOCHE10912 cite{display:block;font-size:0.917em;text-transform:uppercase;font-style:normal;font-weight:bold;padding-left:20px;height:20px;line-height:20px}
+.HOCHE10912 h2{font-size:2.833em;padding:10px 0 13px 20px;border-top:2px solid #fff}
+.HOCHE10912 .lista .issues{float:left;width:204px;margin-right:20px}
+.HOCHE10912 h3{text-transform:uppercase;font-size:0.917em}
+.HOCHE10912 h4{font-size:1.5em}
+
+.urgente cite{background:#9c1010;color:#fff}
+.urgente h2,.urgente a, .urgente div.destaques div a{color:#9c1010}
+.esportes cite{background:#47790c;color:#fff}
+.esportes h2,.esportes a, .esportes div.destaques div a{color:#47790c}
+.destAzul cite{background:#296fa7;color:#fff}
+.destAzul h2,.destAzul a, .destAzul div.destaques div a{color:#296fa7}
+
+/* HOCHE16512 */
+.HOCHE16512 p{font: bold 11px Arial;color: #333;margin: 20px 0 10px 0;text-transform:uppercase;}
+.HOCHE16512 h3 a{font-size: 24px;}
+
+.box-drop{height:32px;background:url(../images/sprite-fe-moedas.png) 0px 0px;color:#CCC;position:relative;margin-bottom:20px}
+.box-drop a{font-size:1em}
+.box-drop.aberto{background-position:0px -122px}
+.box-drop .drop-bg-topo{display:none}
+.box-drop li{width:80px;margin:0;text-align:left}
+.box-drop a.open-drop{display:block;color:#666;width:137px;padding:8px 5px;text-decoration:none;font-weight:bold}
+.box-drop a.open-drop span{display:block;width:108px;overflow:hidden;white-space:nowrap}
+.box-drop-extended{z-index:99990000;height:214px;width:148px;background:#fff;margin-top:-1px}
+.box-drop-extended ul{overflow-y:scroll;overflow-x:hidden;height:210px}
+.drop-extended li{height:26px;border:1px solid #dddddd;border-top:0;border-bottom:0;background:none;color:#666;list-style:none;margin-left:0}
+.drop-extended li a{display:block;line-height:15px;padding:5px 5px;color:#666;text-decoration:none}
+.box-drop-extended li a:hover{color:#08629a}
+.drop-bg-bottom{background:url(../images/sprite-fe-moedas.png) 0 -159px;height:3px}
+
+
+
+
+/*FEE09606*/
+.FEE09606 li{float:left;width:92px;margin:16px 20px 0 0;text-align:center} 
+.FEE09606 h3{font-size:1em;margin-bottom:7px}
+.FEE09606 ul{float:left}
+.FEE09606 .container{border:1px solid #dedede;position:relative;padding:11px 0 8px;float:left;width:100%}
+.FEE09606 .container a strong{display:block;font-weight:normal;font-size:2em}
+.FEE09606 .container a strong span{font-weight:bold}
+.FEE09606 .container a cite{font-style:normal;font-size:0.917em}
+.FEE09606 .container a:hover{text-decoration:none}
+.FEE09606 .container a:hover cite{text-decoration:underline}
+.FEE09606 .situacao{margin-top:15px}
+.FEE09606 .situacao span{float:left;width:23px;height:23px;margin:0 5px 0 9px}
+.FEE09606 .situacao cite{font-style:normal;font-size:1em;color:#6d8495;float:left;margin-top:4px}
+.FEE09606 li.lento .container a strong{color:#c03434}
+.FEE09606 li.lento .sprite{background-position:-210px -91px}
+.FEE09606 li.medio .container a strong,.FEE09606 li.bom .container a strong{color:#138a00}
+.FEE09606 li .sprite{background-position:-234px -91px}
+.FEE09606 .container span.fora{position:absolute;width:3px;height:3px}
+.FEE09606 .container span.canto-se{top:-1px;left:-1px;background-position:-106px -54px}
+.FEE09606 .container span.canto-sd{top:-1px;right:-1px;background-position:-109px -54px}
+.FEE09606 .container span.canto-ie{bottom:-1px;left:-1px;background-position:-106px -57px}
+.FEE09606 .container span.canto-id{bottom:-1px;right:-1px;background-position:-109px -57px}
+.FEE09606 .container span.fora{background-color:#e8edf0}
+.FEE09606 .headRetranca form{float:right;width:103px}
+.FEE09606 .box-drop a.open-drop{width:87px}
+.FEE09606 .box-drop a.open-drop span{display:block;width:57px;overflow:hidden}
+.FEE09606 .box-drop{width:97px;background:url(../images/spriteHome-smush.png) -384px -86px}
+.FEE09606 .box-drop a{font-size:1em}
+.FEE09606 .box-drop li{width:148px;margin:0;text-align:left}
+.FEE09606 .drop-bg-bottom{background:url(../images/spriteHome-smush.png) -384px -86px}
+
+/* HOLIE09912 (TVFlash colunistas) */
+.HOLIE09912 div.HOLIE099tv{height: 266px;overflow: hidden;position:relative;}
+.HOLIE09912 ul {height:266px;overflow:hidden;margin-top:20px;}
+.HOLIE09912 ul li{margin-right:20px;height:265px}
+.HOLIE09912 ul.slider li.nomgr{margin-right:20px!important;}
+.HOLIE09912 ul li div {margin-bottom:20px;padding-bottom:20px;border-bottom:1px dotted #d7d7d7;float:left}
+.HOLIE09912 ul li div img{float:left;border:none;}
+.HOLIE09912 ul li div h3 {font: bold 0.917em Arial;display:inline-block;width:200px;margin: 0 0 5px 15px}
+.HOLIE09912 ul li div h3 a{color:#333;}
+.HOLIE09912 ul li div p{float:left;margin-left:15px;width:195px}
+.HOLIE09912 ul li div p a{font:normal 1.5em Arial;display:block;color:#08629a}
+
+/*FEA10006*/
+.FEA10006 table{width:100%;margin-top:10px}
+.FEA10006 table th{background:#f2f4f5;color:#6d8495;font-size:0.833em;text-align:center;height:21px;line-height:21px}
+.FEA10006 table th.first{width:114px}
+.FEA10006 table th.middle{width:90px}
+.FEA10006 table th.last{width:109px}
+.FEA10006 table tbody tr td{border-left:1px solid #efefef;padding-left:10px;height:39px;line-height:39px}
+.FEA10006 table tbody tr.linhaalt td{background:#f8f8f8}
+.FEA10006 table tbody tr td.bdr{border-right:1px solid #efefef}
+.FEA10006 table tfoot td{text-align:right;font-size:0.833em;color:#6d8495}
+.FEA10006 table tfoot tr.rfoot td{height:30px;line-height:30px}
+.FEA10006 table tfoot tr.bdfoot td{height:3px;font-size:0;background:url(../images/spriteHome-smush.png) no-repeat}
+.FEA10006 table tfoot tr.bdfoot td.first{background-position:-26px -227px}
+.FEA10006 table tfoot tr.bdfoot td.middle{background-position:-46px -227px}
+.FEA10006 table tfoot tr.bdfoot td.last{background-position:-231px -227px}
+.FEA10006 .name{font-weight:bold;color:#6d8495}
+.FEA10006 .value{font-weight:bold;color:#333}
+.FEA10006 .value span{font-weight:normal}
+.FEA10006 .value strong{font-size:1.5em}
+.FEA10006 .variable{font-size:2em}
+.FEA10006 .baixa{color:#c03434}
+.FEA10006 .alta{color:#4d9110}
+.FEA10006 .variable span{float:left;width:20px;height:18px;margin:10px 8px 0 0}
+.FEA10006 .alta span{background-position:-511px -87px}
+.FEA10006 .baixa span{background-position:-488px -87px}
+
+/*FEA10106*/
+.FEA10106{width:316px}
+.FEA10106 hgroup{margin-top:20px}
+.FEA10106 hgroup h3{font-size:16px;font-weight:bold;color:#333;}
+.FEA10106 hgroup h4{clear:both;font-size:12px;font-weight:bold;color:#6d8495;line-height:22px}
+.FEA10106 .grau{font:bold 30px arial;background:url(../images/sprite-fe-tempo.png) no-repeat -1397px -51px;margin-top:20px}
+.FEA10106 .grau .min{color:#40b7ee;border-right:1px solid #e8e8e8;line-height:31px;margin-right:8px;padding-right:14px;font-style:normal}
+.FEA10106 .grau .max{color:#e43e15;font-style:normal}
+.FEA10106 .previsao{float:left;margin-top:20px}
+.FEA10106 .previsao li{float:left;margin-right:18px;width:93px;height:84px;background:url(../images/sprite-fe-tempo.png) no-repeat 0px 0px;}
+.FEA10106 .previsao p{margin:4px 0 0 6px;width:80px;height:84px;line-height:136px;vertical-align:text-bottom;text-align:center;background:url(../images/sprite-fe-tempo.png) no-repeat}
+.FEA10106 .previsao .img1{background-position:-99px 4px} /* 1 - Sol. */
+.FEA10106 .previsao .img2{background-position:-179px 4px} /* 1n - Noite sem nuvens. */
+.FEA10106 .previsao .img3{background-position:-261px 4px} /* 2n - Noite com algumas nuvens.*/
+.FEA10106 .previsao .img4{background-position:-340px 4px} /* 2 - Sol com algumas nuvens. */
+.FEA10106 .previsao .img5{background-position:-420px 4px} /* 3 - nublado.  */
+.FEA10106 .previsao .img6{background-position:-500px 4px} /* 2rn - Noite com muitas nuvens. */
+.FEA10106 .previsao .img7{background-position:-578px 4px} /* 2r - Sol com muitas nuvens. */
+.FEA10106 .previsao .img8{background-position:-660px 4px} /* 3n - nublado? */
+.FEA10106 .previsao .img9{background-position:-741px 4px} /* 4rn - Noite nublada e chuvosa. */
+.FEA10106 .previsao .img10{background-position:-816px 4px} /* 4r - Sol com muitas nuvens e chuva. */
+.FEA10106 .previsao .img11{background-position:-900px 4px} /* 5n - Chuvoso. */
+.FEA10106 .previsao .img12{background-position:-980px 4px} /* 4n - Noite chuvosa. */
+.FEA10106 .previsao .img13{background-position:-1062px 4px} /* 4 - Sol  e chuva. */
+.FEA10106 .previsao .img14{background-position:-1140px 4px} /* 5 - Chuvoso. */
+.FEA10106 .previsao .img15{background-position:-1217px 7px} /* 6 - Chuva e trovoadas. 6n - Chuva e trovoadas.?*/
+.FEA10106 .previsao .img16{background-position:-1302px 4px} /* 9 - Nevoeiro */
+.FEA10106 .previsao .img17{background-position:-1381px 4px} /* 9n- Nevoa */
+.FEA10106 .previsao .img18{background-position:-1460px 4px} /* 8n - Neve. 8   - Neve.*/
+.FEA10106 .previsao .img19{background-position:-1538px 4px} /* 7 - Geada. 7n - Geada.*/
+.FEA10106 .veja{float:left;padding-top:20px;margin-left:15px}
+.FEA10106 .veja li{list-style:disc!important}		
+.FEA10106 .outracidade{margin-top:20px;background:url(../images/sprite-fe-moedas.png) repeat scroll -184px -88px transparent;height:36px;line-height:38px;padding:0 15px 0 10px;width:305px;color:#dadfdf;font-size:18px;}
+.FEA10106 .previsaoTempoBox {background: #F8F8F8;padding:8px;margin-top:20px;}
+.FEA10106 .previsaoTempoBox #seloPrevisaoTempo {width:300px; height:58px;}
+
+/*FEE10306*/
+.FEE10306{margin-bottom:20px}
+.FEE10306 h2{margin-bottom:20px}
+.FEE10306 ul li{float:left;width:68px;height:80px;margin:0 14px 9px 0}
+.FEE10306 ul li a{float:left;width:68px;height:80px;background:url(http://i0.ig.com/ig/images/horoscopo.png) no-repeat}
+.FEE10306 ul li a:hover{background-position:right top}
+.FEE10306 ul li a span{float:left;width:66px;height:56px;overflow:hidden;margin-top:3px}
+.FEE10306 ul li a strong{display:block;text-align:center;font-size:0.917em}
+.FEE10306 ul li a:hover strong{text-decoration:underline}
+.FEE10306 ul li a.aries img{margin:5px 0 0 -73px}
+.FEE10306 ul li a.touro img{margin:5px 0 0 -135px}
+.FEE10306 ul li a.gemeos img{margin:5px 0 0 -195px}
+.FEE10306 ul li a.cancer img{margin:5px 0 0 -255px}
+.FEE10306 ul li a.leao img{margin:5px 0 0 -317px}
+.FEE10306 ul li a.virgem img{margin:5px 0 0 -377px}
+.FEE10306 ul li a.libra img{margin:1px 0 0 -436px}
+.FEE10306 ul li a.escorpiao img{margin:3px 0 0 -498px}
+.FEE10306 ul li a.sargitario img{margin:5px 0 0 -552px}
+.FEE10306 ul li a.capricornio img{margin:5px 0 0 -618px}
+.FEE10306 ul li a.aquario img{margin:5px 0 0 -678px}
+.FEE10306 ul li a.peixes img{margin:5px 0 0 -738px}
+.FEE10306 ol{clear:both;padding-top:16px}
+.FEE10306 ol li{margin-top:3px;font-size:1em;padding-left:8px;background-position:-311px -10px}
+
+/*HOLIE10506*/
+.HOLIE10506{margin-bottom:20px}
+.HOLIE10506 h2{margin-bottom:20px}
+.HOLIE10506 ul li{float:left;width:316px;margin-bottom:18px}
+.HOLIE10506 ul li img{float:left;margin-right:20px}
+.HOLIE10506 ul li h3{float:left;width:204px;font-size:1.5em;color:#6d8495;margin:-4px 0 0}
+.HOLIE10506 ul li ol{float:left;width:204px}
+.HOLIE10506 ul li ol li{margin:3px 0 0;float:none;width:auto;font-size:1em;padding-left:8px;background-position:-311px -10px}
+
+/*HOLIE10606*/
+.HOLIE10606{margin-bottom:20px}
+.HOLIE10606 h2{margin-bottom:20px}
+.HOLIE10606 ul li{float:left;width:316px;margin-bottom:20px}
+.HOLIE10606 ul li img{float:left;margin-right:20px}
+.HOLIE10606 ul li strong{float:left;width:204px;font-size:1.5em;margin:-4px 0 3px}
+.HOLIE10606 ul li cite{float:left;width:204px;font-size:1em;color:#333;font-style:normal}
+.HOLIE10606 ul li a:hover strong{text-decoration:underline}
+.HOLIE10606 ul li a:hover cite{text-decoration:underline}
+
+/*HOLIE10706*/
+.FEE10706{margin-bottom:20px}
+.FEE10706 h2{margin-bottom:20px}
+.fbLikeBox{height:258px;}
+
+/*HOCHE10806*/
+.HOCHE10806{margin-right:20px}
+.HOCHE10806 h4{float:left}
+.HOCHE10806 .adRetranca{float:right;}
+
+/*HOLIE11012*/
+.HOLIE11012 {position:relative;float:left;height:88px}
+.HOLIE11012 h2{height:20px;line-height:20px;background:#9c1010;font-size:0.917em;text-transform:uppercase;padding-left:10px;color:#fff;border-bottom:2px solid #fff}
+.HOLIE11012 .cont{float:left;background:url(../images/bg-retranca.gif);width:652px;padding:10px 0}
+.HOLIE11012 .shown{overflow:hidden;float:left;width:542px;height:47px;position:relative}
+.HOLIE11012 ul{overflow:hidden;height:47px}
+.HOLIE11012 ul li{float:left;width:542px}
+.HOLIE11012 figure{float:left;width:78px;text-align:center;border-right:1px solid #999}
+.HOLIE11012 figure span{float:left;width:26px;height:26px;overflow:hidden;margin:0 0 5px 26px}
+.HOLIE11012 figure p{clear:both;font-weight:bold;font-size:1.167em;color:#666}
+.HOLIE11012 img{margin:-156px 0 0 -353px}
+.HOLIE11012 .borda{float:left;height:47px;border-left:1px solid #fff;width:442px;padding-left:19px}
+.HOLIE11012 h3{font-size:1.167em;font-weight:normal;text-transform:uppercase;margin:6px 0 4px}
+.HOLIE11012 h3 a{color:#9c1010}
+.HOLIE11012 .borda p{font-size:1em;font-weight:bold}
+.HOLIE11012 .borda p a{color:#333}
+.HOLIE11012 nav.tvFlashNav{float:right;margin:10px}
+.HOLIE11012 nav.tvFlashNav a{display:block;width:24px;height:24px;background:url(../images/spriteHome-smush.png) no-repeat;background-position:-24px -149px;float:left;text-indent:-9999px}
+.HOLIE11012 nav.tvFlashNav a.voltar{margin-right:3px}
+.HOLIE11012 nav.tvFlashNav a.voltar:hover {background-position:-353px -190px}
+.HOLIE11012 nav.tvFlashNav a.avancar {background-position:-24px -173px;margin-left:6px;}
+.HOLIE11012 nav.tvFlashNav a.avancar:hover {background-position:-378px -190px}
+
+/*HOLIE11112*/
+.HOLIE11112 {position:relative;float:left;height:88px}
+.HOLIE11112 h2{height:20px;line-height:20px;background:#47790c;font-size:0.917em;text-transform:uppercase;padding-left:10px;color:#fff;border-bottom:2px solid #fff}
+.HOLIE11112 .cont{float:left;background:url(../images/bg-retranca.gif);width:652px;padding:10px 0}
+.HOLIE11112 .shown{float:left;width:555px;height:47px;position:relative;overflow: hidden;}
+.HOLIE11112 ul{overflow:hidden;height:47px}
+.HOLIE11112 ul li{float:left;width:555px}
+.HOLIE11112 figure{float:left;width:78px;text-align:center;border-right:1px solid #999}
+.HOLIE11112 figure span{float:left;width:26px;height:26px;overflow:hidden;margin:0 0 5px 26px}
+.HOLIE11112 figure p{clear:both;font-weight:bold;font-size:1.167em;color:#666}
+.HOLIE11112 figure img{margin:-156px 0 0 -353px}
+.HOLIE11112 .borda{float:left;height:47px;border-left:1px solid #fff;width:400px;padding-left:19px}
+.HOLIE11112 img{float:left}
+.HOLIE11112 img.timemandante{margin:7px 14px 0 0}
+.HOLIE11112 img.timevisitante{margin:7px 20px 0 9px}
+.HOLIE11112 strong{float:left;font-size:2.5em;margin-top:5px}
+.HOLIE11112 span{float:left;font-size:2em;color:#999;margin:12px 2px 0}
+.HOLIE11112 div.cites{float:left;margin-top:7px}
+.HOLIE11112 div.cites cite.citacao{display:block;font-style:normal;font-weight:bold;font-size:1em;line-height:16px}
+.HOLIE11112 a.sprite{float:right;width:99px;padding:0 1px 1px 0;height:32px;line-height:32px;background-position:-453px -196px;text-align:center;font-size:1em;color:#47790c;text-transform:uppercase;margin-top:6px}
+.HOLIE11112 nav.tvFlashNav{float:right;margin:10px}
+.HOLIE11112 nav.tvFlashNav a{display:block;width:24px;height:24px;background:url(../images/spriteHome-smush.png) no-repeat;background-position:-24px -149px;float:left;text-indent:-9999px}
+.HOLIE11112 nav.tvFlashNav a.voltar{margin-right:3px}
+.HOLIE11112 nav.tvFlashNav a.voltar:hover {background-position:-403px -190px}
+.HOLIE11112 nav.tvFlashNav a.avancar {background-position:-24px -173px;margin-left:6px;}
+.HOLIE11112 nav.tvFlashNav a.avancar:hover {background-position:-428px -190px}
+
+/* HOLIE16206 e HOLIE16306(tambem usa HOLIE11012) */
+.HOLIE16206 .cont, .HOLIE16306 .cont{width:316px}
+.HOLIE16206 .shown, .HOLIE16306 .shown{width:230px;}
+.HOLIE16206 figure, .HOLIE16306 figure {width:60px;}
+.HOLIE16206  figure span,.HOLIE16306 figure span{margin-left:15px;}
+.HOLIE16206 ul, .HOLIE16206 .shown, .HOLIE16206 .borda, .HOLIE16306 ul, .HOLIE16306 .shown, .HOLIE16306 .borda{height:60px;}
+.HOLIE16206 ul li, .HOLIE16306 ul li{width:315px}
+.HOLIE16206 .borda,  .HOLIE16306 .borda{width:155px;padding-left:12px;}
+.HOLIE16206 figure, .HOLIE16306 figure{height: 60px;padding-top: 7px;}
+.HOLIE16306 img.timemandante{margin-right:10px;margin-top:0}
+.HOLIE16306 img.timevisitante {margin-right:0;margin-top:0}
+.HOLIE16306 span{margin-top:7px}
+.HOLIE16306 div.cites{margin-top:0;}
+.HOLIE16306 a{color:#333}
+.HOLIE16306 a:hover{text-decoration:none}
+
+/*PPA11206*/
+#PPA11206{float:left;border:1px solid #d0d0d0;width:314px}
+#PPA11206 a{color:#333}
+#PPA11206 img{float:left;width:102px;height:98px;margin-right:13px}
+#PPA11206 strong{display:block;margin-top:22px;font-size:14px}
+#PPA11206 cite,#PPA11206 span{display:block;font:normal 12px arial;margin-top:2px}
+
+/*PPA04906*/
+#PPA04906 #pubsidebar2{padding:8px;width:300px;background:#f8f8f8}
+#PPA04906 #masterText{padding-top: 10px;}
+#PPA04906 #masterText{background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #D0D0D0;height: 98px;width: 298px;}
+#PPA04906 #masterText .pubSmall{float:left;padding:23px 0 0 7px;font:bold 12px Arial;color:#999;width:88px;text-align:center}
+#PPA04906 #masterText .pubSmall #master2{padding-top:5px;width:77px;height:35px}
+#ticker_300x110_PPA04906{padding:7px;}
+
+/*PPA12306*/
+#PPA12306 {padding:8px; width:300px; background:#f8f8f8;}
+#PPA12306 #tickerTexto-2 {background: #FFF;border: solid 1px #D0D0D0; height: auto; clear: both; overflow: hidden; padding: 0 15px 0 0; height: 92px;}
+#PPA12306 .sofoto {float: left; margin-right:15px;}
+#PPA12306 strong {color: #333; display: block; font: bold 14px Arial; padding: 10px 0 0 0;}
+#PPA12306 i,
+#PPA12306 span {color: #000;display: block;font: 12px/18px Arial;text-align: justify;}
+
+/*SHOPPING*/
+.ig-shopping h3{border-top:1px solid #fff;font-size:1.667em;background:url(../images/bg-retranca.gif);padding:0 7px 0 12px;height:45px;line-height:44px;width:297px;margin-bottom:20px}.ig-shopping h3 a{color:#333;background-position:right -332px!important;padding-right:15px}#shoppingLayer{clear:both;width:316px;height:830px;background:#FFF;margin:0 0 20px}#shoppingLayer * {font-family:Arial,sans-serif}#shoppingLayer a{text-decoration:none}#shoppingLayer a:hover{text-decoration:underline}#shoppingLayer img{border:0 none}.SLrotate{display:block;clear:both}.SLrotate.SLsingle{position:relative;height:174px;_height:174px;margin:0 0 10px;padding:0}.SLrotate.SLsingle img.imgAnuncio,.SLrotate.SLbranded img.imgAnuncio {border:1px solid #d0d0d0!important;width:145px;height:145px}.SLrotate.SLbranded img.imgAnuncio{border:0 none!important}.SLrotate.SLsingle a.img,.SLrotate.SLbranded a.img{float:left;margin-right:11px}.SLrotate.SLsingle dl,.SLrotate.SLbranded dl{position:relative;height:147px;background:#F8F8F8;margin:0 0 10px;padding:0}.SLrotate.SLbranded dl{background:none}.SLrotate.SLsingle dt,.SLrotate.SLbranded dt{margin-bottom:2px;font:bold 11px Arial,sans-serif;text-transform:uppercase;padding:8px 10px 0 0}.SLrotate.SLsingle dt a,.SLrotate.SLbranded dt a{color:#08629a}.SLrotate.SLsingle dd,.SLrotate.SLbranded dd{font:normal 12px/18px Arial,sans-serif;padding-right:10px}.SLrotate.SLsingle dd a,.SLrotate.SLbranded dd a{color:#8C8C8C}.SLrotate.SLsingle a.SLoldPrice,.SLrotate.SLbranded a.SLoldPrice{font-size:11px;color:#8C8C8C;margin-top:10px;line-height:24px}.SLrotate.SLsingle dd.SLprice,.SLrotate.SLbranded dd.SLprice{display:block;position:absolute;width:155px;height:30px;bottom:50px;left:117px;margin:0 0 0 40px !important}.SLrotate.SLsingle dd.SLprice:before,.SLrotate.SLbranded dd.SLprice:before{color:#999}.SLrotate.SLsingle dd.SLprice span,.SLrotate.SLbranded dd.SLprice span{font:bold 25px Arial,sans-serif;letter-spacing:-1px;color:#333}.SLrotate.SLsingle dd.SLprice span small,.SLrotate.SLbranded dd.SLprice span small{font-size:18px}.SLrotate.SLsingle a.btn,.SLrotate.SLbranded a.btn{position:absolute;bottom:10px;right:10px;display:block;font-size:11px;text-transform:uppercase;color:#08629a;width:147px;height:32px;line-height:32px;text-align:center;background-position:-544px -33px;font-weight:bold}.SLrotate.SLsingle a.btn:hover,.SLrotate.SLbranded a.btn:hover{background-position:-544px -67px;text-decoration:none!important}.SLrotate.SLsingle a.btn:active,.SLrotate.SLbranded a.btn:active{background-position:-544px -101px}.SLrotate.SLgrid{position:relative}
+.SLrotate.SLgrid .SLprodutos{clear:both;min-height:430px;margin:20px 0 0}
+.SLrotate.SLgrid dl,.SLgrid dd,.SLgrid dt{list-style:none outside;font:normal 11px/14px Arial,sans-serif;margin:0;padding:0}
+.SLrotate.SLgrid dt span,.SLrotate.SLgrid dt span a{display:block;clear:both;font:bold 10px Arial,sans-serif;color:#08629a;text-transform:uppercase}
+.SLrotate.SLgrid dt a span{margin-top:6px}.SLrotate.SLgrid dl{float:left;display:block;overflow:hidden;width:92px;height:167px;color:#707070;margin:0 0 20px}
+.SLrotate.SLgrid dl.meio{margin:0 20px}
+.SLrotate.SLgrid dd{margin:3px 0 0}
+.SLrotate.SLgrid dd a{color:#707070}
+.SLrotate.SLgrid dd.SLprice{margin:7px 0}.SLrotate.SLgrid dd.SLprice:before{font-size:12px;color:#999}
+.SLrotate.SLgrid dd.SLprice span{font:bold 14px Arial,sans-serif;color:#333}
+.SLrotate.SLgrid dd.SLprice span small{font-size:14px}.SLrotate.SLbranded,.SLrotate.SLbranded{position:relative;min-height:430px;margin:0 0 10px;padding:0}.SLrotate.SLbranded .SLbrandedProducts{margin-top:20px}
+.SLrotate .SLdataWrapper{height:540px;*height:570px}
+.SLrotate .SLnavigation{clear:both;height:24px;bottom:0;text-align:center}
+.SLrotate .SLnavigation a{display:inline-block;width:24px;height:24px;outline:none;text-indent:-9999px;cursor:pointer}.SLrotate .SLnavigation a.left{background-position:-24px -149px;margin-right:5px}
+.SLrotate .SLnavigation a.left:hover{background-position:-50px -149px}
+.SLrotate .SLnavigation a.left:active{background-position:-617px -170px}
+.SLrotate .SLnavigation a.right{background-position:-24px -173px;margin-left:5px}
+.SLrotate .SLnavigation a.right:hover{background-position:-50px -173px;}
+.SLrotate .SLnavigation a.right:active{background-position:-642px -170px}
+.SLrotate .SLnavigation a.item{background-position:-92px -146px;margin:0 3px;width:9px}
+.SLrotate .SLnavigation a.ativo{background-position:-82px -146px}
+.SLrotate .SLnavigation a:hover{color:#666}
+.SLrotate .SLnavigation span.navItem{text-indent:-9999px}
+.SLgrid .SLnavigation{margin-top:10px}
+.SLrotate.SLgrid dt img{width:92px;height:92px}* html .SLrotate .SLnavigation a,:first-child+html .SLrotate .SLnavigation a{text-indent:0;line-height:0;font-size:0}
+.SLtabs { height: 31px; padding-top: 10px; background: #F8F8F8; font-family: arial; margin-top: 20px; }
+.SLtabs ul { padding-left: 10px; clear: both; height: 100%; border-bottom: solid 1px #CCC; }
+.SLtabs ul li { float: left; height: 30px; border: solid 1px #CCC; border-radius: 4px 4px 0 0; border-bottom: 0; margin-right: 5px; background: url("../images/tab-shopping.jpg") repeat-x #FFF; }
+.SLtabs ul li a { display: block; padding: 0 9px; height: 100%; line-height: 30px; color: #6b788a; font-size: 12px; }
+.SLtabs ul li:hover a { text-decoration: underline; }
+.SLtabs ul li.SLactive { background-image: url("../images/tab-shopping-sel.jpg"); height: 31px; }
+.SLtabs ul li.SLactive a { color:#474747; font-weight: bold; }
+form#formShopping{clear:both;padding:27px 10px 10px;margin-top:15px;width:296px;border-top:1px dotted #d7d7d7}
+form#formShopping label{display:block;font-size:1em;font-weight:bold;margin-bottom:8px;color:#6d8495}
+form#formShopping input{float:left;margin-right:5px;padding:8px 3px 9px;width:245px;background-position:-697px -186px;border: solid 1px #CCC;}
+form#formShopping input.botao-ok{float:left;margin:0;width:38px;height:32px;cursor:pointer;background-position:-544px -135px;padding:0;color:#08629a;font:bold 12px arial;text-transform:uppercase}
+form#formShopping input.botao-ok:hover{background-position:-584px -135px}
+form#formShopping input.botao-ok:active{background-position:-624px -135px}
+.pubtv{position: absolute;width: 316px;height: 237px;}
+.seloHeader{float: right;margin-top: 7px;width:100px;height:35px;display:inline}
+.chamadaSelo {position:relative;}
+.seloChamada{position:absolute;top:25px;right:5px;}
+.chamadaSelo h3, .chamadaSelo h4{margin-right:120px;}
+
+.LIE12306 ul{margin-top:20px;border:1px solid #ebebeb;border-bottom:none;}
+.LIE12306 ul li{display:block;padding:10px;border-bottom:1px solid #ebebeb;}
+.LIE12306 ul li span.counter{display:block;float: left;font: normal 30px Arial;color:#5a7183;margin:0 15px 0 5px;}
+.LIE12306 ul li a{color:#0d4e88;font:bold 14px Arial;}
+.LIE12306 ul li p{color:#666}
+
+#island_300x250_PPA01306,#island_300x250_PPA12206,#halfPage_300x600_PPA03406{padding:7px;}
+#carregaIntervencao_158x58_pubIntervencao{display:none;height:0;overflow:hidden;}
+
+#geral{width:988px;margin:0 auto;position:relative;}
+#seloOferecimento_88x31_seloColunistas,#seloOferecimento_88x31_seloInfograficos{margin-top:7px}
+.adPosition{display:none;z-index:10}
+#seloDestaque1_158x58_PPA00612-1, #seloDestaque2_158x58_PPA00612-2, #seloDestaque3_158x58_PPA00612-3{}
+#oferecimento_88x31_HOPPA07612-1, #oferecimento_88x31_HOPPA07612-2{margin:0 0 0 10px;}
+
+/* IntervenÃƒÂ§ÃƒÂ£o publicidade - logout */
+#mega-banner{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100}
+#mega-banner .ad {z-index:99999;position:absolute;width:630px;height:650px;left:50%;padding:10px;margin-left:-315px;margin-top:20px;font:normal 10px arial, sans-serif;background:#FFF;color:#666}
+#mega-banner .ad button{position:absolute;top:-20px;right:-20px;background: url("http://i0.ig.com/home/fechar.png") no-repeat 0 0;height:43px;width:43px;border:0;cursor:pointer}
+#mega-banner .transparencia{position:absolute;top:0;left:0; background:transparent url('http://i0.ig.com/home/bgtb.png?v=1');width:100%;height:100%}
+
+/* Disclaimer iG Livre */
+#disclaimer-iglivre{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100}
+#disclaimer-iglivre .disc{z-index:99999;position:absolute;border:1px solid #e7e7e7;border-radius:3px;width:554px;height:511px;top:50%;left:50%;padding:40px 2px 2px;margin-left:-277px;margin-top:-277px;font:normal 10px arial, sans-serif;background:#FFF;color:#666}
+#disclaimer-iglivre .disc strong{display:block}
+#disclaimer-iglivre .disc strong.logo button{position:absolute;right:11px;top:9px;width:21px;height:21px;background:url(http://i0.ig.com/ig/images/iglivre/bt-fechar-iglivre.gif) no-repeat 0 0;border:0;cursor:pointer}
+#disclaimer-iglivre .disc strong.logo img{margin:0 0 45px 34px}
+#disclaimer-iglivre .disc strong.titulo{clear:both;margin:0 0 10px 34px;font-size:26px;color:#3399cc}
+#disclaimer-iglivre .disc p{margin:0 0 17px 34px;font-size:14px;color:#33}
+#disclaimer-iglivre .disc p.warn{margin-bottom:29px;font-size:16px}
+#disclaimer-iglivre .disc p.acesse{margin:0 0 33px;text-align:center}
+#disclaimer-iglivre .disc p.aviso-iglivre{margin:0;padding:20px 0 0 30px;height:60px;font-size:12px;background:#F0F0F0}
+#disclaimer-iglivre .disc p.aviso-iglivre img{float:left;margin-right:12px}
+#disclaimer-iglivre .disc p.aviso-iglivre span{display:block;margin-top:3px}
+#disclaimer-iglivre .transparencia{position:absolute;top:0;left:0; background:transparent url('http://i0.ig.com/home/bgtb.png?v=1');width:100%;height:100%}
+
+a#verIntervencao{ display:none; overflow:visible; height:6px; margin-top:20px; font:bold 10px Arial, sans-serif; text-align:center; border-bottom:1px solid #e7e7e7; }
+a#verIntervencao span{ color:#3099da; padding:10px 20px 10px 10px; background:#FFFFFF url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGlJREFUeNpiNJh5iwEJ/EdiM4IIJgYCgAWIhYDYEog90OS8gfg7yIR3QJwPxDloCrYAsRzMimggfoqmYBkQL4ApeA3EEUD8F8q/CcTp6I48AsQ1IHuBOAiIv8AciQw6gPg4EF+DCQAEGABrWhLPYPnVHQAAAABJRU5ErkJggg==') no-repeat 87px 13px; }
+
+#tbl-medalhas-home table{width:314px;height:216px;border-spacing:0;border-collapse:collapse;background-color:#fff;}	
+#tbl-medalhas-home table, tr, th, td{border:1px solid #F0F0F0}
+#tbl-medalhas-home table tr{height:29px}
+#tbl-medalhas-home table caption{text-transform:uppercase;font:normal 18px arial;color:#3b5e00;text-align:left;padding: 0 0 15px}		
+#tbl-medalhas-home table thead tr{background:#f7f8f9;text-align:left}
+#tbl-medalhas-home .ouro, #tbl-medalhas-home .prata, #tbl-medalhas-home .bronze{background:url(http://i0.ig.com/canais/esporte/images/medalhas.png) no-repeat;width:44px}
+#tbl-medalhas-home table thead tr th.classificacao{font:bold 11px arial;color:#666666;text-transform:uppercase;padding-left:10px}
+#tbl-medalhas-home table thead tr th.prata{background-position:-45px 0}
+#tbl-medalhas-home table thead tr th.bronze{background-position:-90px 0}		
+#tbl-medalhas-home table tbody tr td{text-align:center;font:bold 14px arial;color:#666666;}
+#tbl-medalhas-home table tbody tr td.pais{text-align:left;padding-left:10px}
+#tbl-medalhas-home table tbody tr td.posicao{width:32px;border-right:3px solid #F0F0F0;text-align:center;font:bold 18px arial;color:#666666}
+#tbl-medalhas-home table tbody tr td.top{border-right:3px solid #456260;background:#567a00;color:#ffffff;}		
+#tbl-medalhas-home table tfoot tr td a{font:bold 12px arial;text-align:left;padding-left:10px}
+
+
+/* LIE15506 - componente Receitas*/
+
+.LIE15506{height:512px;overflow: hidden;position:relative;}
+.LIE15506 ul {height:325px;overflow:hidden;margin-top:20px;border-bottom:1px dotted #d7d7d7;}
+.LIE15506 ul li{margin-right:20px;height:330px}
+.LIE15506 ul.slider li.nomgr{margin-right:20px!important;}
+.LIE15506 ul li div {margin-bottom:20px;padding-bottom:20px;float:left}
+.LIE15506 ul li div img{float:left;border:none;}
+.LIE15506 ul li div h3 {font: bold 11px Arial;margin-bottom:1px;text-transform: uppercase}
+.LIE15506 ul li div h3 a{color:#333;}
+
+.LIE15506 a{color: #08629A}
+.LIE15506 ul li div p{float:left;margin-left:15px;width:195px}
+.LIE15506 ul li div p a{font:normal 1.5em Arial;display:block;color:#08629a}
+
+.LIE15506 .headRetranca {border-top: 2px solid #6D8495}
+.LIE15506 .headRetranca nav.tvFlashNav .slide.ativo, .LIE15506 .headRetranca nav.tvFlashNav .slide{background: url("../images/LIE15506-setastv.png") no-repeat scroll 0px 0px transparent;}
+.LIE15506 .headRetranca nav.tvFlashNav a{background: url("../images/LIE15506-setastv.png") no-repeat scroll 0px 0px transparent;display: block;float:left;height:24px;text-indent:-9999px;width:24px}
+.LIE15506 .headRetranca nav.tvFlashNav{background: url("../images/LIE15506-bg-retranca.gif") repeat scroll 0 0 transparent;float:right;padding:10px;visibility:visible}
+.LIE15506 .headRetranca nav.tvFlashNav a.voltar{margin-right:8px}
+.LIE15506 .headRetranca nav.tvFlashNav a.voltar:hover{background-position:-26px 0px}
+.LIE15506 .headRetranca nav.tvFlashNav a.avancar{background-position:0px -24px;margin-left:8px}
+.LIE15506 .headRetranca nav.tvFlashNav a.avancar:hover{background-position:-26px -24px}
+
+.LIE15506 .headRetranca nav.tvFlashNav div{float:left}
+.LIE15506 .headRetranca nav.tvFlashNav .slide.ativo{background-position:-54px 8px}
+.LIE15506 .headRetranca nav.tvFlashNav .slide{background-position:-64px 8px;margin:0 4px;width:6px}
+
+.LIE15506 .headRetranca h2{background: url("../images/LIE15506-bg-retranca.gif") repeat scroll 0 0 transparent;border-top: 1px solid #FFFFFF;font-size: 1.667em;height:45px;line-height: 44px;padding: 0 7px 0 12px}
+.LIE15506 .headRetranca h2 a{background: url("../images/LIE15506-firula.png")no-repeat scroll 85px 20px transparent;color: #3B454E;float: left;padding-right:15px;position:relative;right:0;top:0}
+.LIE15506 .headRetranca h2 a span{color: #0B73B4;display:none;font-size: 1em;font-weight: normal;letter-spacing: -4px;text-indent: -1500em}
+
+div.LIE15506tv{height:355px;overflow: hidden;position:relative;}
+.LIE15506tv ul li h3{margin:0 0 5px;float:none!important;}
+.LIE15506tv ul li h3 a{color:#333333;font:bold 11px Arial;text-transform:uppercase}
+
+.LIE15506tv h4 a{font:bold 18px Arial;color:#08629a}
+
+.LIE15506 .busca-receita{float:left;width:316px; margin-top: 15px;padding:10px 0 16px 10px;border-radius:3px;background-color:#f8f8f8}
+.LIE15506 .busca-receita .titulo-busca{color:#6d8495;font:bold 12px Arial}
+.LIE15506 .busca-receita .campo-busca{float:left;width:244px;height:30px;padding-left:6px;margin:10px 0 0;border-radius:3px;background: url(../images/LIE15506-bg-input-busca.png) repeat-x;font-size:12px;color:#999999;border:1px solid #dddddd;line-height:30px}
+.LIE15506 .busca-receita .bt-ok{float:left;width:38px;height:32px;margin:10px 0 0 5px;border-radius:3px;background: url(../images/LIE15506-bt-ok.gif) repeat-x;text-indent:-1500px;cursor:pointer}
+
+#accessible-menu{display:none;}
+
+aside#barra-lateral #PPA12206{position:inherit!important}
+
+
+/*.HOLIE18812 (destaque texto principal)*/
+.HOLIE18812 h2{float:left;font:bold 2.833em arial;margin-top:-4px}
+.HOLIE18812 h2 a{float:left; color:#08629a}
+.HOLIE18812 p{float:left;clear:both;font:normal 1.167em/1.5em Arial;width:100%;margin-bottom:15px}
+.HOLIE18812 p a{color: #666;}
+.HOLIE18812 .tvFlashNav a,
+.HOLIE18812 .tvFlashNav div,
+.HOLIE18812 .tvFlashNav a span,
+.HOLIE18812 ul{background:#f8f8f8}
+.HOLIE18812 div.tv{float:left;width:652px;height:313px;overflow:hidden;position:relative}
+.HOLIE18812 ul{float:left;width:652px;height:313px;position:relative;}
+.HOLIE18812 ul li{float:left;width:652px;height:313px}
+.HOLIE18812 ul li h3{float:none!important;clear:both;margin-bottom:3px;padding:14px 10px 0;font-size:0.917em;text-transform:uppercase}
+.HOLIE18812 ul li h3 a{color:#333}
+.HOLIE18812 .tvFlashNav{float:left;padding:4px 3px 0;height:32px;background:#F2F4F5}
+.HOLIE18812 .tvFlashNav a{float:left;width:77px;height:29px;background: url(http://i0.ig.com/ig/images/holie18812_bg.png) no-repeat -1px 0;color:#08629a;font-size:0.917em;line-height:29px}
+.HOLIE18812 .tvFlashNav a:hover{background-position:0 -31px;text-decoration:none}
+.HOLIE18812 .tvFlashNav a:hover span,
+.HOLIE18812 .tvFlashNav a:active span{background-position:-175px -41px}
+.HOLIE18812 .tvFlashNav a:active{background-position:-80px -31px}
+.HOLIE18812 .tvFlashNav a.avancar{background-position:-416px 0;width:76px}
+.HOLIE18812 .tvFlashNav a.avancar:hover{background-position:-2px -31px}
+.HOLIE18812 .tvFlashNav a.avancar:active{background-position:-82px -31px}
+.HOLIE18812 .tvFlashNav a span{float:left;width:7px;height:11px;margin:9px 6px 0 11px;background: url(http://i0.ig.com/ig/images/holie18812_bg.png) no-repeat -175px -41px}
+.HOLIE18812 .tvFlashNav a.avancar span{background-position:-187px -41px;margin:9px 0 0 5px}
+.HOLIE18812 .tvFlashNav a.avancar:hover span,.HOLIE18812 .tvFlashNav a.avancar:active span{background-position:-187px -41px}
+.HOLIE18812 .tvFlashNav a strong{float:left}
+.HOLIE18812 .tvFlashNav a:hover strong{cursor:pointer}
+.HOLIE18812 .tvFlashNav a.avancar strong{margin-left:11px}
+.HOLIE18812 .tvFlashNav div{float:left;width:493px;text-align:center;height:29px;font-size:1.167em;color:#6d8495;line-height:29px;background: url(http://i0.ig.com/ig/images/holie18812_bg.png) no-repeat 0 0}
+.HOLIE18812 .tvFlashNav div cite{font-style:normal;font-weight:bold}
+
+
+
+/*CHA19906*/
+.CHA19906 .headRetranca h2{margin-bottom:11px}
+.CHA19906 ul li{float:left;width:30px;height:30px;padding:6px 13px 6px 12px;margin:0 9px 9px 0;background-position:-484px -110px}
+.CHA19906 ul li:hover{background-position: -484px -153px}
+.CHA19906 ul li figure{display:block;width:30px;height:30px;overflow:hidden}
+.CHA19906 ul li a.atleticogo figure img{margin:-540px 0 0}
+.CHA19906 ul li a.atleticomg figure img{margin:0}
+.CHA19906 ul li a.bahia figure img{margin:-330px 0 0}
+.CHA19906 ul li a.botafogo figure img{margin:-270px 0 0}
+.CHA19906 ul li a.corinthians figure img{margin:-300px 0 0}
+.CHA19906 ul li a.coritiba figure img{margin:-360px 0 0}
+.CHA19906 ul li a.cruzeiro figure img{margin:-420px 0 0}
+.CHA19906 ul li a.figueirense figure img{margin:-450px 0 0}
+.CHA19906 ul li a.flamengo figure img{margin:-480px 0 0}
+.CHA19906 ul li a.fluminense figure img{margin:-510px 0 0}
+.CHA19906 ul li a.gremio figure img{margin:-30px 0 0}
+.CHA19906 ul li a.internacional figure img{margin:-60px 0 0}
+.CHA19906 ul li a.nautico figure img{margin:-90px 0 0}
+.CHA19906 ul li a.palmeiras figure img{margin:-570px 0 0}
+.CHA19906 ul li a.pontepreta figure img{margin:-390px 0 0}
+.CHA19906 ul li a.portuguesa figure img{margin:-120px 0 0}
+.CHA19906 ul li a.santos figure img{margin:-150px 0 0}
+.CHA19906 ul li a.saopaulo figure img{margin:-180px 0 0}
+.CHA19906 ul li a.sport figure img{margin:-210px 0 0}
+.CHA19906 ul li a.vasco figure img{margin:-240px 0 0}
+
+#fb-root{display:none}
+.FEE21006{margin-bottom:10px;}
+.FEE21006 h2{margin-bottom:10px}
+.FEE21006 #fb-caixa-activity {width:313px;height:215px;overflow-x:hidden;overflow-y: scroll;border-top: 1px solid #D7D7D7;position:relative}
+.FEE21006 #fb-caixa{border: 1px solid #D7D7D7}

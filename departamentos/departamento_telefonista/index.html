@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script language=JavaScript>
+
+<!-- Desabilita o botão direito do mouse -->
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- DESABILITA BOTÃO DIREITO DO MOUSE -->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!-- Charset -->
+
+<title>Telefonista</title> <!-- Título -->
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style> <!-- Estilos prontos -->
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#pdde').hide(); // esta div irá desaparecer
+$ ('#pnae').hide(); // esta div irá desaparecer
+$ ('#pnate').hide(); // esta div irá desaparecer
+$ ('#pde-escola').hide(); // esta div irá desaparecer
+$ ('#frequencia').hide(); // esta div irá desaparecer
+$ ('#album04').hide(); // esta div irá desaparecer
+$ ('#album05').hide(); // esta div irá desaparecer
+$ ('#album06').hide(); // esta div irá desaparecer
+$ ('#album07').hide(); // esta div irá desaparecer
+$ ('#album08').hide(); // esta div irá desaparecer
+$ ('#album09').hide(); // esta div irá desaparecer
+$ ('#album10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				nextTxt: "Próxima",
+				prevTxt: "Anterior",
+				boxId: "superbox", // Id attribute of the "superbox" element
+				boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "800", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				
+			};
+			$.superbox();
+		});
+
+</script> <!-- Modal -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script> <!-- mudar fundo de div -->
+
+<script language="javascript" src="funcao.js"></script> <!-- Load Função.js -->
+
+<script type='text/javascript'>
+            <!--
+            function FecharJanela()
+            {
+            ww = window.open(window.location, "_self");
+            ww.close();
+            }
+            -->
+</script> <!-- fechar janela -->
+
+</head>
+
+<body>
+
+<div style="width:804px; background:#fff; margin:0 auto">
+
+<table width="100%">
+
+<tr>
+
+<td colspan="3">
+
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank"><img src="../../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" /></a>
+
+</td>
+
+</tr> <!-- Site da Prefeitura -->
+
+<tr>
+
+<td colspan="3">
+
+<img src="imagens/fundo_telefonista.jpg" width="800" height="310" border="0" />
+
+</td>
+
+</tr> <!-- Template -->
+
+<tr>
+
+<td colspan="3">
+
+<center>
+<a href="javascript:FecharJanela()">
+<img src="../../imagens/ir_para_o_portal_da_educacao.jpg" width="332" height="23" border="0" longdesc="../index.htm" />
+</a>
+</center>
+
+</td>
+
+</tr> <!-- Fechar Janela -->
+
+<tr>
+
+<td colspan="3">
+<div style="padding:5px; height:60px; background:url(imagens/fundo_descricao.jpg); font-size:18px; text-align:center;">
+
+	A telefonista atende toda a Rede de Ensino de Camboriú fazendo ligações de informação e urgência para os pais dos alunos tanto de escolas como de CEIs (creches).
+    
+</div>
+
+</td>
+
+</tr> <!-- Descrição -->
+
+<tr>
+
+<td colspan="3">
+<div style="padding:5px; height:120px; background:url(imagens/fundo_descricao.jpg); font-size:15px; text-align:left;">
+
+<img src="../../imagens/representante.jpg" width="162" height="15" /><br>
+<br>
+Nome: <strong>Juliana Joana S. Medeiros</strong><br>
+<br>
+Função: <strong>Telefonista</strong><br>
+<br>
+Ramal: <strong>200</strong><br>
+
+</div>
+</td>
+
+</tr> <!-- Representante -->
+
+<tr>
+
+<td width="20%">
+
+</td>
+
+<td width="60%" height="1800px">
+
+<iframe scrolling="no" src ="ramais.txt" width="100%" height="100%" frameborder="0">
+
+Se quiser escrever algo que não tem escrito no seu site mas vc queira mostrar, escreva nessa área, se não, deixe em branco
+
+</iframe>
+
+</td>
+
+<td width="20%">
+
+</td>
+
+</tr> <!-- Corpo do Site -->
+
+<tr>
+<td colspan="3">
+<div style="width:800px; height:100px; background:url(../../imagens/barradown.jpg)"></div>
+</td>
+</tr> <!-- Rodapé -->
+
+</table>
+
+</div>
+
+</body>
+
+</html>

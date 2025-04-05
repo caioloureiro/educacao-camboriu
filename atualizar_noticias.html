@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Atualização</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="JavaScript" type="text/JavaScript">
+
+<!--
+function MM_reloadPage(init) {//reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+</script>
+
+<script type='text/javascript'>
+
+<!--
+function FecharJanela()
+{
+ww = window.open(window.location, "_self");
+ww.close();
+}
+-->
+
+</script>
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#item02').hide(); // esta div irá desaparecer
+$ ('#item03').hide(); // esta div irá desaparecer
+$ ('#item04').hide(); // esta div irá desaparecer
+$ ('#item05').hide(); // esta div irá desaparecer
+$ ('#item06').hide(); // esta div irá desaparecer
+$ ('#item07').hide(); // esta div irá desaparecer
+$ ('#item08').hide(); // esta div irá desaparecer
+$ ('#item09').hide(); // esta div irá desaparecer
+$ ('#item10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				// nextTxt: "Próxima",
+				// prevTxt: "Anterior",
+				// boxId: "superbox", // Id attribute of the "superbox" element
+				// boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "1000", // Default width of the box
+				boxHeight: "600", // Default height of the box
+				// loadTxt: "Loading...", // Loading text
+				// closeTxt: "Close", // "Close" button text
+				// prevTxt: "Previous", // "Previous" button text
+				// nextTxt: "Next" // "Next" button text
+
+			};
+			$.superbox();
+		});
+
+</script> <!-- Modelar o Box Modal -->
+
+</head>
+
+<body style="margin:0 auto; background:url(imagens/camboriu.jpg) fixed no-repeat;">
+<center>
+<form style="width:1000px; background:url(imagens/fundo_titulo.png);" action="atualizar.php" method="post">
+<h1><em><strong>ATUALIZAR NOTÍCIAS</strong></em></h1>
+Título:<br>
+<input name="titulo" type="text" size="100" /><br>
+<br>
+Area:<br>
+<input name="area" type="text" size="50"  /><br>
+<br>
+Link:<br>
+<input name="link" type="text" size="100"  /><br>
+<br>
+Foto pequena:<br>
+<input name="foto_p" type="text" size="50"  /><br>
+<br>
+Foto grande:<br>
+<input name="foto_g" type="text" size="50"  /><br>
+<br>
+Leading:<br>
+<textarea name="leading" cols="100" rows="7"></textarea><br>
+<br>
+GUID:<br>
+<input name="guid" type="text" size="10"  /><br>
+<br>
+<input type="submit" value="Gerar atualização">
+</form>
+</center>
+</body>
+</html>

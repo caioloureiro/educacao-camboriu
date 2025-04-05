@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Protocolo</title>
+<script language="JavaScript" type="text/JavaScript">
+
+<!--
+function MM_reloadPage(init) {//reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+</script>
+
+<script type='text/javascript'>
+
+<!--
+function FecharJanela()
+{
+ww = window.open(window.location, "_self");
+ww.close();
+}
+-->
+
+</script>
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#item02').hide(); // esta div irá desaparecer
+$ ('#item03').hide(); // esta div irá desaparecer
+$ ('#item04').hide(); // esta div irá desaparecer
+$ ('#item05').hide(); // esta div irá desaparecer
+$ ('#item06').hide(); // esta div irá desaparecer
+$ ('#item07').hide(); // esta div irá desaparecer
+$ ('#item08').hide(); // esta div irá desaparecer
+$ ('#item09').hide(); // esta div irá desaparecer
+$ ('#item10').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				// nextTxt: "Próxima",
+				// prevTxt: "Anterior",
+				// boxId: "superbox", // Id attribute of the "superbox" element
+				// boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "1000", // Default width of the box
+				boxHeight: "600", // Default height of the box
+				// loadTxt: "Loading...", // Loading text
+				// closeTxt: "Close", // "Close" button text
+				// prevTxt: "Previous", // "Previous" button text
+				// nextTxt: "Next" // "Next" button text
+
+			};
+			$.superbox();
+		});
+
+</script> <!-- Modelar o Box Modal -->
+
+</head>
+
+<body style="margin:0 auto; background:url(imagens/camboriu.jpg) fixed no-repeat;">
+<center>
+
+<form style="width:1000px; background:url(imagens/fundo_titulo.png);" action="protocolo.php" method="post">
+<h1><em><strong>GERADOR DE PROTOCOLOS</strong></em></h1>
+Destinatário:<br>
+<input name="destino" type="text" size="100" /><br>
+<br>
+Item 01:<br>
+<input name="item01" type="text" size="100" /><br>
+<br>
+Item 02:<br>
+<input name="item02" type="text" size="100" /><br>
+<br>
+Item 03:<br>
+<input name="item03" type="text" size="100" /><br>
+<br>
+Item 04:<br>
+<input name="item04" type="text" size="100" /><br>
+<br>
+
+<div id=item02 style="height:100%; text-align:center; background:url(imagens/camboriu.jpg) fixed no-repeat;">
+<br>
+<br>
+Item 05:<br>
+<input name="item05" type="text" size="100" /><br>
+<br>
+Item 06:<br>
+<input name="item06" type="text" size="100" /><br>
+<br>
+Item 07:<br>
+<input name="item07" type="text" size="100" /><br>
+<br>
+Item 08:<br>
+<input name="item08" type="text" size="100" /><br>
+<br>
+Item 09:<br>
+<input name="item09" type="text" size="100" /><br>
+<br>
+Item 10:<br>
+<input name="item10" type="text" size="100" /><br>
+<br>
+<a href="#item03" rel="superbox[content]">
+<input name="modal" type="button" value="Concluir" /><br>
+</a>
+</div>
+
+<br>
+<br>
+<input type="submit" value="Gerar Protocolo"><br>
+<br>
+<br>
+</form>
+
+</center>
+</body>
+</html>

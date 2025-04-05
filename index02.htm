@@ -1,0 +1,377 @@
+﻿<html> <!-- Portal desenvolvido por Caio Loureiro -->
+
+<head>
+
+<META http-equiv="content-type" content="text-html" charset="utf-8"> <!-- Charset -->
+
+<META NAME="KeyWords" CONTENT="educação, Camboriú, SC, Governo, Municipal, cidadedecamboriu"> <!-- Keyword -->
+
+<meta name="author" content="Caio Loureiro"> <!-- autor -->
+
+<meta name="copyright" content="© 2010 Prefeitura Municipal de Camboriu" /> <!-- direitos -->
+
+<meta http-equiv="imagetoolbar" content="no" /> <!-- image tool bar -->
+
+<script LANGUAGE="JavaScript"> 
+
+function agregar(){
+   if ((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4)) {
+      var url="http://www.educacao.cidadedecamboriu.sc.gov.br/";
+      var titulo="O Portal da Educação de Camboriú";
+      window.external.AddFavorite(url,titulo);
+   }
+   else {
+      if(navigator.appName == "Netscape")
+         alert ("Pressione Crtl+D para agregar este site em seus Favoritos");
+   }
+}
+</script> <!-- Adicionar aos favoritos -->
+
+<script language=JavaScript> 
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script> <!-- Desabilita o botão direito do mouse -->
+ 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<title>
+Secretaria da Educação e Cultura de Camboriú - SC
+</title> <!-- titulo -->
+
+<link href="estilo.css" type="text/css" rel="stylesheet"> <!--load o arquivo estilo.css nesta página-->
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="feed/rss.xml" /> <!--load o arquivo RSS nesta página-->
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script> <!-- load flash -->
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script> <!-- função reload page -->
+
+<script language="javascript" type="text/javascript" src="Scripts/Mobile2Detect.js"></script> <!-- Localizar Celular -->
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:950px;
+	top:343px;
+	width:101px;
+	height:96px;
+	z-index:23;
+}
+#apDiv2 {
+	position:absolute;
+	left:896px;
+	top:2342px;
+	width:137px;
+	height:144px;
+	z-index:23;
+}
+.GEORGIA {
+	font-family: Arial;
+}
+body p {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+body p {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.arial {
+	font-family: Arial;
+	font-size: 10px;
+}
+.arial {
+	font-family: Arial;
+	font-size: 12px;
+}
+#apDiv3 {
+	position:absolute;
+	left:223px;
+	top:986px;
+	width:352px;
+	height:62px;
+	z-index:23;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #06F;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+#apDiv4 {
+	position:absolute;
+	left:871px;
+	top:1645px;
+	width:222px;
+	height:170px;
+	z-index:23;
+}
+#apDiv5 {
+	position:absolute;
+	left:228px;
+	top:899px;
+	height:328px;
+	z-index:23;
+}
+#apDiv6 {
+	position:absolute;
+	left:226px;
+	top:325px;
+	width:349px;
+	height:47px;
+	z-index:23;
+}
+#apDiv7 {
+	position:absolute;
+	left:896px;
+	top:0px;
+	width:76px;
+	height:1662px;
+	z-index:23;
+}
+#apDiv8 {
+	position:absolute;
+	left:866px;
+	top:1396px;
+	width:122px;
+	height:109px;
+	z-index:23;
+}
+#apDiv9 {
+	position:absolute;
+	left:866px;
+	top:114px;
+	width:123px;
+	height:138px;
+	z-index:23;
+}
+#apDiv10 {
+	position:absolute;
+	left:415px;
+	top:1774px;
+	width:350px;
+	height:156px;
+	z-index:1;
+}
+#apDiv11 {
+	position:absolute;
+	left:56px;
+	top:1865px;
+	width:72px;
+	height:18px;
+	z-index:1;
+}
+#apDiv12 {
+	position:absolute;
+	left:385px;
+	top:2162px;
+	width:349px;
+	height:103px;
+	z-index:2;
+}
+
+#apDiv13 {
+	position:absolute;
+	left:385px;
+	top:2390px;
+	width:349px;
+	height:340px;
+	z-index:1;
+}
+</style> <!-- estilos prontos -->
+
+<link href='imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- scripts slider -->
+<link rel="stylesheet" type="text/css" media="all" href="content-slider.css">
+
+<script type="text/javascript" src="Scripts/jquery-1.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-ui.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery_002.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-easing-1.js">
+</script>
+
+<script type="text/javascript" src="Scripts/jquery-easing-compatibility.js">
+</script>
+
+<script type="text/javascript" src="Scripts/coda-slider.js">
+</script>
+
+<script type="text/javascript" src="Scripts/content-slider.js">
+</script>
+<!-- scripts slider -->
+
+<!-- CHAVE DE MENU NO HEAD - expansiva **********************************-->
+
+<script src="Scripts/prototype.js"></script>
+
+<script src="Scripts/Formulario2.js"></script>
+	
+<script src="Scripts/myPrototype.htm"></script>
+
+<!-- CHAVE DE MENU NO HEAD - expansiva ********************************-->
+
+</head>
+
+<body onLoad="MM_preloadImages('imagens/hora_atividade_on.jpg')">
+<center>
+<table style="width:800px; text-align:center; height:100%; background:url(imagens/fundo_titulo.png);">
+
+<tr>
+<td colspan="3">
+<a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank">
+<img src="imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0">
+</a>
+</td>
+</tr> <!-- Imagem Site Prefeitura -->
+
+<tr>
+
+<td>
+<a href="noticia/noticia_2011-11-03a.html" target="_blank">
+<img src="imagens/rematriculas_cei.png" width="342" height="280" border="0" title="Acesse as datas de matrículas e rematrículas dos CEI (Creches) municipais">
+</a>
+</td>
+
+<td>
+<a href="noticia/noticia_2011-11-09.html" target="_blank">
+<img src="imagens/rematriculas_escolas.png" width="342" height="280" border="0" title="Acesse as datas de matrículas e rematrículas das escolas municipais">
+</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3">
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/processo_seletivo_2011/homologacao_de_inscritos.pdf" target="_blank">
+<img src="imagens/local_prova_seletivo.png" width="804" height="154">
+</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<a href="index02.htm">
+<img src="imagens/portal_da_educacao.png" width="804" height="154" border="0" title="Acesse o Portal da Educação">
+</a>
+</td>
+
+</tr>
+
+</table>
+</center>
+<script type="text/javascript">
+swfobject.registerObject("FlashID2");
+</script> <!-- script do flash -->
+<script type="text/javascript" src="Scripts/jquery-1.js"></script>
+<script type="text/javascript" src="Scripts/init.js"></script>
+</body>
+
+</html>

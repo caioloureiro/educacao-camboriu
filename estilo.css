@@ -1,0 +1,267 @@
+body {
+	background:url(imagens/camboriu.jpg) fixed no-repeat;
+	font-family: Arial, Georgia, "Times New Roman", Serif, tahoma;
+	font-size:10px;
+	margin:0 auto;
+	}
+
+#divcabecalho {
+background:#FFF;
+width:802px;
+height:330px;
+
+}
+	
+#divbotoes{
+	background:#FFF;
+	width:226px;
+	text-align:left;
+	}
+	
+#divbotao01linha {
+		height:24px;
+		text-align:center;
+		vertical-align: middle;
+		}
+	
+#divbotao02linha {
+		height:44px;
+		vertical-align: middle;
+		}
+	
+#divbotao03linha {
+		height:74px;
+		vertical-align: middle;
+		}
+
+#botao_padrao01 {
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_escolas_01_off.jpg) no-repeat;
+		height:24px;
+		vertical-align: middle;
+		}
+	
+#botao_padrao02 {
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_escolas_02_off.jpg) no-repeat;
+		height:44px;
+		vertical-align: middle;
+		}
+	
+#botao_padrao03 {
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_escolas_03_off.jpg) no-repeat;
+		height:64px;
+		vertical-align: middle;
+		}
+		
+#botao_depto_01 {
+		font-size:14px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_deptos_01_off.jpg) no-repeat;
+		height:24px;
+		vertical-align: middle;
+		padding-top:2px;
+		}
+	
+#botao_depto_02 {
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_deptos_02_off.jpg) no-repeat;
+		height:44px;
+		vertical-align: middle;
+		}
+	
+#botao_depto_03 {
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		background:url(imagens/botao_deptos_03_off.jpg) no-repeat;
+		height:64px;
+		vertical-align: middle;
+		}
+		
+#divprevisaodotempo {
+	padding-top:3px;
+	text-align:center;
+	height:190px;
+		}
+
+#divnoticiamestre {
+	width:350px;
+	height:1600px;
+	}
+#divcamponoticia {
+		height:160px;
+		background:#FFF1D7;
+		font:20px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+		font-weight:bold;
+		padding:2px;
+		}
+#divpostadoem {
+			height:13px;
+			background:#FFFFFF;
+			font:10px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+			font-weight:normal;
+			}
+#divnoticia {
+			height:94px;
+			background:#FFFFFF;
+			font:12px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+			font-weight:normal;
+			padding:2px;
+		}
+#divfotonoticia {
+			width:123px;
+			height:90px;
+			margin:0 auto;
+			background:#FFF;
+			float:left;
+			}
+#divfloatnoticia {
+			width:210px;
+			height:90px;
+			background:#FFF;
+			font:12px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+			font-weight:normal;
+			padding:2px;
+			float:right;
+			}
+#divnoticiasvelhas {
+			height:94px;
+			background:#E6FFE6;
+			font:11px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+			font-weight:normal;
+			padding:2px;
+			}
+#divprojetos {
+			height:370px;
+			}
+			
+#divlinksmestre01 {
+height:155px;
+}
+#divcampolink01 {
+	width:175px;
+	height:150px;
+	float:left;
+	}
+	
+#divcampolink02 {
+	width:175px;
+	height:155px;
+	float:right;
+	}
+	
+#divtitulolink {
+	height:45px;
+	font:15px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+	font-weight:bold;
+	color:#00F;
+	Text-align:center;
+	}
+	
+#divimagemlink {
+	height:70px;
+	Text-align:center;
+	}
+	
+#divtextolink {
+	height:40px;
+	font:10px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+	Text-align:center;
+	}
+
+#divcultura {
+width:350px;
+height:175px;
+padding:5 0 0 0px;
+}
+
+#divfeedburner {
+width:350px;
+height:300px;
+padding:5 0 0 0px;
+}
+
+#divespacoleftbase {
+height:285px;
+font:15px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+padding:5 0 0 3px;
+}
+
+#divespacorightbase {
+height:760px;
+font:10px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+text-align:center;
+}
+
+#divcentrolinks {
+	width:350px;
+	height:340px;
+	font:10px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+	text-align:center;
+	background:#FFF;
+}
+
+#boxanuncie {
+width:220px;
+height:100px;
+overflow-x:scroll;
+
+}
+
+#rodape {
+width:800px;
+height:100px;
+font:13px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+background:url(imagens/barradown.jpg) no-repeat;
+}
+			
+#clear {clear:both;}
+
+#ultimaatualizacao {
+width:400px;
+height:15px;
+font:13px Arial, Georgia, "Times New Roman", Serif, Tahoma;
+Text-align:center;
+float:right;
+margin:0 auto;
+}
+
+ul li ul { display:none }
+ul.menu { list-style-type:none; margin: 0; padding: 0; padding-left:0; padding-right:4px; }
+ul.menu ul { list-style-type:none; margin: 0; padding: 0; }
+ul.menu a { display: block; text-decoration: none; padding-top: 5px; padding-bottom: 5px; padding-left:0; }
+ul.menu li { border-bottom:1px solid #cccbca; padding:0px; }
+ul.menu li.submenu { font-weight:bold; }
+ul.menu li a { font-size:15px; color:#333; border-left: 3px #FFFFFF solid; }
+ul.menu li a:hover { color:#367436; border-left: 3px #72B722 solid; }
+ul.menu li ul li a { color: #333; font-size:13px; font-weight: normal; background:#FFF; border-left: 3px #FFF solid; padding-left:3px; }
+ul.menu li ul li {border-bottom:1px solid #cccbca;}
+ul.menu li ul li a:hover { border-left: 3px #F19226 solid; }
+
+footer,nav,header,section,article{display:block}
+
+/*HOLIE09218 - RodapÃ©*/
+.HOLIE09218{border-top:7px solid #F90;background:#F9FFF9;padding:16px 0 12px}
+.HOLIE09218 .column{position:relative;float:left;border-right:1px dotted #d7d7d7;padding:0 10px 0 20px;width:170px}
+.HOLIE09218 .coluna1{padding-left:10px}
+.HOLIE09218 .coluna6{border:none;width:132px;padding-right:6px}
+.HOLIE09218 ul li{font-size:1em;line-height:20px;float:left;width:100%}
+.HOLIE09218 ul li.primeiro a,.HOLIE09218 ul li.retranca a{font-size:1.167em;font-weight:bold;color:#333;background-position:right -334px;padding-right:15px;float:left}
+.HOLIE09218 ul li a span{color:#0b73b4;font-size:1.417em;font-weight:normal;letter-spacing:-4px;background-position:-631px -177px;text-indent:-1500em;display:none}
+.HOLIE09218 ul li.primeiro{margin:-4px 0 9px}
+.HOLIE09218 ul li.retranca{margin:27px 0 9px}
+
+.fl{float:left}
+
+.gd18{width:800px;margin:0;padding:0;border:0;outline:0;list-style:none;text-decoration:none}

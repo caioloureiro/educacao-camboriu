@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+
+<image>
+<title>Bandeira</title>
+<url>http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/bandeira_camboriu03.jpg?07112010</url>
+<link>http://www.educacao.cidadedecamboriu.sc.gov.br/index.htm</link>
+</image>
+
+<title>Portal da Educação de Camboriú</title>
+<atom:link href="http://www.educacao.cidadedecamboriu.sc.gov.br/feed/rss.xml" rel="self" type="application/rss+xml" />
+<link>http://www.educacao.cidadedecamboriu.sc.gov.br</link>
+<description>O Portal da Educação de Camboriú. Camboriú uma cidade feliz por natureza!</description>
+
+<language>en</language> <!-- generator="WordPress/3.1-alpha" -->
+
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<generator>http://wordpress.org/?v=3.2.1</generator>
+
+<item>
+
+<title>
+
+Resultado do Processo Seletivo 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_2012.html
+</link>
+
+<pubDate>Tue, 22 Jan 13 09:44:07 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps2012_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Resultado Parcial do Processo Seletivo 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">250</guid>
+
+</item> <!-- Noticia 01 -->
+
+<item>
+
+<title>
+
+Homologação do Processo Seletivo de Aumento de Carga Horária 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html
+</link>
+
+<pubDate>Wed, 19 Dec 12 18:30:50 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps_carga_horaria_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Homologação do Processo Seletivo de Aumento de Carga Horária 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">249</guid>
+
+</item> <!-- Noticia 02 -->
+
+<item>
+
+<title>
+
+Resultado Parcial do Processo Seletivo de Aumento de Carga Horária 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html
+</link>
+
+<pubDate>Tue, 18 Dec 12 17:43:52 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps_carga_horaria_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Resultado Parcial do Processo Seletivo de Aumento de Carga Horária 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">248</guid>
+
+</item> <!-- Noticia 03 -->
+
+<item>
+
+<title>
+
+Homologação com Quadro de Vagas do Processo Seletivo de Remoção 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_remocao_2012.html
+</link>
+
+<pubDate>Wed, 12 Dec 12 17:20:30 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_remocao_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps_remocao_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Homologação com Quadro de Vagas do Processo Seletivo de Remoção 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">247</guid>
+
+</item> <!-- Noticia 04 -->
+
+<item>
+
+<title>
+
+Errata no Edital de Aumento de Carga Horária 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html
+</link>
+
+<pubDate>Mon, 10 Dec 12 14:32:17 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_aumento_de_carga_horaria_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps_carga_horaria_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Errata no Edital de Aumento de Carga Horária 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">246</guid>
+
+</item> <!-- Noticia 05 - PENÚLTIMA NOTÍCIA -->
+
+<item>
+
+<title>
+
+Resultado Parcial do Processo Seletivo de Remoção 2012
+</title>
+
+<link>
+
+http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_remocao_2012.html
+</link>
+
+<pubDate>Fri, 07 Dec 12 18:02:46 -0200</pubDate>
+
+<dc:creator>
+
+Caio Loureiro
+
+</dc:creator>
+
+<description>
+
+<![CDATA[
+
+<a href="http://www.educacao.cidadedecamboriu.sc.gov.br/noticia/ps_remocao_2012.html" target="_blank">
+
+<img src="http://www.educacao.cidadedecamboriu.sc.gov.br/imagens/slider/ps_remocao_grande.jpg" width="338" height="276" border="0">
+
+</a>
+
+<br />
+
+<br />
+
+Resultado Parcial do Processo Seletivo de Remoção 2012
+]]>
+
+</description>
+
+<guid isPermaLink="false">245</guid>
+
+</item> <!-- Noticia 06 -->
+
+</channel>
+
+</rss>

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link href='../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<script language=JavaScript> <!-- Desabilita o botão direito do mouse -->
+function desabilitar(){
+    alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+    return false
+}
+document.oncontextmenu=desabilitar
+// -->
+</script>
+
+<!-- EVITAR SELECIONAR TEXTO--> 
+<script type="text/javascript"> 
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Notícias</title>
+
+<link href="../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+<div id=box> <!-- Inicio da div box -->
+
+<div id=cabecalho> <a href="http://www.cidadedecamboriu.sc.gov.br/" target="_blank"><img src="../imagens/link_prefeitura_camboriu.jpg" width="798" height="39" border="0" /></a>
+    <br />
+    
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="265">
+      <param name="movie" value="../imagens/fundocima.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+      <param name="swfversion" value="6.0.65.0" />
+      <!-- Esta tag param solicita que os usuários com o Flash Player 6.0 r65 e versões posteriores baixem a versão mais recente do Flash Player. Exclua-o se você não deseja que os usuários vejam o prompt. -->
+      <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+      <!-- A tag object a seguir aplica-se a navegadores que não sejam o IE. Portanto, oculte-a do IE usando o IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="../imagens/fundocima.swf" width="800" height="265">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+        <!-- O navegador exibe o seguinte conteúdo alternativo para usuários que tenham o Flash Player 6.0 e versões anteriores. -->
+        <div>
+          <h4>O conteúdo desta página requer uma versão mais recente do Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obter Adobe Flash player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object>
+    <br>
+    <br>
+    <br>
+    <a href="../index.htm"><img src="../imagens/pagina01.jpg" width="160" height="18" border="0" longdesc="../index.htm" /></a>
+  
+  </div>
+    
+<div id=divtitulo>
+	
+Secretaria de Educação e Cultura faz capacitação para monitores de Educação Infantil
+    
+</div>
+
+<div id=divpostadoem>
+    
+    Postado em 
+      <!-- #BeginDate format:fcEn2m -->Sexta-feira, 26-Nov-2010  11:38<!-- #EndDate -->
+  </div>
+
+<div id=divfoto>
+
+  <img src="imagens_noticias/26-11-2010_03.JPG" width="524" height="250" border="0" />
+
+</div>
+
+<div id=divdescricao>
+
+A Secretaria de Educação e Cultura promoveu no dia 20 de novembro uma capacitação sobre motivação com ênfase a faixa etária de zero a três anos. A capacitação foi ministrada pelo Professor Max Haetinger Mestre em Educação Básica.<br>
+<br>
+"A capacitação foi super importante e produtiva, que realmente motivou as monitoras da Educação Infantil do município, com assuntos relevantes referentes a esta área" disse a Coordenadora da Educação Infantil Fabiana Gomes. <br><br>
+
+	<div style="text-align:center">
+
+    <img src="imagens_noticias/26-11-2010_02.JPG" width="524" height="250" border="0" />
+    <br><br>
+    <img src="imagens_noticias/26-11-2010_01.JPG" width="524" height="250" border="0" />
+    
+	</div> 
+
+</div>  
+    
+    
+</div> <!-- Fim da div box -->
+
+<div id=rodape>
+    
+</div>
+
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+
+</html>

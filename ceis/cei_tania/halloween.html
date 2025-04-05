@@ -1,0 +1,1078 @@
+﻿<html>
+<head>
+
+<script language=JavaScript>
+
+<!-- Desabilita o botão direito do mouse -->
+
+function desabilitar(){
+alert ("Função desabilitada.\n\nDesculpe o incômodo.")
+return false
+}
+document.oncontextmenu=desabilitar
+// -->
+
+</script> <!-- EVITAR SELECIONAR TEXTO-->
+
+<script type="text/javascript">
+// IE Evitar seleccion de texto
+document.onselectstart=function(){
+if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")
+return false
+else return true;
+};
+// FIREFOX Evitar seleccion de texto
+if (window.sidebar){
+document.onmousedown=function(e){
+var obj=e.target;
+if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD")
+return true;
+/*else if (obj.tagName=="BUTTON"){
+return true;
+}*/
+else
+return false;
+}
+}
+// End -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> <!-- Aqui é a Instrução de Compatibilidade -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>halloween</title>
+
+<link href="../../noticia.css" type="text/css" rel="stylesheet"> <!--load o arquivo CSS nesta página-->
+
+<style type="text/css">
+
+#apDiv1 {
+	position:absolute;
+	left:870px;
+	top:806px;
+	width:133px;
+	height:49px;
+	z-index:1;
+}
+
+</style>
+
+<link href='../../imagens/favicon.ico' rel='shortcut icon' type='image/x-icon'/> <!-- Mostra o ícone favicon -->
+
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ -->
+<link rel="stylesheet" href="jquery.superbox.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.superbox-min.js"></script>
+<!-- COLADO DO SITE http://www.pierrebertet.net/projects/jquery_superbox/ --> <!-- Chama os arquivos modal -->
+
+<!-- Modelar o Box Modal -->
+<script type="text/javascript">
+
+$(function(){
+
+$ ('#conteudo').hide(); // esta div irá desaparecer
+$ ('#equipe').hide(); // esta div irá desaparecer
+$ ('#historia').hide(); // esta div irá desaparecer
+$ ('#patronesse').hide(); // esta div irá desaparecer
+$ ('#ppp').hide(); // esta div irá desaparecer
+$ ('#projetos').hide(); // esta div irá desaparecer
+$ ('#app').hide(); // esta div irá desaparecer
+$ ('#pdde').hide(); // esta div irá desaparecer
+
+			$.superbox.settings = {
+				closeTxt: "Fechar", // CSS #superbox .close para mudar o "fechar"
+				loadTxt: "Carregando...",
+				nextTxt: "- | Próxima",
+				prevTxt: "Anterior | - ",
+				boxId: "superbox", // Id attribute of the "superbox" element
+				boxClasses: "", // Class of the "superbox" element
+				overlayOpacity: .8, // Background opaqueness
+				boxWidth: "800", // Default width of the box
+				boxHeight: "500", // Default height of the box
+				
+			};
+			$.superbox();
+		});
+
+</script> <!-- Blog -->
+<!-- Modelar o Box Modal --> <!-- Modal -->
+
+<!-- Mudar fundo de Div -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#botao_escolas").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+	
+	$("#botao_escolas02").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas03").hover(function() {
+
+		$(this).css("background-color", "#999");
+
+	}, function(){
+
+		$(this).css("background-color", "#CCC");
+
+	});
+
+	$("#botao_escolas04").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas05").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas06").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas07").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas08").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas09").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+	
+	$("#botao_escolas10").hover(function() {
+	
+			$(this).css("background-color", "#999");
+	
+		}, function(){
+	
+			$(this).css("background-color", "#CCC");
+	
+		});
+
+});
+
+</script>
+<!-- mudar fundo de div -->
+
+</head>
+
+<body>
+<center>
+<div style="overflow:auto; width:800px; height:500px; background:#fff; margin:30 0 0 0px;">
+
+<div style="margin:5px; width:50px; Background:#F00; color:#FFF; font-weight:bold; float:left;">
+<a href="index.html">
+Voltar
+</a>
+</div>
+
+<div id=album01>
+
+<table style="width:100%;">
+
+<tr>
+
+<h1>
+
+Halloween
+
+</h1>
+
+</tr> <!-- TITULO -->
+
+<tr>
+
+Clique na foto para ampliar.<br>
+Para movimentação clique em "próxima" ou "anterior", ou então use as setas do teclado.<br>
+Para sair clique em fechar ou pressione a tecla "ESC".
+
+</tr> <!-- Instruções de uso -->
+
+<tr>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02672.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02672.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02673.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02673.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02674.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02674.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02675.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02675.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02676.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02676.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02677.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02677.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02678.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02678.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02679.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02679.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02680.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02680.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02681.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02681.JPG" width="50" height="37" border="2">
+
+</a></td>
+
+</tr> <!-- PRIMEIRA LINHA -->
+
+<tr>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02682.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02682.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/DSC02683.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/DSC02683.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5894.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5894.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5895.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5895.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5896.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5896.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5897.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5897.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5898.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5898.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5899.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5899.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5900.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5900.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5901.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5901.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+</tr> <!-- SEGUNDA LINHA -->
+
+<tr>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5902.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5902.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5904.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5904.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5905.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5905.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5906.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5906.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5907.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5907.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5908.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5908.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5909.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5909.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5910.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5910.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5911.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5911.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5912.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5912.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+</tr> <!-- TERCEIRA LINHA -->
+
+<tr>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5913.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5913.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5914.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5914.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5915.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5915.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5917.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5917.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5918.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5918.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5919.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5919.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5920.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5920.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5921.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5921.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5922.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5922.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5923.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5923.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+</tr> <!-- QUARTA LINHA -->
+
+<tr>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5924.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5924.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5925.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5925.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5926.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5926.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5927.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5927.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5928.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5928.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5929.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5929.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5930.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5930.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5931.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5931.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5932.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5932.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5933.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5933.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+</tr> <!-- QUINTA LINHA -->
+
+<tr>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5934.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5934.JPG" width="50" height="37" border="2">
+
+</a>
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5935.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5935.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5936.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5936.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5937.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5937.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5938.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5938.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5939.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5939.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5940.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5940.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5941.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5941.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5942.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5942.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5943.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5943.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+</tr> <!-- SEXTA LINHA -->
+
+<tr>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5944.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5944.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5945.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5945.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5946.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5946.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5947.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5947.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5948.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5948.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+<a href="imagens/festa_de_despedida_da_educacao_infantil_-_formatura/GEDC5949.JPG" rel="superbox[gallery][my_gallery]">
+
+<img src="imagens/festa_de_despedida_da_educacao_infantil_-_formatura_pequenas/GEDC5949.JPG" width="50" height="37" border="2">
+
+</a>
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr> <!-- SETIMA LINHA -->
+
+<tr>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr> <!-- OITAVA LINHA -->
+
+<tr>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr> <!-- NONA LINHA -->
+
+<tr>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr> <!-- DECIMA LINHA -->
+
+</table>
+
+</div> 
+<!-- album 01 -->
+
+</div>
+</center>
+</body>
+</html>
